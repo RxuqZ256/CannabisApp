@@ -12,5 +12,5 @@ typischen Einsatzzwecks. Eine Suchfunktion ermöglicht das Filtern nach Namen.
    Entwicklungsserver (z. B. `npx serve` oder die Live-Server-Erweiterung in VS Code)
    verwendet werden.
 
-Beim Laden erscheint eine Liste einiger Beispielsorten. Über das Suchfeld lassen
-sich die Einträge filtern.
+Beim Laden erscheint eine Liste von rund 100 Beispielsorten. Über das Suchfeld
+lässt sich die Liste filtern.
