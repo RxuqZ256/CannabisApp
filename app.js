@@ -1,4 +1,4 @@
-const products = [
+const baseStrains = [
   {
     name: 'Sorte A',
     thc: 20,
@@ -37,13 +37,27 @@ const products = [
   }
 ];
 
+const products = [];
+for (let i = 0; i < 100; i++) {
+  const base = baseStrains[i % baseStrains.length];
+  products.push({
+    name: `${base.name} ${i + 1}`,
+    thc: base.thc,
+    cbd: base.cbd,
+    description: base.description
+  });
+}
+
 function renderProducts(list) {
   const container = document.getElementById('product-list');
   container.innerHTML = '';
   list.forEach(p => {
     const div = document.createElement('div');
     div.className = 'product';
-    div.innerHTML = `<h2>${p.name}</h2><p>${p.description}</p><p>THC: ${p.thc}%</p><p>CBD: ${p.cbd}%</p>`;
+    div.innerHTML = `<h3>${p.name}</h3><p>THC: ${p.thc}%<br/>CBD: ${p.cbd}%</p>`;
+    div.addEventListener('click', () => {
+      alert(p.description);
+    });
     container.appendChild(div);
   });
 }
