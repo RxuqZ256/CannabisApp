@@ -54,26 +54,15 @@ document.getElementById('search-input').addEventListener('input', e => {
   renderProducts(filtered);
 });
 
-function showSection(id) {
-  const sections = document.querySelectorAll('.content-section');
-  sections.forEach(sec => {
-    sec.hidden = sec.id !== id;
-  });
-}
-
 function setupNavigation() {
-  const menuButtons = document.querySelectorAll('#main-menu button');
-  const backButtons = document.querySelectorAll('.back-button');
+  const buttons = document.querySelectorAll('#main-menu button');
+  const sections = document.querySelectorAll('.content-section');
 
-  menuButtons.forEach(btn => {
+  buttons.forEach(btn => {
     btn.addEventListener('click', () => {
-      showSection(btn.dataset.target);
-    });
-  });
-
-  backButtons.forEach(btn => {
-    btn.addEventListener('click', () => {
-      showSection('menu-section');
+      sections.forEach(sec => {
+        sec.hidden = sec.id !== btn.dataset.target;
+      });
     });
   });
 }
@@ -81,5 +70,4 @@ function setupNavigation() {
 window.addEventListener('load', () => {
   renderProducts(products);
   setupNavigation();
-  showSection('menu-section');
 });
