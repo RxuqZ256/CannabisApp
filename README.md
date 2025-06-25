@@ -1,6 +1,15 @@
 # CannabisApp
 
-Dieses Projekt soll eine Vergleichs-App für Cannabisprodukte bereitstellen. Ziel ist es, unterschiedliche Sorten samt Eigenschaften wie THC- und CBD-Gehalt gegenüberzustellen und eine Suche sowie Filterfunktionen anzubieten.
+Dieses Projekt stellt eine einfache Vergleichs-App für Cannabisprodukte bereit. 
+Ziel ist es, unterschiedliche Sorten samt Eigenschaften wie THC- und CBD-Gehalt 
+zu vergleichen. Eine Suchfunktion ermöglicht das Filtern nach Namen.
 
-Um die enthaltene HTML-Datei lokal zu öffnen, kann `index.html` im Browser gestartet oder bei der weiteren Entwicklung über einen lokalen Server eingebunden werden.
+## Lokale Nutzung
 
+1. Repository klonen oder herunterladen.
+2. `index.html` in einem Browser öffnen. Alternativ kann ein einfacher
+   Entwicklungsserver (z. B. `npx serve` oder die Live-Server-Erweiterung in VS Code)
+   verwendet werden.
+
+Beim Laden erscheint eine Liste einiger Beispielsürten. Über das Suchfeld lassen
+sich die Einträge filtern.
