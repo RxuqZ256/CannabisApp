@@ -6,11 +6,53 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>Willkommen zur Cannabis Vergleichs-App</h1>
-    <div id="search-container">
-      <input type="text" id="search-input" placeholder="Sorte suchen..." />
-    </div>
-    <div id="product-list"></div>
+    <header>
+      <h1>CannabisApp</h1>
+      <nav id="main-menu">
+        <button data-target="compare-section">Vergleich</button>
+        <button data-target="safeuse-section">Safe-Use</button>
+        <button data-target="map-section">Karte</button>
+        <button data-target="news-section">Neuigkeiten</button>
+      </nav>
+    </header>
+
+    <main>
+      <section id="compare-section" class="content-section">
+        <h2>Sorten vergleichen</h2>
+        <div id="search-container">
+          <input type="text" id="search-input" placeholder="Sorte suchen..." />
+        </div>
+        <div id="product-list"></div>
+      </section>
+
+      <section id="safeuse-section" class="content-section" hidden>
+        <h2>Safe-Use Regeln</h2>
+        <p>
+          Informiere dich stets über die aktuelle Gesetzeslage und konsumiere nur,
+          wenn es für dich legal ist. Beachte verantwortungsvolle Dosierung,
+          konsumiere nicht am Straßenverkehr und halte Pausen ein. Bei Fragen
+          wende dich an medizinisches Fachpersonal.
+        </p>
+      </section>
+
+      <section id="map-section" class="content-section" hidden>
+        <h2>Konsumkarte</h2>
+        <p>Die Karte dient nur als Orientierung. Prüfe lokale Gesetze.</p>
+        <iframe
+          title="OpenStreetMap"
+          src="https://www.openstreetmap.org/export/embed.html"
+          style="width: 100%; height: 300px; border: 1px solid #ccc;"
+        ></iframe>
+      </section>
+
+      <section id="news-section" class="content-section" hidden>
+        <h2>Neuigkeiten</h2>
+        <ul>
+          <li><a href="https://www.cannabis-med.org/" target="_blank">Aktuelle Meldungen</a></li>
+          <li><a href="https://hanfverband.de/nachrichten" target="_blank">Pressemitteilungen</a></li>
+        </ul>
+      </section>
+    </main>
 
     <script src="app.js"></script>
   </body>

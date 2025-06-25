@@ -21,6 +21,20 @@ document.getElementById('search-input').addEventListener('input', e => {
   renderProducts(filtered);
 });
 
+function setupNavigation() {
+  const buttons = document.querySelectorAll('#main-menu button');
+  const sections = document.querySelectorAll('.content-section');
+
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      sections.forEach(sec => {
+        sec.hidden = sec.id !== btn.dataset.target;
+      });
+    });
+  });
+}
+
 window.addEventListener('load', () => {
   renderProducts(products);
+  setupNavigation();
 });
