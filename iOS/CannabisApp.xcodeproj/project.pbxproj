@@ -1,0 +1,174 @@
+// !$*UTF8*$!
+{
+  archiveVersion = 1;
+  classes = {};
+  objectVersion = 55;
+  objects = {
+
+/* Begin PBXBuildFile section */
+    000000000000000000000006 /* CannabisAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000004 /* CannabisAppApp.swift */; };
+    000000000000000000000008 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000005 /* ContentView.swift */; };
+    00000000000000000000000A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000009 /* Assets.xcassets */; };
+    00000000000000000000000C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000000B /* Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+    000000000000000000000004 /* CannabisAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CannabisAppApp.swift; sourceTree = "<group>"; };
+    000000000000000000000005 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+    000000000000000000000009 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+    00000000000000000000000B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+    00000000000000000000000D /* CannabisApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = CannabisApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+    000000000000000000000003 = {
+        isa = PBXGroup;
+        children = (
+            000000000000000000000004 /* CannabisAppApp.swift */,
+            000000000000000000000005 /* ContentView.swift */,
+            000000000000000000000009 /* Assets.xcassets */,
+            00000000000000000000000B /* Info.plist */,
+        );
+        path = "";
+        sourceTree = "<group>";
+    };
+    000000000000000000000013 = {
+        isa = PBXGroup;
+        children = (
+            00000000000000000000000D /* CannabisApp.app */,
+        );
+        name = Products;
+        sourceTree = "<group>";
+    };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+    000000000000000000000002 /* CannabisApp */ = {
+        isa = PBXNativeTarget;
+        buildConfigurationList = 000000000000000000000011 /* Build configuration list for PBXNativeTarget "CannabisApp" */;
+        buildPhases = (
+            00000000000000000000000E /* Sources */,
+            00000000000000000000000F /* Resources */,
+        );
+        buildRules = (
+        );
+        dependencies = (
+        );
+        name = CannabisApp;
+        productName = CannabisApp;
+        productReference = 00000000000000000000000D /* CannabisApp.app */;
+        productType = "com.apple.product-type.application";
+    };
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+    000000000000000000000001 /* Project object */ = {
+        isa = PBXProject;
+        attributes = {
+            LastUpgradeCheck = 1500;
+            ORGANIZATIONNAME = "Codex";
+        };
+        buildConfigurationList = 000000000000000000000010 /* Build configuration list for PBXProject "CannabisApp" */;
+        compatibilityVersion = "Xcode 15.0";
+        developmentRegion = en;
+        hasScannedForEncodings = 0;
+        knownRegions = (
+            en,
+        );
+        mainGroup = 000000000000000000000003;
+        productRefGroup = 000000000000000000000013;
+        projectDirPath = "";
+        projectRoot = "";
+        targets = (
+            000000000000000000000002 /* CannabisApp */,
+        );
+    };
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+    00000000000000000000000E /* Sources */ = {
+        isa = PBXSourcesBuildPhase;
+        buildActionMask = 2147483647;
+        files = (
+            000000000000000000000006 /* CannabisAppApp.swift in Sources */,
+            000000000000000000000008 /* ContentView.swift in Sources */,
+        );
+        runOnlyForDeploymentPostprocessing = 0;
+    };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXResourcesBuildPhase section */
+    00000000000000000000000F /* Resources */ = {
+        isa = PBXResourcesBuildPhase;
+        buildActionMask = 2147483647;
+        files = (
+            00000000000000000000000A /* Assets.xcassets in Resources */,
+            00000000000000000000000C /* Info.plist in Resources */,
+        );
+        runOnlyForDeploymentPostprocessing = 0;
+    };
+/* End PBXResourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+    000000000000000000000012 /* Debug */ = {
+        isa = XCBuildConfiguration;
+        buildSettings = {
+            PRODUCT_NAME = "$(TARGET_NAME)";
+        };
+        name = Debug;
+    };
+    000000000000000000000013 /* Release */ = {
+        isa = XCBuildConfiguration;
+        buildSettings = {
+            PRODUCT_NAME = "$(TARGET_NAME)";
+        };
+        name = Release;
+    };
+    000000000000000000000014 /* Debug */ = {
+        isa = XCBuildConfiguration;
+        buildSettings = {
+            INFOPLIST_FILE = "Info.plist";
+            PRODUCT_BUNDLE_IDENTIFIER = "com.example.cannabisapp";
+            PRODUCT_NAME = "$(TARGET_NAME)";
+            SWIFT_VERSION = 5.9;
+            TARGETED_DEVICE_FAMILY = "1";
+        };
+        name = Debug;
+    };
+    000000000000000000000015 /* Release */ = {
+        isa = XCBuildConfiguration;
+        buildSettings = {
+            INFOPLIST_FILE = "Info.plist";
+            PRODUCT_BUNDLE_IDENTIFIER = "com.example.cannabisapp";
+            PRODUCT_NAME = "$(TARGET_NAME)";
+            SWIFT_VERSION = 5.9;
+            TARGETED_DEVICE_FAMILY = "1";
+        };
+        name = Release;
+    };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+    000000000000000000000010 /* Build configuration list for PBXProject "CannabisApp" */ = {
+        isa = XCConfigurationList;
+        buildConfigurations = (
+            000000000000000000000012 /* Debug */,
+            000000000000000000000013 /* Release */,
+        );
+        defaultConfigurationIsVisible = 0;
+        defaultConfigurationName = Release;
+    };
+    000000000000000000000011 /* Build configuration list for PBXNativeTarget "CannabisApp" */ = {
+        isa = XCConfigurationList;
+        buildConfigurations = (
+            000000000000000000000014 /* Debug */,
+            000000000000000000000015 /* Release */,
+        );
+        defaultConfigurationIsVisible = 0;
+        defaultConfigurationName = Release;
+    };
+/* End XCConfigurationList section */
+
+  };
+  rootObject = 000000000000000000000001 /* Project object */;
+}
