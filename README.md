@@ -7,6 +7,9 @@ typischen Einsatzzwecks. Eine Suchfunktion ermöglicht das Filtern nach Namen.
 Beim Start erscheint nun ein Hauptmenü, über das die einzelnen Bereiche
 aufgerufen werden können.
 
+Die Oberfläche verwendet nun ein moderneres Layout mit Karten und
+Responsive-Design.
+
 ## Lokale Nutzung
 
 1. Repository klonen oder herunterladen.
