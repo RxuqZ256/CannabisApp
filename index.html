@@ -10,6 +10,7 @@
     <header>
       <h1>CannabisApp</h1>
       <nav id="main-menu">
+        <button data-target="home-section">Start</button>
         <button data-target="compare-section">Vergleich</button>
         <button data-target="safeuse-section">Safe-Use</button>
         <button data-target="map-section">Karte</button>
@@ -18,7 +19,17 @@
     </header>
 
     <main>
-      <section id="compare-section" class="content-section">
+      <section id="home-section" class="content-section">
+        <h2>Willkommen</h2>
+        <p>Wähle eine Kategorie, um fortzufahren:</p>
+        <ul>
+          <li><button data-target="compare-section">Sorten vergleichen</button></li>
+          <li><button data-target="safeuse-section">Safe-Use</button></li>
+          <li><button data-target="map-section">Karte</button></li>
+          <li><button data-target="news-section">Neuigkeiten</button></li>
+        </ul>
+      </section>
+      <section id="compare-section" class="content-section" hidden>
         <h2>Sorten vergleichen</h2>
         <div id="search-container">
           <input type="text" id="search-input" placeholder="Sorte suchen..." />

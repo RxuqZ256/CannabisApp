@@ -1,42 +1,47 @@
 const products = [
   {
-    name: 'Sorte A',
-    thc: 20,
-    cbd: 1,
-    description: 'Klassische Hybridsorte mit ausgewogenem Wirkungsspektrum.'
-  },
-  {
-    name: 'Sorte B',
-    thc: 15,
-    cbd: 5,
-    description: 'Milderes Produkt, wird oft zur leichten Entspannung genutzt.'
-  },
-  {
-    name: 'Sorte C',
-    thc: 10,
-    cbd: 12,
-    description: 'CBD-reich, beliebt zur Linderung von Entzündungen.'
-  },
-  {
     name: 'Amnesia Haze',
     thc: 22,
     cbd: 1,
-    description: 'Energetische Sorte, häufig gegen Müdigkeit eingesetzt.'
+    description: 'Energetische Sorte, h\u00e4ufig gegen M\u00fcdigkeit eingesetzt.'
   },
   {
     name: 'Northern Lights',
     thc: 18,
     cbd: 2,
-    description: 'Bekannt für beruhigende Wirkung, ideal zum Entspannen am Abend.'
+    description: 'Bekannt f\u00fcr beruhigende Wirkung, ideal zum Entspannen am Abend.'
   },
   {
     name: "Charlotte's Web",
     thc: 1,
     cbd: 15,
-    description: 'Speziell für medizinische Zwecke gezüchtet, z. B. bei Epilepsie.'
+    description: 'Speziell f\u00fcr medizinische Zwecke gez\u00fcchtet, z. B. bei Epilepsie.'
+  },
+  {
+    name: 'Blue Dream',
+    thc: 17,
+    cbd: 2,
+    description: 'Ber\u00fchmte kalifornische Sorte mit ausgeglichenem High.'
+  },
+  {
+    name: 'Super Lemon Haze',
+    thc: 20,
+    cbd: 1,
+    description: 'Fruchtig-zitroniges Aroma und anregende Wirkung.'
+  },
+  {
+    name: 'White Widow',
+    thc: 19,
+    cbd: 1,
+    description: 'Klassiker aus den 90ern, sorgt f\u00fcr ausgeglichene Effekte.'
+  },
+  {
+    name: 'Purple Kush',
+    thc: 21,
+    cbd: 0,
+    description: 'Reine Indica-Sorte, bekannt f\u00fcr tief entspannende Wirkung.'
   }
 ];
-
 function renderProducts(list) {
   const container = document.getElementById('product-list');
   container.innerHTML = '';
@@ -55,7 +60,7 @@ document.getElementById('search-input').addEventListener('input', e => {
 });
 
 function setupNavigation() {
-  const buttons = document.querySelectorAll('#main-menu button');
+  const buttons = document.querySelectorAll('button[data-target]');
   const sections = document.querySelectorAll('.content-section');
 
   buttons.forEach(btn => {
