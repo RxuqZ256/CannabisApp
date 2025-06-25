@@ -3,25 +3,25 @@ const products = [
     name: 'Amnesia Haze',
     thc: 22,
     cbd: 1,
-    description: 'Energetische Sorte, h\u00e4ufig gegen M\u00fcdigkeit eingesetzt.'
+    description: 'Energetische Sorte, häufig gegen Müdigkeit eingesetzt.'
   },
   {
     name: 'Northern Lights',
     thc: 18,
     cbd: 2,
-    description: 'Bekannt f\u00fcr beruhigende Wirkung, ideal zum Entspannen am Abend.'
+    description: 'Bekannt für beruhigende Wirkung, ideal zum Entspannen am Abend.'
   },
   {
     name: "Charlotte's Web",
     thc: 1,
     cbd: 15,
-    description: 'Speziell f\u00fcr medizinische Zwecke gez\u00fcchtet, z. B. bei Epilepsie.'
+    description: 'Speziell für medizinische Zwecke gezüchtet, z. B. bei Epilepsie.'
   },
   {
     name: 'Blue Dream',
     thc: 17,
     cbd: 2,
-    description: 'Ber\u00fchmte kalifornische Sorte mit ausgeglichenem High.'
+    description: 'Berühmte kalifornische Sorte mit ausgeglichenem High.'
   },
   {
     name: 'Super Lemon Haze',
@@ -33,13 +33,13 @@ const products = [
     name: 'White Widow',
     thc: 19,
     cbd: 1,
-    description: 'Klassiker aus den 90ern, sorgt f\u00fcr ausgeglichene Effekte.'
+    description: 'Klassiker aus den 90ern, sorgt für ausgeglichene Effekte.'
   },
   {
     name: 'Purple Kush',
     thc: 21,
     cbd: 0,
-    description: 'Reine Indica-Sorte, bekannt f\u00fcr tief entspannende Wirkung.'
+    description: 'Reine Indica-Sorte, bekannt für tief entspannende Wirkung.'
   }
 ];
 function renderProducts(list) {
