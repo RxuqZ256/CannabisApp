@@ -668,6 +668,7 @@ function setupNavigation() {
       sections.forEach(sec => {
         sec.hidden = sec.id !== btn.dataset.target;
       });
+      buttons.forEach(b => b.classList.toggle('active', b === btn));
     });
   });
 }
@@ -675,4 +676,8 @@ function setupNavigation() {
 window.addEventListener('load', () => {
   renderProducts(products);
   setupNavigation();
+  const homeButton = document.querySelector('button[data-target="home-section"]');
+  if (homeButton) {
+    homeButton.classList.add('active');
+  }
 });
