@@ -13,6 +13,9 @@ aufgerufen werden können.
 2. `index.html` in einem Browser öffnen. Alternativ kann ein einfacher
    Entwicklungsserver (z. B. `npx serve` oder die Live-Server-Erweiterung in VS Code)
    verwendet werden.
+3. **Hinweis:** `app.js` wird durch die HTML-Seite eingebunden und ist nicht f\u00fcr
+   die Ausf\u00fchrung mit Node gedacht. Bei einem Versuch mit `node app.js` erscheint
+   typischerweise der Fehler `ReferenceError: document is not defined`.
 
 Im Bereich "Vergleich" wird eine Liste verschiedener Sorten angezeigt. Über das
 Suchfeld lassen sich die Einträge filtern.
