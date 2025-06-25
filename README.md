@@ -2,8 +2,10 @@
 
 Dieses Projekt stellt eine einfache Vergleichs-App für Cannabisprodukte bereit. 
 Ziel ist es, unterschiedliche Sorten samt Eigenschaften wie THC- und CBD-Gehalt
-zu vergleichen. Jede Sorte enthält nun auch eine kurze Beschreibung ihres
+zu vergleichen. Jede Sorte enthält eine kurze Beschreibung ihres
 typischen Einsatzzwecks. Eine Suchfunktion ermöglicht das Filtern nach Namen.
+Beim Start erscheint nun ein Hauptmenü, über das die einzelnen Bereiche
+aufgerufen werden können.
 
 ## Lokale Nutzung
 
@@ -12,8 +14,8 @@ typischen Einsatzzwecks. Eine Suchfunktion ermöglicht das Filtern nach Namen.
    Entwicklungsserver (z. B. `npx serve` oder die Live-Server-Erweiterung in VS Code)
    verwendet werden.
 
-Beim Laden erscheint eine Liste einiger Beispielsorten. Über das Suchfeld lassen
-sich die Einträge filtern.
+Im Bereich "Vergleich" wird eine Liste verschiedener Sorten angezeigt. Über das
+Suchfeld lassen sich die Einträge filtern.
 
 ## Lizenz
 
