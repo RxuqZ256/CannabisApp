@@ -14,3 +14,7 @@ typischen Einsatzzwecks. Eine Suchfunktion ermöglicht das Filtern nach Namen.
 
 Beim Laden erscheint eine Liste einiger Beispielsorten. Über das Suchfeld lassen
 sich die Einträge filtern.
+
+## Lizenz
+
+Dieses Projekt steht unter der [MIT-Lizenz](LICENSE).
