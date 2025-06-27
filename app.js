@@ -3,7 +3,7 @@ const products = [
     name: 'Amnesia Haze',
     thc: 22,
     cbd: 1,
-    description: 'Energetische Sorte, häufig gegen Müdigkeit eingesetzt.'
+    description: 'Energetische Sorte, häufig gegen Müdigkeit eingesetzt.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -13,7 +13,7 @@ const products = [
     name: 'Northern Lights',
     thc: 18,
     cbd: 2,
-    description: 'Bekannt für beruhigende Wirkung, ideal zum Entspannen am Abend.'
+    description: 'Bekannt für beruhigende Wirkung, ideal zum Entspannen am Abend.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -23,7 +23,7 @@ const products = [
     name: "Charlotte's Web",
     thc: 1,
     cbd: 15,
-    description: 'Speziell für medizinische Zwecke gezüchtet, z. B. bei Epilepsie.'
+    description: 'Speziell für medizinische Zwecke gezüchtet, z. B. bei Epilepsie.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -33,7 +33,7 @@ const products = [
     name: 'Blue Dream',
     thc: 17,
     cbd: 2,
-    description: 'Berühmte kalifornische Sorte mit ausgeglichenem High.'
+    description: 'Berühmte kalifornische Sorte mit ausgeglichenem High.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -43,7 +43,7 @@ const products = [
     name: 'Super Lemon Haze',
     thc: 20,
     cbd: 1,
-    description: 'Fruchtig-zitroniges Aroma und anregende Wirkung.'
+    description: 'Fruchtig-zitroniges Aroma und anregende Wirkung.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -53,7 +53,7 @@ const products = [
     name: 'White Widow',
     thc: 19,
     cbd: 1,
-    description: 'Klassiker aus den 90ern, sorgt für ausgeglichene Effekte.'
+    description: 'Klassiker aus den 90ern, sorgt für ausgeglichene Effekte.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -63,7 +63,7 @@ const products = [
     name: 'Purple Kush',
     thc: 21,
     cbd: 0,
-    description: 'Reine Indica-Sorte, bekannt für tief entspannende Wirkung.'
+    description: 'Reine Indica-Sorte, bekannt für tief entspannende Wirkung.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -73,7 +73,7 @@ const products = [
     name: 'OG Kush',
     thc: 16,
     cbd: 1,
-    description: 'Starkes Aroma, häufig am Abend genutzt.'
+    description: 'Starkes Aroma, häufig am Abend genutzt.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -83,7 +83,7 @@ const products = [
     name: 'AK-47',
     thc: 17,
     cbd: 2,
-    description: 'Fruchtiger Geschmack, liefert ausgeglichenes High.'
+    description: 'Fruchtiger Geschmack, liefert ausgeglichenes High.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -93,7 +93,7 @@ const products = [
     name: 'Jack Herer',
     thc: 18,
     cbd: 0,
-    description: 'Klassischer Strain mit typischem Cannabis-Duft.'
+    description: 'Klassischer Strain mit typischem Cannabis-Duft.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -103,7 +103,7 @@ const products = [
     name: 'White Russian',
     thc: 19,
     cbd: 1,
-    description: 'Ergibt anregende Effekte und eignet sich für tagsüber.'
+    description: 'Ergibt anregende Effekte und eignet sich für tagsüber.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -113,7 +113,7 @@ const products = [
     name: 'Orange Bud',
     thc: 20,
     cbd: 2,
-    description: 'Bekannt für hohen THC-Gehalt und intensives High.'
+    description: 'Bekannt für hohen THC-Gehalt und intensives High.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -123,7 +123,7 @@ const products = [
     name: 'Skunk #1',
     thc: 21,
     cbd: 0,
-    description: 'Milder Geschmack und sanfte, beruhigende Wirkung.'
+    description: 'Milder Geschmack und sanfte, beruhigende Wirkung.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -133,7 +133,7 @@ const products = [
     name: 'Pineapple Express',
     thc: 22,
     cbd: 1,
-    description: 'Sorgt für kreativen Energieschub.'
+    description: 'Sorgt für kreativen Energieschub.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -143,7 +143,7 @@ const products = [
     name: 'Girl Scout Cookies',
     thc: 23,
     cbd: 2,
-    description: 'Häufig für medizinische Zwecke eingesetzt.'
+    description: 'Häufig für medizinische Zwecke eingesetzt.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -153,7 +153,7 @@ const products = [
     name: 'Trainwreck',
     thc: 24,
     cbd: 0,
-    description: 'Berühmt für sein süßes Aroma und entspannende Effekte.'
+    description: 'Berühmt für sein süßes Aroma und entspannende Effekte.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -163,7 +163,7 @@ const products = [
     name: 'Green Crack',
     thc: 15,
     cbd: 1,
-    description: 'Beliebte Sorte mit entspannender Wirkung.'
+    description: 'Beliebte Sorte mit entspannender Wirkung.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -173,7 +173,7 @@ const products = [
     name: 'Strawberry Cough',
     thc: 16,
     cbd: 2,
-    description: 'Starkes Aroma, häufig am Abend genutzt.'
+    description: 'Starkes Aroma, häufig am Abend genutzt.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -183,7 +183,7 @@ const products = [
     name: 'Banana Kush',
     thc: 17,
     cbd: 0,
-    description: 'Fruchtiger Geschmack, liefert ausgeglichenes High.'
+    description: 'Fruchtiger Geschmack, liefert ausgeglichenes High.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -193,7 +193,7 @@ const products = [
     name: 'Blackberry Kush',
     thc: 18,
     cbd: 1,
-    description: 'Klassischer Strain mit typischem Cannabis-Duft.'
+    description: 'Klassischer Strain mit typischem Cannabis-Duft.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -203,7 +203,7 @@ const products = [
     name: 'Durban Poison',
     thc: 19,
     cbd: 2,
-    description: 'Ergibt anregende Effekte und eignet sich für tagsüber.'
+    description: 'Ergibt anregende Effekte und eignet sich für tagsüber.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -213,7 +213,7 @@ const products = [
     name: 'Master Kush',
     thc: 20,
     cbd: 0,
-    description: 'Bekannt für hohen THC-Gehalt und intensives High.'
+    description: 'Bekannt für hohen THC-Gehalt und intensives High.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -223,7 +223,7 @@ const products = [
     name: 'Afghan Kush',
     thc: 21,
     cbd: 1,
-    description: 'Milder Geschmack und sanfte, beruhigende Wirkung.'
+    description: 'Milder Geschmack und sanfte, beruhigende Wirkung.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -233,7 +233,7 @@ const products = [
     name: 'Chemdawg',
     thc: 22,
     cbd: 2,
-    description: 'Sorgt für kreativen Energieschub.'
+    description: 'Sorgt für kreativen Energieschub.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -243,7 +243,7 @@ const products = [
     name: 'OG Diesel',
     thc: 23,
     cbd: 0,
-    description: 'Häufig für medizinische Zwecke eingesetzt.'
+    description: 'Häufig für medizinische Zwecke eingesetzt.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -253,7 +253,7 @@ const products = [
     name: 'Bubba Kush',
     thc: 24,
     cbd: 1,
-    description: 'Berühmt für sein süßes Aroma und entspannende Effekte.'
+    description: 'Berühmt für sein süßes Aroma und entspannende Effekte.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -263,7 +263,7 @@ const products = [
     name: 'Lemon Skunk',
     thc: 15,
     cbd: 2,
-    description: 'Beliebte Sorte mit entspannender Wirkung.'
+    description: 'Beliebte Sorte mit entspannender Wirkung.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -273,7 +273,7 @@ const products = [
     name: 'Sour Diesel',
     thc: 16,
     cbd: 0,
-    description: 'Starkes Aroma, häufig am Abend genutzt.'
+    description: 'Starkes Aroma, häufig am Abend genutzt.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -283,7 +283,7 @@ const products = [
     name: 'Purple Haze',
     thc: 17,
     cbd: 1,
-    description: 'Fruchtiger Geschmack, liefert ausgeglichenes High.'
+    description: 'Fruchtiger Geschmack, liefert ausgeglichenes High.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -293,7 +293,7 @@ const products = [
     name: 'Cherry Pie',
     thc: 18,
     cbd: 2,
-    description: 'Klassischer Strain mit typischem Cannabis-Duft.'
+    description: 'Klassischer Strain mit typischem Cannabis-Duft.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -303,7 +303,7 @@ const products = [
     name: 'Godfather OG',
     thc: 19,
     cbd: 0,
-    description: 'Ergibt anregende Effekte und eignet sich für tagsüber.'
+    description: 'Ergibt anregende Effekte und eignet sich für tagsüber.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -313,7 +313,7 @@ const products = [
     name: 'Bruce Banner',
     thc: 20,
     cbd: 1,
-    description: 'Bekannt für hohen THC-Gehalt und intensives High.'
+    description: 'Bekannt für hohen THC-Gehalt und intensives High.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -323,7 +323,7 @@ const products = [
     name: 'Wedding Cake',
     thc: 21,
     cbd: 2,
-    description: 'Milder Geschmack und sanfte, beruhigende Wirkung.'
+    description: 'Milder Geschmack und sanfte, beruhigende Wirkung.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -333,7 +333,7 @@ const products = [
     name: 'Gelato',
     thc: 22,
     cbd: 0,
-    description: 'Sorgt für kreativen Energieschub.'
+    description: 'Sorgt für kreativen Energieschub.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -343,7 +343,7 @@ const products = [
     name: 'Zkittlez',
     thc: 23,
     cbd: 1,
-    description: 'Häufig für medizinische Zwecke eingesetzt.'
+    description: 'Häufig für medizinische Zwecke eingesetzt.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -353,7 +353,7 @@ const products = [
     name: 'Critical Mass',
     thc: 24,
     cbd: 2,
-    description: 'Berühmt für sein süßes Aroma und entspannende Effekte.'
+    description: 'Berühmt für sein süßes Aroma und entspannende Effekte.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -363,7 +363,7 @@ const products = [
     name: 'Mango Haze',
     thc: 15,
     cbd: 0,
-    description: 'Beliebte Sorte mit entspannender Wirkung.'
+    description: 'Beliebte Sorte mit entspannender Wirkung.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -373,7 +373,7 @@ const products = [
     name: 'Apple Fritter',
     thc: 16,
     cbd: 1,
-    description: 'Starkes Aroma, häufig am Abend genutzt.'
+    description: 'Starkes Aroma, häufig am Abend genutzt.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -383,7 +383,7 @@ const products = [
     name: 'Blue Cheese',
     thc: 17,
     cbd: 2,
-    description: 'Fruchtiger Geschmack, liefert ausgeglichenes High.'
+    description: 'Fruchtiger Geschmack, liefert ausgeglichenes High.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -393,7 +393,7 @@ const products = [
     name: 'Orange Cookies',
     thc: 18,
     cbd: 0,
-    description: 'Klassischer Strain mit typischem Cannabis-Duft.'
+    description: 'Klassischer Strain mit typischem Cannabis-Duft.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -403,7 +403,7 @@ const products = [
     name: 'Lava Cake',
     thc: 19,
     cbd: 1,
-    description: 'Ergibt anregende Effekte und eignet sich für tagsüber.'
+    description: 'Ergibt anregende Effekte und eignet sich für tagsüber.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -413,7 +413,7 @@ const products = [
     name: 'Ice Cream Cake',
     thc: 20,
     cbd: 2,
-    description: 'Bekannt für hohen THC-Gehalt und intensives High.'
+    description: 'Bekannt für hohen THC-Gehalt und intensives High.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -423,7 +423,7 @@ const products = [
     name: 'Banana Split',
     thc: 21,
     cbd: 0,
-    description: 'Milder Geschmack und sanfte, beruhigende Wirkung.'
+    description: 'Milder Geschmack und sanfte, beruhigende Wirkung.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -433,7 +433,7 @@ const products = [
     name: 'Strawberry Banana',
     thc: 22,
     cbd: 1,
-    description: 'Sorgt für kreativen Energieschub.'
+    description: 'Sorgt für kreativen Energieschub.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -443,7 +443,7 @@ const products = [
     name: 'Tangerine Dream',
     thc: 23,
     cbd: 2,
-    description: 'Häufig für medizinische Zwecke eingesetzt.'
+    description: 'Häufig für medizinische Zwecke eingesetzt.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -453,7 +453,7 @@ const products = [
     name: 'Lemon OG',
     thc: 24,
     cbd: 0,
-    description: 'Berühmt für sein süßes Aroma und entspannende Effekte.'
+    description: 'Berühmt für sein süßes Aroma und entspannende Effekte.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -463,7 +463,7 @@ const products = [
     name: 'Purple Urkle',
     thc: 15,
     cbd: 1,
-    description: 'Beliebte Sorte mit entspannender Wirkung.'
+    description: 'Beliebte Sorte mit entspannender Wirkung.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -473,7 +473,7 @@ const products = [
     name: 'Grape Ape',
     thc: 16,
     cbd: 2,
-    description: 'Starkes Aroma, häufig am Abend genutzt.'
+    description: 'Starkes Aroma, häufig am Abend genutzt.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -483,7 +483,7 @@ const products = [
     name: 'Sour OG',
     thc: 17,
     cbd: 0,
-    description: 'Fruchtiger Geschmack, liefert ausgeglichenes High.'
+    description: 'Fruchtiger Geschmack, liefert ausgeglichenes High.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -493,7 +493,7 @@ const products = [
     name: 'Cookie Monster',
     thc: 18,
     cbd: 1,
-    description: 'Klassischer Strain mit typischem Cannabis-Duft.'
+    description: 'Klassischer Strain mit typischem Cannabis-Duft.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -503,7 +503,7 @@ const products = [
     name: 'Do-Si-Dos',
     thc: 19,
     cbd: 2,
-    description: 'Ergibt anregende Effekte und eignet sich für tagsüber.'
+    description: 'Ergibt anregende Effekte und eignet sich für tagsüber.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -513,7 +513,7 @@ const products = [
     name: 'Skywalker OG',
     thc: 20,
     cbd: 0,
-    description: 'Bekannt für hohen THC-Gehalt und intensives High.'
+    description: 'Bekannt für hohen THC-Gehalt und intensives High.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -523,7 +523,7 @@ const products = [
     name: 'Vanilla Kush',
     thc: 21,
     cbd: 1,
-    description: 'Milder Geschmack und sanfte, beruhigende Wirkung.'
+    description: 'Milder Geschmack und sanfte, beruhigende Wirkung.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -533,7 +533,7 @@ const products = [
     name: 'Romulan',
     thc: 22,
     cbd: 2,
-    description: 'Sorgt für kreativen Energieschub.'
+    description: 'Sorgt für kreativen Energieschub.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -543,7 +543,7 @@ const products = [
     name: 'Chocolate Thai',
     thc: 23,
     cbd: 0,
-    description: 'Häufig für medizinische Zwecke eingesetzt.'
+    description: 'Häufig für medizinische Zwecke eingesetzt.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -553,7 +553,7 @@ const products = [
     name: 'Alien OG',
     thc: 24,
     cbd: 1,
-    description: 'Berühmt für sein süßes Aroma und entspannende Effekte.'
+    description: 'Berühmt für sein süßes Aroma und entspannende Effekte.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -563,7 +563,7 @@ const products = [
     name: 'God Bud',
     thc: 15,
     cbd: 2,
-    description: 'Beliebte Sorte mit entspannender Wirkung.'
+    description: 'Beliebte Sorte mit entspannender Wirkung.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -573,7 +573,7 @@ const products = [
     name: 'Headband',
     thc: 16,
     cbd: 0,
-    description: 'Starkes Aroma, häufig am Abend genutzt.'
+    description: 'Starkes Aroma, häufig am Abend genutzt.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -583,7 +583,7 @@ const products = [
     name: 'Cheese',
     thc: 17,
     cbd: 1,
-    description: 'Fruchtiger Geschmack, liefert ausgeglichenes High.'
+    description: 'Fruchtiger Geschmack, liefert ausgeglichenes High.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -593,7 +593,7 @@ const products = [
     name: 'NYC Diesel',
     thc: 18,
     cbd: 2,
-    description: 'Klassischer Strain mit typischem Cannabis-Duft.'
+    description: 'Klassischer Strain mit typischem Cannabis-Duft.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -603,7 +603,7 @@ const products = [
     name: 'Kosher Kush',
     thc: 19,
     cbd: 0,
-    description: 'Ergibt anregende Effekte und eignet sich für tagsüber.'
+    description: 'Ergibt anregende Effekte und eignet sich für tagsüber.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -613,7 +613,7 @@ const products = [
     name: 'Moby Dick',
     thc: 20,
     cbd: 1,
-    description: 'Bekannt für hohen THC-Gehalt und intensives High.'
+    description: 'Bekannt für hohen THC-Gehalt und intensives High.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -623,7 +623,7 @@ const products = [
     name: 'Thai Stick',
     thc: 21,
     cbd: 2,
-    description: 'Milder Geschmack und sanfte, beruhigende Wirkung.'
+    description: 'Milder Geschmack und sanfte, beruhigende Wirkung.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -633,7 +633,7 @@ const products = [
     name: 'Hash Plant',
     thc: 22,
     cbd: 0,
-    description: 'Sorgt für kreativen Energieschub.'
+    description: 'Sorgt für kreativen Energieschub.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -643,7 +643,7 @@ const products = [
     name: 'Golden Goat',
     thc: 23,
     cbd: 1,
-    description: 'Häufig für medizinische Zwecke eingesetzt.'
+    description: 'Häufig für medizinische Zwecke eingesetzt.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -653,7 +653,7 @@ const products = [
     name: 'Cherry Diesel',
     thc: 24,
     cbd: 2,
-    description: 'Berühmt für sein süßes Aroma und entspannende Effekte.'
+    description: 'Berühmt für sein süßes Aroma und entspannende Effekte.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -663,7 +663,7 @@ const products = [
     name: 'Jillybean',
     thc: 15,
     cbd: 0,
-    description: 'Beliebte Sorte mit entspannender Wirkung.'
+    description: 'Beliebte Sorte mit entspannender Wirkung.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -673,7 +673,7 @@ const products = [
     name: 'LA Confidential',
     thc: 16,
     cbd: 1,
-    description: 'Starkes Aroma, häufig am Abend genutzt.'
+    description: 'Starkes Aroma, häufig am Abend genutzt.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -683,7 +683,7 @@ const products = [
     name: 'Kushberry',
     thc: 17,
     cbd: 2,
-    description: 'Fruchtiger Geschmack, liefert ausgeglichenes High.'
+    description: 'Fruchtiger Geschmack, liefert ausgeglichenes High.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -693,7 +693,7 @@ const products = [
     name: 'Pineapple Chunk',
     thc: 18,
     cbd: 0,
-    description: 'Klassischer Strain mit typischem Cannabis-Duft.'
+    description: 'Klassischer Strain mit typischem Cannabis-Duft.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -703,7 +703,7 @@ const products = [
     name: 'Runtz',
     thc: 19,
     cbd: 1,
-    description: 'Ergibt anregende Effekte und eignet sich für tagsüber.'
+    description: 'Ergibt anregende Effekte und eignet sich für tagsüber.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -713,7 +713,7 @@ const products = [
     name: 'Meat Breath',
     thc: 20,
     cbd: 2,
-    description: 'Bekannt für hohen THC-Gehalt und intensives High.'
+    description: 'Bekannt für hohen THC-Gehalt und intensives High.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -723,7 +723,7 @@ const products = [
     name: 'Peanut Butter Breath',
     thc: 21,
     cbd: 0,
-    description: 'Milder Geschmack und sanfte, beruhigende Wirkung.'
+    description: 'Milder Geschmack und sanfte, beruhigende Wirkung.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -733,7 +733,7 @@ const products = [
     name: 'Slurricane',
     thc: 22,
     cbd: 1,
-    description: 'Sorgt für kreativen Energieschub.'
+    description: 'Sorgt für kreativen Energieschub.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -743,7 +743,7 @@ const products = [
     name: 'Wedding Crasher',
     thc: 23,
     cbd: 2,
-    description: 'Häufig für medizinische Zwecke eingesetzt.'
+    description: 'Häufig für medizinische Zwecke eingesetzt.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -753,7 +753,7 @@ const products = [
     name: 'Lemon Pie',
     thc: 24,
     cbd: 0,
-    description: 'Berühmt für sein süßes Aroma und entspannende Effekte.'
+    description: 'Berühmt für sein süßes Aroma und entspannende Effekte.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -763,7 +763,7 @@ const products = [
     name: 'Critical Kush',
     thc: 15,
     cbd: 1,
-    description: 'Beliebte Sorte mit entspannender Wirkung.'
+    description: 'Beliebte Sorte mit entspannender Wirkung.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -773,7 +773,7 @@ const products = [
     name: 'Dark Star',
     thc: 16,
     cbd: 2,
-    description: 'Starkes Aroma, häufig am Abend genutzt.'
+    description: 'Starkes Aroma, häufig am Abend genutzt.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -783,7 +783,7 @@ const products = [
     name: 'Forbidden Fruit',
     thc: 17,
     cbd: 0,
-    description: 'Fruchtiger Geschmack, liefert ausgeglichenes High.'
+    description: 'Fruchtiger Geschmack, liefert ausgeglichenes High.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -793,7 +793,7 @@ const products = [
     name: 'Gelato #33',
     thc: 18,
     cbd: 1,
-    description: 'Klassischer Strain mit typischem Cannabis-Duft.'
+    description: 'Klassischer Strain mit typischem Cannabis-Duft.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -803,7 +803,7 @@ const products = [
     name: 'Gelato #45',
     thc: 19,
     cbd: 2,
-    description: 'Ergibt anregende Effekte und eignet sich für tagsüber.'
+    description: 'Ergibt anregende Effekte und eignet sich für tagsüber.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -813,7 +813,7 @@ const products = [
     name: 'God’s Gift',
     thc: 20,
     cbd: 0,
-    description: 'Bekannt für hohen THC-Gehalt und intensives High.'
+    description: 'Bekannt für hohen THC-Gehalt und intensives High.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -823,7 +823,7 @@ const products = [
     name: 'G13',
     thc: 21,
     cbd: 1,
-    description: 'Milder Geschmack und sanfte, beruhigende Wirkung.'
+    description: 'Milder Geschmack und sanfte, beruhigende Wirkung.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -833,7 +833,7 @@ const products = [
     name: 'Jet Fuel',
     thc: 22,
     cbd: 2,
-    description: 'Sorgt für kreativen Energieschub.'
+    description: 'Sorgt für kreativen Energieschub.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -843,7 +843,7 @@ const products = [
     name: 'Kryptonite',
     thc: 23,
     cbd: 0,
-    description: 'Häufig für medizinische Zwecke eingesetzt.'
+    description: 'Häufig für medizinische Zwecke eingesetzt.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -853,7 +853,7 @@ const products = [
     name: 'Lemon Diesel',
     thc: 24,
     cbd: 1,
-    description: 'Berühmt für sein süßes Aroma und entspannende Effekte.'
+    description: 'Berühmt für sein süßes Aroma und entspannende Effekte.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -863,7 +863,7 @@ const products = [
     name: 'Mimosa',
     thc: 15,
     cbd: 2,
-    description: 'Beliebte Sorte mit entspannender Wirkung.'
+    description: 'Beliebte Sorte mit entspannender Wirkung.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -873,7 +873,7 @@ const products = [
     name: 'Moonrocks',
     thc: 16,
     cbd: 0,
-    description: 'Starkes Aroma, häufig am Abend genutzt.'
+    description: 'Starkes Aroma, häufig am Abend genutzt.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -883,7 +883,7 @@ const products = [
     name: 'Orange Velvet',
     thc: 17,
     cbd: 1,
-    description: 'Fruchtiger Geschmack, liefert ausgeglichenes High.'
+    description: 'Fruchtiger Geschmack, liefert ausgeglichenes High.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -893,7 +893,7 @@ const products = [
     name: 'Pink Kush',
     thc: 18,
     cbd: 2,
-    description: 'Klassischer Strain mit typischem Cannabis-Duft.'
+    description: 'Klassischer Strain mit typischem Cannabis-Duft.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -903,7 +903,7 @@ const products = [
     name: 'Quantum Kush',
     thc: 19,
     cbd: 0,
-    description: 'Ergibt anregende Effekte und eignet sich für tagsüber.'
+    description: 'Ergibt anregende Effekte und eignet sich für tagsüber.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -913,7 +913,7 @@ const products = [
     name: 'Rainbow Kush',
     thc: 20,
     cbd: 1,
-    description: 'Bekannt für hohen THC-Gehalt und intensives High.'
+    description: 'Bekannt für hohen THC-Gehalt und intensives High.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -923,7 +923,7 @@ const products = [
     name: 'Red Diesel',
     thc: 21,
     cbd: 2,
-    description: 'Milder Geschmack und sanfte, beruhigende Wirkung.'
+    description: 'Milder Geschmack und sanfte, beruhigende Wirkung.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -933,7 +933,7 @@ const products = [
     name: 'Rockstar',
     thc: 22,
     cbd: 0,
-    description: 'Sorgt für kreativen Energieschub.'
+    description: 'Sorgt für kreativen Energieschub.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -943,7 +943,7 @@ const products = [
     name: 'Space Queen',
     thc: 23,
     cbd: 1,
-    description: 'Häufig für medizinische Zwecke eingesetzt.'
+    description: 'Häufig für medizinische Zwecke eingesetzt.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -953,7 +953,7 @@ const products = [
     name: 'Super Silver Haze',
     thc: 24,
     cbd: 2,
-    description: 'Berühmt für sein süßes Aroma und entspannende Effekte.'
+    description: 'Berühmt für sein süßes Aroma und entspannende Effekte.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -963,7 +963,7 @@ const products = [
     name: 'Tahoe OG',
     thc: 15,
     cbd: 0,
-    description: 'Beliebte Sorte mit entspannender Wirkung.'
+    description: 'Beliebte Sorte mit entspannender Wirkung.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -973,7 +973,7 @@ const products = [
     name: 'White Fire OG',
     thc: 16,
     cbd: 1,
-    description: 'Starkes Aroma, häufig am Abend genutzt.'
+    description: 'Starkes Aroma, häufig am Abend genutzt.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -983,7 +983,7 @@ const products = [
     name: 'White Rhino',
     thc: 17,
     cbd: 2,
-    description: 'Fruchtiger Geschmack, liefert ausgeglichenes High.'
+    description: 'Fruchtiger Geschmack, liefert ausgeglichenes High.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -993,7 +993,7 @@ const products = [
     name: 'Yoda OG',
     thc: 18,
     cbd: 0,
-    description: 'Klassischer Strain mit typischem Cannabis-Duft.'
+    description: 'Klassischer Strain mit typischem Cannabis-Duft.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -1003,7 +1003,7 @@ const products = [
     name: '9 Pound Hammer',
     thc: 19,
     cbd: 1,
-    description: 'Ergibt anregende Effekte und eignet sich für tagsüber.'
+    description: 'Ergibt anregende Effekte und eignet sich für tagsüber.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -1013,7 +1013,7 @@ const products = [
     name: 'Animal Cookies',
     thc: 20,
     cbd: 2,
-    description: 'Bekannt für hohen THC-Gehalt und intensives High.'
+    description: 'Bekannt für hohen THC-Gehalt und intensives High.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -1023,7 +1023,7 @@ const products = [
     name: 'Banana Cream',
     thc: 21,
     cbd: 0,
-    description: 'Milder Geschmack und sanfte, beruhigende Wirkung.'
+    description: 'Milder Geschmack und sanfte, beruhigende Wirkung.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -1033,7 +1033,7 @@ const products = [
     name: 'Blueberry',
     thc: 22,
     cbd: 1,
-    description: 'Sorgt für kreativen Energieschub.'
+    description: 'Sorgt für kreativen Energieschub.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -1043,7 +1043,7 @@ const products = [
     name: 'Candyland',
     thc: 23,
     cbd: 2,
-    description: 'Häufig für medizinische Zwecke eingesetzt.'
+    description: 'Häufig für medizinische Zwecke eingesetzt.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -1053,7 +1053,7 @@ const products = [
     name: 'Death Star',
     thc: 24,
     cbd: 0,
-    description: 'Berühmt für sein süßes Aroma und entspannende Effekte.'
+    description: 'Berühmt für sein süßes Aroma und entspannende Effekte.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
@@ -1063,7 +1063,7 @@ const products = [
     name: 'Double Dream',
     thc: 15,
     cbd: 1,
-    description: 'Beliebte Sorte mit entspannender Wirkung.'
+    description: 'Beliebte Sorte mit entspannender Wirkung.',
     type: "Hybrid",
     aroma: "Herb",
     origin: "Unbekannt",
