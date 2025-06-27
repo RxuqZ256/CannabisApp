@@ -83,10 +83,22 @@ main {
   list-style: none;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(4cm, 1fr));
   gap: 10px;
 }
 
 #home-section li {
   margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#home-section li button {
+  width: 4cm;
+  height: 4cm;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
