@@ -25,6 +25,19 @@ Responsive-Design.
 Im Bereich "Vergleich" wird eine Liste verschiedener Sorten angezeigt. Über das
 Suchfeld lassen sich die Einträge filtern.
 
+## GitHub Pages
+
+Um die App ohne erneutes Herunterladen zu verwenden, kann sie auf GitHub Pages
+bereitgestellt werden. Das Repository enthält dafür einen Workflow unter
+`.github/workflows/gh-pages.yml`.
+
+1. Repository auf GitHub erstellen und die Dateien hochladen oder per `git push`
+   übertragen.
+2. In den Repository-Einstellungen unter **Pages** als Quelle **GitHub Actions**
+   auswählen.
+3. Bei jedem Push auf den Branch `main` veröffentlicht der Workflow die App und
+   zeigt die zugehörige URL im "Pages"-Bereich an.
+
 ## Lizenz
 
 Dieses Projekt steht unter der [MIT-Lizenz](LICENSE).
