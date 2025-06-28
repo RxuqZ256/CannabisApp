@@ -26,7 +26,7 @@ function renderProducts(list) {
   container.innerHTML = '';
   list.forEach(p => {
     const div = document.createElement('div');
-    div.className = 'product';
+    div.className = 'border rounded-lg p-4 bg-white shadow';
     div.innerHTML = `
       <h2>${p.name}</h2>
       <p>${p.description}</p>
