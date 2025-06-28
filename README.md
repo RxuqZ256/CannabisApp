@@ -1,6 +1,10 @@
 # CannabisApp
 
-Dieses Projekt stellt eine einfache Vergleichs-App für Cannabisprodukte bereit. Ziel ist es, unterschiedliche Sorten samt Eigenschaften wie THC- und CBD-Gehalt zu vergleichen. Neben Beschreibung, THC- und CBD-Werten stehen nun weitere Felder wie Typ, Aroma, Herkunft und medizinische Verwendung bereit. Eine Suchfunktion ermöglicht das Filtern nach Namen sowie nach minimalem THC- und CBD-Gehalt. Beim Start erscheint ein Hauptmenü, über das die einzelnen Bereiche aufgerufen werden können.
+Dieses Projekt stellt eine einfache Vergleichs-App für Cannabisprodukte bereit.
+Ziel ist es, unterschiedliche Sorten samt Eigenschaften wie THC- und CBD-Gehalt zu vergleichen.
+Neben Beschreibung, THC- und CBD-Werten stehen nun weitere Felder wie Typ, Aroma, Herkunft und medizinische Verwendung bereit.
+Eine Suchfunktion ermöglicht das Filtern nach Namen sowie nach minimalem THC- und CBD-Gehalt.
+Beim Start erscheint ein Hauptmenü, über das die einzelnen Bereiche aufgerufen werden können.
 
 Die Oberfläche verwendet ein modernes Layout mit Karten und Responsive-Design.
 
