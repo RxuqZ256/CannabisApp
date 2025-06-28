@@ -18,7 +18,10 @@ Responsive-Design.
 2. `index.html` in einem Browser öffnen. Alternativ kann ein einfacher
    Entwicklungsserver (z. B. `npx serve` oder die Live-Server-Erweiterung in VS Code)
    verwendet werden.
-3. **Hinweis:** `app.js` wird durch die HTML-Seite eingebunden und ist nicht f\u00fcr
+3. Die Liste der Produkte befindet sich jetzt in der Datei `products.json` und
+   wird von `app.js` per `fetch` geladen. Stelle sicher, dass diese Datei neben
+   der HTML-Seite verfügbar ist.
+4. **Hinweis:** `app.js` wird durch die HTML-Seite eingebunden und ist nicht f\u00fcr
    die Ausf\u00fchrung mit Node gedacht. Bei einem Versuch mit `node app.js` erscheint
    typischerweise der Fehler `ReferenceError: document is not defined`.
 
