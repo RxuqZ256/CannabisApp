@@ -9,11 +9,10 @@ CBD-Gehalt. Beim Start erscheint nun ein Hauptmenü, über das die einzelnen
 Bereiche aufgerufen werden können.
 
 Die Oberfläche verwendet nun ein moderneres Layout mit Karten und
-Responsive-Design. Im Bereich "Karte" wird eine Leaflet-Karte geladen,
-die anhand der Datei `zones.json` anzeigt, in welchen Gebieten das
-Rauchen erlaubt oder verboten ist. Bei aktivierter Standortfreigabe
-prüft die App, ob man sich in einer dieser Zonen befindet und blendet
-einen entsprechenden Hinweis ein.
+Responsive-Design. Im Bereich "Karte" wird eine Leaflet-Karte geladen, die
+anhand der Datei `zones.json` anzeigt, in welchen Gebieten das Rauchen erlaubt
+oder verboten ist. Bei aktivierter Standortfreigabe prüft die App, ob man sich
+in einer dieser Zonen befindet und blendet einen entsprechenden Hinweis ein.
 
 ## Lokale Nutzung
 
@@ -46,7 +45,7 @@ bereitgestellt werden. Das Repository enthält dafür einen Workflow unter
 3. Bei jedem Push auf den Branch `main` veröffentlicht der Workflow die App und
    zeigt die zugehörige URL im "Pages"-Bereich an.
 
-Nach Abschluss des Workflows sind deine Änderungen automatisch unter der selben
+Nach Abschluss des Workflows sind deine Änderungen automatisch unter derselben
 URL verfügbar. Das Deployen dauert in der Regel nur wenige Minuten.
 
 ## Lizenz
