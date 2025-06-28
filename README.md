@@ -1,15 +1,8 @@
 # CannabisApp
 
-Dieses Projekt stellt eine einfache Vergleichs-App für Cannabisprodukte bereit.
-Ziel ist es, unterschiedliche Sorten samt Eigenschaften wie THC- und CBD-Gehalt zu vergleichen.
-Neben Beschreibung, THC- und CBD-Werten stehen nun weitere Felder wie Typ, Aroma, Herkunft und medizinische Verwendung bereit.
-Eine Suchfunktion ermöglicht das Filtern nach Namen sowie nach minimalem THC- und CBD-Gehalt.
-Beim Start erscheint ein Hauptmenü, über das die einzelnen Bereiche aufgerufen werden können.
+Dieses Projekt stellt eine einfache Vergleichs-App für Cannabisprodukte bereit. Ziel ist es, unterschiedliche Sorten samt Eigenschaften wie THC- und CBD-Gehalt zu vergleichen. Neben Beschreibung, THC- und CBD-Werten stehen nun weitere Felder wie Typ, Aroma, Herkunft und medizinische Verwendung bereit. Eine Suchfunktion ermöglicht das Filtern nach Namen sowie nach minimalem THC- und CBD-Gehalt. Beim Start erscheint ein Hauptmenü, über das die einzelnen Bereiche aufgerufen werden können.
 
-Die Oberfläche verwendet ein moderneres Layout mit Karten und Responsive-Design.
-Im Bereich "Karte" wird eine Leaflet-Karte geladen, die anhand der Datei `zones.json` anzeigt, in welchen Gebieten das Rauchen erlaubt oder verboten ist.
-Bei aktivierter Standortfreigabe prüft die App, ob man sich in einer dieser Zonen befindet und blendet einen entsprechenden Hinweis ein.
-Die Karte wird erst initialisiert, wenn der Bereich geöffnet wird, damit sie korrekt angezeigt wird.
+Die Oberfläche verwendet ein modernes Layout mit Karten und Responsive-Design. Im Bereich "Karte" wird eine Leaflet-Karte geladen, die anhand der Datei `zones.json` anzeigt, in welchen Gebieten das Rauchen erlaubt oder verboten ist. Bei aktivierter Standortfreigabe prüft die App, ob man sich in einer dieser Zonen befindet und blendet einen entsprechenden Hinweis ein. Die Karte wird erst initialisiert, wenn der Bereich geöffnet wird, damit sie korrekt angezeigt wird.
 
 ## Lokale Nutzung
 
