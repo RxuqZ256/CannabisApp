@@ -36,11 +36,41 @@
       <div class="max-w-md mx-auto text-center">
         <h1 class="text-2xl font-bold">CannabisApp</h1>
           <nav id="main-menu" class="mt-3 flex flex-wrap justify-center gap-2">
-            <button data-target="home-section" class="px-4 py-2 rounded-full bg-emerald-500 hover:bg-emerald-600 shadow-md transition duration-200 text-white">Start</button>
-            <button data-target="compare-section" class="px-4 py-2 rounded-full bg-emerald-500 hover:bg-emerald-600 shadow-md transition duration-200 text-white">Vergleich</button>
-            <button data-target="safeuse-section" class="px-4 py-2 rounded-full bg-emerald-500 hover:bg-emerald-600 shadow-md transition duration-200 text-white">Safe-Use</button>
-            <button data-target="map-section" class="px-4 py-2 rounded-full bg-emerald-500 hover:bg-emerald-600 shadow-md transition duration-200 text-white">Karte</button>
-            <button data-target="news-section" class="px-4 py-2 rounded-full bg-emerald-500 hover:bg-emerald-600 shadow-md transition duration-200 text-white">Neuigkeiten</button>
+            <button
+              data-target="home-section"
+              class="px-4 py-2 rounded-full bg-emerald-500 hover:bg-emerald-600 shadow-md
+                transition duration-200 text-white"
+            >
+              Start
+            </button>
+            <button
+              data-target="compare-section"
+              class="px-4 py-2 rounded-full bg-emerald-500 hover:bg-emerald-600 shadow-md
+                transition duration-200 text-white"
+            >
+              Vergleich
+            </button>
+            <button
+              data-target="safeuse-section"
+              class="px-4 py-2 rounded-full bg-emerald-500 hover:bg-emerald-600 shadow-md
+                transition duration-200 text-white"
+            >
+              Safe-Use
+            </button>
+            <button
+              data-target="map-section"
+              class="px-4 py-2 rounded-full bg-emerald-500 hover:bg-emerald-600 shadow-md
+                transition duration-200 text-white"
+            >
+              Karte
+            </button>
+            <button
+              data-target="news-section"
+              class="px-4 py-2 rounded-full bg-emerald-500 hover:bg-emerald-600 shadow-md
+                transition duration-200 text-white"
+            >
+              Neuigkeiten
+            </button>
           </nav>
       </div>
     </header>
@@ -51,25 +81,66 @@
         <p>Wähle eine Kategorie, um fortzufahren:</p>
         <ul class="grid grid-cols-2 gap-4 mt-4">
           <li>
-              <button data-target="compare-section" class="w-full h-32 bg-emerald-500 text-white rounded-xl shadow hover:bg-emerald-700 transition duration-200 flex items-center justify-center">Sorten vergleichen</button>
+            <button
+              data-target="compare-section"
+              class="w-full h-32 bg-emerald-500 text-white rounded-xl shadow
+                hover:bg-emerald-700 transition duration-200 flex items-center justify-center"
+            >
+              Sorten vergleichen
+            </button>
           </li>
           <li>
-              <button data-target="safeuse-section" class="w-full h-32 bg-emerald-500 text-white rounded-xl shadow hover:bg-emerald-700 transition duration-200 flex items-center justify-center">Safe-Use</button>
+            <button
+              data-target="safeuse-section"
+              class="w-full h-32 bg-emerald-500 text-white rounded-xl shadow
+                hover:bg-emerald-700 transition duration-200 flex items-center justify-center"
+            >
+              Safe-Use
+            </button>
           </li>
           <li>
-              <button data-target="map-section" class="w-full h-32 bg-emerald-500 text-white rounded-xl shadow hover:bg-emerald-700 transition duration-200 flex items-center justify-center">Karte</button>
+            <button
+              data-target="map-section"
+              class="w-full h-32 bg-emerald-500 text-white rounded-xl shadow
+                hover:bg-emerald-700 transition duration-200 flex items-center justify-center"
+            >
+              Karte
+            </button>
           </li>
           <li>
-              <button data-target="news-section" class="w-full h-32 bg-emerald-500 text-white rounded-xl shadow hover:bg-emerald-700 transition duration-200 flex items-center justify-center">Neuigkeiten</button>
+            <button
+              data-target="news-section"
+              class="w-full h-32 bg-emerald-500 text-white rounded-xl shadow
+                hover:bg-emerald-700 transition duration-200 flex items-center justify-center"
+            >
+              Neuigkeiten
+            </button>
           </li>
         </ul>
       </section>
       <section id="compare-section" class="content-section bg-white rounded-lg shadow p-4 mb-6" hidden>
         <h2 class="text-xl font-bold mb-4">Sorten vergleichen</h2>
         <div id="search-container" class="flex flex-wrap gap-2 mb-4">
-            <input type="text" id="search-input" placeholder="Sorte suchen..." class="flex-1 min-w-[150px] px-3 py-2 border rounded-md" />
-            <input type="number" id="thc-min" placeholder="min THC %" min="0" max="100" class="w-24 px-3 py-2 border rounded-md" />
-            <input type="number" id="cbd-min" placeholder="min CBD %" min="0" max="100" class="w-24 px-3 py-2 border rounded-md" />
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Sorte suchen..."
+              class="flex-1 min-w-[150px] px-3 py-2 border rounded-md"
+            />
+            <input
+              type="number"
+              id="thc-min"
+              placeholder="min THC %"
+              min="0" max="100"
+              class="w-24 px-3 py-2 border rounded-md"
+            />
+            <input
+              type="number"
+              id="cbd-min"
+              placeholder="min CBD %"
+              min="0" max="100"
+              class="w-24 px-3 py-2 border rounded-md"
+            />
         </div>
         <div id="product-list" class="grid gap-4 sm:grid-cols-2"></div>
       </section>
