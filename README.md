@@ -38,6 +38,9 @@ bereitgestellt werden. Das Repository enthält dafür einen Workflow unter
 3. Bei jedem Push auf den Branch `main` veröffentlicht der Workflow die App und
    zeigt die zugehörige URL im "Pages"-Bereich an.
 
+Nach Abschluss des Workflows sind deine Änderungen automatisch unter der selben
+URL verf\u00fcgbar. Das Deployen dauert in der Regel nur wenige Minuten.
+
 ## Lizenz
 
 Dieses Projekt steht unter der [MIT-Lizenz](LICENSE).
