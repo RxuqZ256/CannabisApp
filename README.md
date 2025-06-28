@@ -7,7 +7,7 @@ Die Oberfläche nutzt ein modernes Layout mit Karten und Responsive-Design. Im B
 ## Lokale Nutzung
 
 1. Repository klonen oder herunterladen.
-2. `index.html` in einem Browser öffnen. Alternativ kann ein einfacher Entwicklungsserver (z. B. `npx serve` oder die Live-Server-Erweiterung in VS Code) verwendet werden.
+2. `homescreen.html` im Browser öffnen. Diese mobile Startseite verlinkt direkt zu den Bereichen der App in `index.html`. Alternativ kann ein einfacher Entwicklungsserver (z. B. `npx serve` oder die Live-Server-Erweiterung in VS Code) verwendet werden.
 3. Die Liste der Produkte befindet sich in der Datei `products.json` und wird von `app.js` per `fetch` geladen. Stelle sicher, dass diese Datei neben der HTML-Seite verfügbar ist.
 4. **Hinweis:** `app.js` wird durch die HTML-Seite eingebunden und ist nicht für die Ausführung mit Node gedacht. Bei einem Versuch mit `node app.js` erscheint typischerweise der Fehler `ReferenceError: document is not defined`.
 5. Optional können mit `npm test` einfache Tests ausgeführt werden. Derzeit wird lediglich der Text `no tests` ausgegeben.
