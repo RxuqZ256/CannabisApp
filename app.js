@@ -118,7 +118,9 @@ function showSection(id) {
     sec.hidden = sec.id !== id;
   });
   buttons.forEach(b => {
-    b.classList.toggle('active', b.dataset.target === id);
+    const active = b.dataset.target === id;
+    b.classList.toggle('bg-blue-700', active);
+    b.classList.toggle('text-white', active);
   });
 }
 
