@@ -8,6 +8,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-pvMHDbT+9A1qhjL3aWYVHSe7lDP9G6fw+YFA2Qp/ZCA="
+      crossorigin=""
+    />
   </head>
   <body>
     <header>
@@ -60,11 +66,8 @@
           Beratung. Nutze die Steuerung zum Zoomen und Verschieben, um deinen
           Standort zu erkunden.
         </p>
-        <iframe
-          title="OpenStreetMap"
-          src="https://www.openstreetmap.org/export/embed.html"
-          style="width: 100%; height: 300px; border: 1px solid #ccc;"
-        ></iframe>
+        <div id="map"></div>
+        <p id="zone-info"></p>
       </section>
 
       <section id="news-section" class="content-section" hidden>
@@ -78,6 +81,11 @@
       </section>
     </main>
 
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-VIRdUnL+6P2f6KAgXwrpWnyey+HOB+MTWCf9zD5hznU="
+      crossorigin=""
+    ></script>
     <script src="app.js"></script>
   </body>
 </html>

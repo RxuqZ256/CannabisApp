@@ -1,4 +1,6 @@
 let products = [];
+let zones = [];
+let map;
 async function loadProducts() {
   try {
     const resp = await fetch("products.json");
@@ -6,6 +8,16 @@ async function loadProducts() {
     products = await resp.json();
   } catch (err) {
     console.error("Fehler beim Laden der Produktdaten:", err);
+  }
+}
+
+async function loadZones() {
+  try {
+    const resp = await fetch("zones.json");
+    if (!resp.ok) throw new Error("zones.json not found");
+    zones = await resp.json();
+  } catch (err) {
+    console.error("Fehler beim Laden der Zonen:", err);
   }
 }
 
@@ -45,6 +57,56 @@ function applyFilters() {
   renderProducts(filtered);
 }
 
+function initMap() {
+  const mapElem = document.getElementById('map');
+  if (!mapElem) return;
+  map = L.map(mapElem).setView([52.52, 13.405], 13);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© OpenStreetMap contributors'
+  }).addTo(map);
+
+  zones.forEach(z => {
+    const color = z.allowed ? 'green' : 'red';
+    L.circle([z.lat, z.lng], { radius: z.radius, color }).addTo(map)
+      .bindPopup(`${z.name} - ${z.allowed ? 'Rauchen erlaubt' : 'Rauchen verboten'}`);
+  });
+
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(pos => {
+      const { latitude, longitude } = pos.coords;
+      L.marker([latitude, longitude]).addTo(map)
+        .bindPopup('Dein Standort').openPopup();
+      checkZone(latitude, longitude);
+    });
+  }
+}
+
+function checkZone(lat, lng) {
+  const info = document.getElementById('zone-info');
+  if (!info) return;
+  for (const z of zones) {
+    const d = distance(lat, lng, z.lat, z.lng);
+    if (d <= z.radius) {
+      info.textContent = z.allowed
+        ? 'Rauchen ist hier erlaubt.'
+        : 'Rauchen ist hier nicht erlaubt.';
+      return;
+    }
+  }
+  info.textContent = 'Keine Informationen für diesen Standort.';
+}
+
+function distance(lat1, lon1, lat2, lon2) {
+  const R = 6371000; // meters
+  const dLat = (lat2 - lat1) * Math.PI / 180;
+  const dLon = (lon2 - lon1) * Math.PI / 180;
+  const a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+            Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+            Math.sin(dLon/2) * Math.sin(dLon/2);
+  const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+  return R * c;
+}
+
 searchInput.addEventListener('input', applyFilters);
 thcInput.addEventListener('input', applyFilters);
 cbdInput.addEventListener('input', applyFilters);
@@ -56,7 +118,15 @@ function setupNavigation() {
   buttons.forEach(btn => {
     btn.addEventListener('click', () => {
       sections.forEach(sec => {
-        sec.hidden = sec.id !== btn.dataset.target;
+        const show = sec.id === btn.dataset.target;
+        sec.hidden = !show;
+        if (show && sec.id === 'map-section') {
+          if (!map) {
+            initMap();
+          } else {
+            setTimeout(() => map.invalidateSize(), 100);
+          }
+        }
       });
       buttons.forEach(b => b.classList.toggle('active', b === btn));
     });
@@ -65,6 +135,7 @@ function setupNavigation() {
 
 window.addEventListener('load', async () => {
   await loadProducts();
+  await loadZones();
   renderProducts(products);
   setupNavigation();
   const homeButton = document.querySelector('button[data-target="home-section"]');

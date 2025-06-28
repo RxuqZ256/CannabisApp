@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Park A",
+    "lat": 52.5200,
+    "lng": 13.4050,
+    "radius": 300,
+    "allowed": false
+  },
+  {
+    "name": "Privates Gelände",
+    "lat": 52.5186,
+    "lng": 13.4094,
+    "radius": 200,
+    "allowed": true
+  }
+]
