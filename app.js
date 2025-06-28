@@ -111,16 +111,22 @@ searchInput.addEventListener('input', applyFilters);
 thcInput.addEventListener('input', applyFilters);
 cbdInput.addEventListener('input', applyFilters);
 
-function setupNavigation() {
+function showSection(id) {
   const buttons = document.querySelectorAll('button[data-target]');
   const sections = document.querySelectorAll('.content-section');
+  sections.forEach(sec => {
+    sec.hidden = sec.id !== id;
+  });
+  buttons.forEach(b => {
+    b.classList.toggle('active', b.dataset.target === id);
+  });
+}
 
+function setupNavigation() {
+  const buttons = document.querySelectorAll('button[data-target]');
   buttons.forEach(btn => {
     btn.addEventListener('click', () => {
-      sections.forEach(sec => {
-        sec.hidden = sec.id !== btn.dataset.target;
-      });
-      buttons.forEach(b => b.classList.toggle('active', b === btn));
+      showSection(btn.dataset.target);
     });
   });
 }
@@ -131,8 +137,7 @@ window.addEventListener('load', async () => {
   renderProducts(products);
   setupNavigation();
   initMap();
-  const homeButton = document.querySelector('button[data-target="home-section"]');
-  if (homeButton) {
-    homeButton.classList.add('active');
-  }
+  const params = new URLSearchParams(window.location.search);
+  const target = params.get('section') || 'home-section';
+  showSection(target);
 });
