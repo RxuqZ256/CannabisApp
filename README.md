@@ -1,27 +1,20 @@
 # CannabisApp
 
-Dieses Projekt stellt eine einfache Vergleichs-App für Cannabisprodukte bereit. 
-Ziel ist es, unterschiedliche Sorten samt Eigenschaften wie THC- und CBD-Gehalt
-zu vergleichen. Jede Sorte enthält eine kurze Beschreibung ihres
-typischen Einsatzzwecks. Eine Suchfunktion ermöglicht das Filtern nach Namen.
-Beim Start erscheint nun ein Hauptmenü, über das die einzelnen Bereiche
-aufgerufen werden können.
+Dieses Projekt stellt eine einfache Vergleichs-App für Cannabisprodukte bereit.
+Ziel ist es, unterschiedliche Sorten samt Eigenschaften wie THC- und CBD-Gehalt zu vergleichen.
+Neben Beschreibung, THC- und CBD-Werten stehen nun weitere Felder wie Typ, Aroma, Herkunft und medizinische Verwendung bereit.
+Eine Suchfunktion ermöglicht das Filtern nach Namen sowie nach minimalem THC- und CBD-Gehalt.
+Beim Start erscheint ein Hauptmenü, über das die einzelnen Bereiche aufgerufen werden können.
 
-Die Oberfläche verwendet nun ein moderneres Layout mit Karten und
-Responsive-Design.
+Die Oberfläche verwendet ein modernes Layout mit Karten und Responsive-Design.
 
 ## Lokale Nutzung
 
 1. Repository klonen oder herunterladen.
-2. `index.html` in einem Browser öffnen. Alternativ kann ein einfacher
-   Entwicklungsserver (z. B. `npx serve` oder die Live-Server-Erweiterung in VS Code)
-   verwendet werden.
-3. **Hinweis:** `app.js` wird durch die HTML-Seite eingebunden und ist nicht f\u00fcr
-   die Ausf\u00fchrung mit Node gedacht. Bei einem Versuch mit `node app.js` erscheint
-   typischerweise der Fehler `ReferenceError: document is not defined`.
+2. `index.html` im Browser öffnen. Alternativ kann ein einfacher Entwicklungsserver (z. B. `npx serve` oder die Live-Server-Erweiterung in VS Code) genutzt werden.
+3. **Hinweis:** `app.js` wird durch die HTML-Seite eingebunden und ist nicht für die Ausführung mit Node gedacht. Ein Aufruf mit `node app.js` führt gewöhnlich zum Fehler `ReferenceError: document is not defined`.
 
-Im Bereich "Vergleich" wird eine Liste verschiedener Sorten angezeigt. Über das
-Suchfeld lassen sich die Einträge filtern.
+Im Bereich „Vergleich“ wird eine Liste verschiedener Sorten angezeigt. Über das Suchfeld lassen sich die Einträge filtern.
 
 ## Lizenz
 

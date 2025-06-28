@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CannabisApp</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -36,27 +36,30 @@
         <h2>Sorten vergleichen</h2>
         <div id="search-container">
           <input type="text" id="search-input" placeholder="Sorte suchen..." />
+          <input type="number" id="thc-min" placeholder="min THC %" min="0" max="100" />
+          <input type="number" id="cbd-min" placeholder="min CBD %" min="0" max="100" />
         </div>
         <div id="product-list"></div>
       </section>
 
       <section id="safeuse-section" class="content-section" hidden>
         <h2>Safe-Use Regeln</h2>
-        <p>
-          Informiere dich stets über die aktuelle Gesetzeslage und konsumiere nur,
-          wenn es für dich legal ist. Beachte verantwortungsvolle Dosierung,
-          konsumiere nicht am Straßenverkehr und halte Pausen ein. Bei Fragen
-          wende dich an medizinisches Fachpersonal.
-        </p>
-        <p>
-          Teile keine Konsumutensilien, um das Risiko von Infektionen zu
-          reduzieren.
-        </p>
+        <ul>
+          <li>Informiere dich über die aktuelle Gesetzeslage.</li>
+          <li>Konsumiere nur in sicherer Umgebung und nimm dir Zeit für Pausen.</li>
+          <li>Trinke ausreichend Wasser und achte auf deine Dosierung.</li>
+          <li>Teile keine Konsumutensilien und verwende saubere Geräte.</li>
+        </ul>
+        <p>Bei gesundheitlichen Fragen hilft medizinisches Fachpersonal weiter.</p>
       </section>
 
       <section id="map-section" class="content-section" hidden>
         <h2>Konsumkarte</h2>
-        <p>Die Karte dient nur als Orientierung. Prüfe lokale Gesetze.</p>
+        <p>
+          Die Karte bietet eine grobe Übersicht und ersetzt keine rechtliche
+          Beratung. Nutze die Steuerung zum Zoomen und Verschieben, um deinen
+          Standort zu erkunden.
+        </p>
         <iframe
           title="OpenStreetMap"
           src="https://www.openstreetmap.org/export/embed.html"
@@ -66,9 +69,11 @@
 
       <section id="news-section" class="content-section" hidden>
         <h2>Neuigkeiten</h2>
+        <p>Links zu aktuellen Nachrichten rund um Cannabis:</p>
         <ul>
           <li><a href="https://www.cannabis-med.org/" target="_blank" rel="noopener noreferrer">Aktuelle Meldungen</a></li>
           <li><a href="https://hanfverband.de/nachrichten" target="_blank" rel="noopener noreferrer">Pressemitteilungen</a></li>
+          <li><a href="https://www.cannabiswirtschaft.de/" target="_blank" rel="noopener noreferrer">Branchen-News</a></li>
         </ul>
       </section>
     </main>
