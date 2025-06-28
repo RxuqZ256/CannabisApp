@@ -1,0 +1,12 @@
+{
+  "name": "cannabisapp",
+  "version": "1.0.0",
+  "description": "Einfache Vergleichs-App für Cannabisprodukte",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"no tests\""
+  },
+  "keywords": ["cannabis", "vergleich", "webapp"],
+  "author": "",
+  "license": "MIT"
+}

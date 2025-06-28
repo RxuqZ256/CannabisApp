@@ -13,6 +13,8 @@ Die Oberfläche verwendet nun ein moderneres Layout mit Karten und Responsive-De
 3. **Hinweis:** `app.js` wird durch die HTML-Seite eingebunden und ist nicht f\u00fcr
    die Ausf\u00fchrung mit Node gedacht. Bei einem Versuch mit `node app.js` erscheint
    typischerweise der Fehler `ReferenceError: document is not defined`.
+4. Optional können mit `npm test` einfache Tests ausgeführt werden. Derzeit
+   wird lediglich der Text `no tests` ausgegeben.
 
 Im Bereich "Vergleich" wird eine Liste verschiedener Sorten angezeigt. Über das
 Suchfeld lassen sich die Einträge filtern.
