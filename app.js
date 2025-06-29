@@ -62,7 +62,7 @@ function initMap() {
   if (!mapElem) return;
   map = L.map(mapElem).setView([52.52, 13.405], 13);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '© OpenStreetMap contributors'
+    attribution: '\u00A9 OpenStreetMap contributors'
   }).addTo(map);
 
   zones.forEach(z => {
@@ -93,7 +93,7 @@ function checkZone(lat, lng) {
       return;
     }
   }
-  info.textContent = 'Keine Informationen für diesen Standort.';
+  info.textContent = 'Keine Informationen f\u00fcr diesen Standort.';
 }
 
 function distance(lat1, lon1, lat2, lon2) {
