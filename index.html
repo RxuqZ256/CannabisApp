@@ -41,6 +41,7 @@
           <button data-target="safeuse-section" class="px-4 py-2 rounded-full shadow-md bg-blue-500 text-white transition duration-200 hover:bg-blue-600">Safe-Use</button>
           <button data-target="map-section" class="px-4 py-2 rounded-full shadow-md bg-blue-500 text-white transition duration-200 hover:bg-blue-600">Karte</button>
           <button data-target="news-section" class="px-4 py-2 rounded-full shadow-md bg-blue-500 text-white transition duration-200 hover:bg-blue-600">Neuigkeiten</button>
+          <button id="strains-link" class="px-4 py-2 rounded-full shadow-md bg-blue-500 text-white transition duration-200 hover:bg-blue-600">Sortenliste</button>
         </nav>
       </div>
     </header>
@@ -145,5 +146,10 @@
       crossorigin=""
     ></script>
     <script src="app.js"></script>
+    <script>
+      document.getElementById('strains-link').addEventListener('click', () => {
+        window.location.href = 'strains.html';
+      });
+    </script>
   </body>
 </html>
