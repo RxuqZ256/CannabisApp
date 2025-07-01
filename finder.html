@@ -4,8 +4,129 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Finder</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
 </head>
-<body>
-  <h1>Finder-Seite</h1>
+<body class="bg-gray-100 text-gray-800 font-sans text-lg font-semibold tracking-wide flex flex-col min-h-screen">
+  <header class="bg-emerald-700 text-white py-4">
+    <div class="max-w-md mx-auto text-center">
+      <h1 class="text-2xl font-bold">Strain Finder</h1>
+    </div>
+  </header>
+
+  <main class="flex-1 max-w-md mx-auto p-4 pb-24">
+    <section>
+      <form id="search-form" class="space-y-4 mb-6">
+        <div>
+          <label for="effect" class="block mb-1">Gewünschte Wirkung</label>
+          <select id="effect" class="w-full border rounded-lg p-2">
+            <option value="">egal</option>
+            <option value="entspannend">Entspannend</option>
+            <option value="anregend">Anregend</option>
+          </select>
+        </div>
+        <div>
+          <label for="thc" class="block mb-1">Mindest-THC (%)</label>
+          <input type="number" id="thc" min="0" max="30" step="1" class="w-full border rounded-lg p-2">
+        </div>
+        <button type="submit" class="w-full bg-emerald-700 text-white py-2 rounded-lg">Suchen</button>
+      </form>
+      <div id="results"></div>
+    </section>
+  </main>
+
+  <nav class="fixed bottom-0 left-0 right-0 bg-white border-t shadow-lg pb-[env(safe-area-inset-bottom)]">
+    <div class="max-w-md mx-auto px-4">
+      <ul class="flex justify-between items-center gap-x-2 py-2 text-xs">
+        <li>
+          <a href="strains.html" class="flex flex-col items-center text-gray-700 hover:text-emerald-700">
+            <img src="icons/strains.svg" alt="Strains" class="w-6 h-6 mb-0.5">
+            <span>Strains</span>
+          </a>
+        </li>
+        <li>
+          <a href="finder.html" class="flex flex-col items-center text-gray-700 hover:text-emerald-700">
+            <img src="icons/finder.svg" alt="Finder" class="w-6 h-6 mb-0.5">
+            <span>Finder</span>
+          </a>
+        </li>
+        <li>
+          <a href="news.html" class="flex flex-col items-center text-gray-700 hover:text-emerald-700">
+            <img src="icons/news.svg" alt="News" class="w-6 h-6 mb-0.5">
+            <span>News</span>
+          </a>
+        </li>
+        <li>
+          <a href="safe-use.html" class="flex flex-col items-center text-gray-700 hover:text-emerald-700">
+            <img src="icons/safe.svg" alt="Safer Use" class="w-6 h-6 mb-0.5">
+            <span>Safer Use</span>
+          </a>
+        </li>
+        <li>
+          <a href="map.html" class="flex flex-col items-center text-gray-700 hover:text-emerald-700">
+            <img src="icons/map.svg" alt="Map" class="w-6 h-6 mb-0.5">
+            <span>Map</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <script>
+    let strains = [];
+    async function loadData() {
+      const resp = await fetch('products.json');
+      strains = await resp.json();
+    }
+
+    function filterStrains() {
+      const effect = document.getElementById('effect').value;
+      const thcMin = parseFloat(document.getElementById('thc').value) || 0;
+      let list = strains.filter(s => s.thc >= thcMin);
+      if (effect === 'entspannend') {
+        list = list.filter(s => s.description.toLowerCase().includes('entspann'));
+      } else if (effect === 'anregend') {
+        list = list.filter(s => s.description.toLowerCase().includes('anreg') || s.description.toLowerCase().includes('energie'));
+      }
+      showResults(list.slice(0, 10));
+    }
+
+    function showResults(list) {
+      const container = document.getElementById('results');
+      container.innerHTML = '';
+      if (!list.length) {
+        container.textContent = 'Keine passenden Sorten gefunden.';
+        return;
+      }
+      list.forEach(s => {
+        const div = document.createElement('div');
+        div.className = 'bg-white rounded-xl shadow p-4 mb-4';
+        div.innerHTML = `<h3 class="text-lg font-bold mb-1">${s.name}</h3>
+          <p class="text-sm mb-1">${s.description}</p>
+          <p class="text-sm">THC: ${s.thc}% | CBD: ${s.cbd}%</p>`;
+        container.appendChild(div);
+      });
+    }
+
+    document.getElementById('search-form').addEventListener('submit', e => {
+      e.preventDefault();
+      filterStrains();
+    });
+
+    window.addEventListener('DOMContentLoaded', loadData);
+  </script>
 </body>
 </html>
