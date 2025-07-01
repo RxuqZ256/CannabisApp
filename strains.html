@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cannabis Sorten</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans text-gray-800">
+  <div class="max-w-4xl mx-auto p-4">
+    <h1 class="text-2xl font-bold text-emerald-700 mb-4">Cannabis-Sorten</h1>
+    <div id="strain-list" class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
+  </div>
+<script>
+const strains = [
+  {
+    name: "Amnesia Haze",
+    type: "Sativa",
+    thc: 22,
+    cbd: 1,
+    image: "https://flavorfix.com/wp-content/uploads/2021/07/amnesia-haze-strain.jpg",
+    effects: ["🌞", "😂"],
+    rating: 4.5,
+    description: "Energetisch und kreativ"
+  },
+  {
+    name: "Northern Lights",
+    type: "Indica",
+    thc: 18,
+    cbd: 2,
+    image: "https://weedmaps.com/learn/strains/northern-lights/northern-lights1.jpg",
+    effects: ["😴", "🧘"],
+    rating: 4.8,
+    description: "Beruhigend und entspannend"
+  }
+];
+
+function renderStars(rating) {
+  const full = Math.floor(rating);
+  const half = rating % 1 >= 0.5 ? 1 : 0;
+  const empty = 5 - full - half;
+  return '★'.repeat(full) + (half ? '☆' : '') + '✩'.repeat(empty);
+}
+
+function createBar(value, color) {
+  return `<div class="h-2 bg-gray-200 rounded">
+    <div class="h-2 rounded ${color}" style="width:${value}%"></div>
+  </div>`;
+}
+
+function renderStrains() {
+  const container = document.getElementById('strain-list');
+  strains.forEach(s => {
+    const card = document.createElement('div');
+    card.className = 'bg-white rounded-lg shadow p-4 flex flex-col';
+    card.innerHTML = `
+      <img src="${s.image}" alt="${s.name}" class="h-40 w-full object-cover rounded-md mb-2" onerror="this.src='https://via.placeholder.com/300x160?text=No+Image'" />
+      <div class="flex justify-between items-center mb-1">
+        <h2 class="font-bold text-lg">${s.name}</h2>
+        <button class="text-red-500">❤</button>
+      </div>
+      <p class="text-sm mb-1">${s.type}</p>
+      <div class="mb-1">
+        <span class="text-xs">THC ${s.thc}%</span>
+        ${createBar(s.thc, 'bg-emerald-500')}
+      </div>
+      <div class="mb-1">
+        <span class="text-xs">CBD ${s.cbd}%</span>
+        ${createBar(s.cbd, 'bg-blue-500')}
+      </div>
+      <div class="mb-1">${s.effects.join(' ')}</div>
+      <p class="mb-1 text-sm">${s.description}</p>
+      <div class="text-yellow-400 text-lg">${renderStars(s.rating)}</div>
+    `;
+    container.appendChild(card);
+  });
+}
+
+document.addEventListener('DOMContentLoaded', renderStrains);
+</script>
+</body>
+</html>
