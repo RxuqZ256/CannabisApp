@@ -4,699 +4,799 @@
     "type": "Hybrid",
     "thc": 22,
     "cbd": 1,
-    "effects": "🎨😌"
+    "effects": "🎨😌",
+    "beschreibung": ""
   },
   {
     "name": "Blue Dream",
     "type": "Sativa",
     "thc": 19,
     "cbd": 2,
-    "effects": "💡😊"
+    "effects": "💡😊",
+    "beschreibung": ""
   },
   {
     "name": "OG Kush",
     "type": "Indica",
     "thc": 21,
     "cbd": 1,
-    "effects": "🛋️😴"
+    "effects": "🛋️😴",
+    "beschreibung": ""
   },
   {
     "name": "Gelato",
     "type": "Hybrid",
     "thc": 20,
     "cbd": 1,
-    "effects": "😋🎨"
+    "effects": "😋🎨",
+    "beschreibung": ""
   },
   {
     "name": "Northern Lights",
     "type": "Indica",
     "thc": 18,
     "cbd": 2,
-    "effects": "🌙🛌"
+    "effects": "🌙🛌",
+    "beschreibung": ""
   },
   {
     "name": "Sour Diesel",
     "type": "Sativa",
     "thc": 20,
     "cbd": 1,
-    "effects": "⚡🧠"
+    "effects": "⚡🧠",
+    "beschreibung": ""
   },
   {
     "name": "Pineapple Express",
     "type": "Hybrid",
     "thc": 19,
     "cbd": 1,
-    "effects": "🍍😃"
+    "effects": "🍍😃",
+    "beschreibung": ""
   },
   {
     "name": "White Widow",
     "type": "Hybrid",
     "thc": 20,
     "cbd": 1,
-    "effects": "❄️😎"
+    "effects": "❄️😎",
+    "beschreibung": ""
   },
   {
     "name": "AK-47",
     "type": "Hybrid",
     "thc": 19,
     "cbd": 1,
-    "effects": "🎯😊"
+    "effects": "🎯😊",
+    "beschreibung": ""
   },
   {
     "name": "Girl Scout Cookies",
     "type": "Hybrid",
     "thc": 22,
     "cbd": 1,
-    "effects": "🍪😁"
+    "effects": "🍪😁",
+    "beschreibung": ""
   },
   {
     "name": "Jack Herer",
     "type": "Sativa",
     "thc": 18,
     "cbd": 1,
-    "effects": "📝💡"
+    "effects": "📝💡",
+    "beschreibung": ""
   },
   {
     "name": "Green Crack",
     "type": "Sativa",
     "thc": 20,
     "cbd": 1,
-    "effects": "⚡😄"
+    "effects": "⚡😄",
+    "beschreibung": ""
   },
   {
     "name": "Durban Poison",
     "type": "Sativa",
     "thc": 18,
     "cbd": 1,
-    "effects": "🌍🔆"
+    "effects": "🌍🔆",
+    "beschreibung": ""
   },
   {
     "name": "Granddaddy Purple",
     "type": "Indica",
     "thc": 21,
     "cbd": 1,
-    "effects": "🍇😴"
+    "effects": "🍇😴",
+    "beschreibung": ""
   },
   {
     "name": "Lemon Haze",
     "type": "Sativa",
     "thc": 17,
     "cbd": 2,
-    "effects": "🍋🎉"
+    "effects": "🍋🎉",
+    "beschreibung": ""
   },
   {
     "name": "Bubba Kush",
     "type": "Indica",
     "thc": 18,
     "cbd": 1,
-    "effects": "🛌😌"
+    "effects": "🛌😌",
+    "beschreibung": ""
   },
   {
     "name": "Maui Waui",
     "type": "Sativa",
     "thc": 17,
     "cbd": 1,
-    "effects": "🏝️🌞"
+    "effects": "🏝️🌞",
+    "beschreibung": ""
   },
   {
     "name": "Critical Mass",
     "type": "Indica",
     "thc": 20,
     "cbd": 5,
-    "effects": "💪😴"
+    "effects": "💪😴",
+    "beschreibung": ""
   },
   {
     "name": "Super Silver Haze",
     "type": "Sativa",
     "thc": 19,
     "cbd": 1,
-    "effects": "⚡🎨"
+    "effects": "⚡🎨",
+    "beschreibung": ""
   },
   {
     "name": "Purple Haze",
     "type": "Sativa",
     "thc": 17,
     "cbd": 2,
-    "effects": "🎸💭"
+    "effects": "🎸💭",
+    "beschreibung": ""
   },
   {
     "name": "Skywalker OG",
     "type": "Indica",
     "thc": 21,
     "cbd": 0,
-    "effects": "🎨"
+    "effects": "🎨",
+    "beschreibung": ""
   },
   {
     "name": "Trainwreck",
     "type": "Hybrid",
     "thc": 22,
     "cbd": 3,
-    "effects": "😁"
+    "effects": "😁",
+    "beschreibung": ""
   },
   {
     "name": "Cherry Pie",
     "type": "Indica",
     "thc": 20,
     "cbd": 1,
-    "effects": "🛋️"
+    "effects": "🛋️",
+    "beschreibung": ""
   },
   {
     "name": "Zkittlez",
     "type": "Sativa",
     "thc": 19,
     "cbd": 1,
-    "effects": "😌"
+    "effects": "😌",
+    "beschreibung": ""
   },
   {
     "name": "Forbidden Fruit",
     "type": "Hybrid",
     "thc": 19,
     "cbd": 1,
-    "effects": "😁"
+    "effects": "😁",
+    "beschreibung": ""
   },
   {
     "name": "Banana Kush",
     "type": "Sativa",
     "thc": 16,
     "cbd": 2,
-    "effects": "🧠"
+    "effects": "🧠",
+    "beschreibung": ""
   },
   {
     "name": "Cheese",
     "type": "Hybrid",
     "thc": 16,
     "cbd": 2,
-    "effects": "🌈"
+    "effects": "🌈",
+    "beschreibung": ""
   },
   {
     "name": "Cinderella 99",
     "type": "Indica",
     "thc": 18,
     "cbd": 3,
-    "effects": "🏆"
+    "effects": "🏆",
+    "beschreibung": ""
   },
   {
     "name": "Cookies and Cream",
     "type": "Hybrid",
     "thc": 19,
     "cbd": 0,
-    "effects": "🌞"
+    "effects": "🌞",
+    "beschreibung": ""
   },
   {
     "name": "Kandy Kush",
     "type": "Sativa",
     "thc": 16,
     "cbd": 3,
-    "effects": "😊"
+    "effects": "😊",
+    "beschreibung": ""
   },
   {
     "name": "Strawberry Cough",
     "type": "Hybrid",
     "thc": 22,
     "cbd": 2,
-    "effects": "😃"
+    "effects": "😃",
+    "beschreibung": ""
   },
   {
     "name": "Tangerine Dream",
     "type": "Hybrid",
     "thc": 20,
     "cbd": 0,
-    "effects": "⚡"
+    "effects": "⚡",
+    "beschreibung": ""
   },
   {
     "name": "Godfather OG",
     "type": "Hybrid",
     "thc": 18,
     "cbd": 1,
-    "effects": "😄"
+    "effects": "😄",
+    "beschreibung": ""
   },
   {
     "name": "Banana Punch",
     "type": "Hybrid",
     "thc": 22,
     "cbd": 0,
-    "effects": "💪"
+    "effects": "💪",
+    "beschreibung": ""
   },
   {
     "name": "Runtz",
     "type": "Indica",
     "thc": 22,
     "cbd": 0,
-    "effects": "😁"
+    "effects": "😁",
+    "beschreibung": ""
   },
   {
     "name": "Gorilla Glue",
     "type": "Hybrid",
     "thc": 19,
     "cbd": 0,
-    "effects": "🌞"
+    "effects": "🌞",
+    "beschreibung": ""
   },
   {
     "name": "Wedding Cake",
     "type": "Indica",
     "thc": 18,
     "cbd": 2,
-    "effects": "🏆"
+    "effects": "🏆",
+    "beschreibung": ""
   },
   {
     "name": "Sunset Sherbet",
     "type": "Sativa",
     "thc": 21,
     "cbd": 2,
-    "effects": "🍀"
+    "effects": "🍀",
+    "beschreibung": ""
   },
   {
     "name": "Fire OG",
     "type": "Sativa",
     "thc": 19,
     "cbd": 1,
-    "effects": "⚡"
+    "effects": "⚡",
+    "beschreibung": ""
   },
   {
     "name": "LA Confidential",
     "type": "Sativa",
     "thc": 15,
     "cbd": 2,
-    "effects": "🧠"
+    "effects": "🧠",
+    "beschreibung": ""
   },
   {
     "name": "Alien OG",
     "type": "Sativa",
     "thc": 16,
     "cbd": 1,
-    "effects": "😄"
+    "effects": "😄",
+    "beschreibung": ""
   },
   {
     "name": "White Rhino",
     "type": "Sativa",
     "thc": 16,
     "cbd": 3,
-    "effects": "🛋️"
+    "effects": "🛋️",
+    "beschreibung": ""
   },
   {
     "name": "Berry White",
     "type": "Indica",
     "thc": 18,
     "cbd": 1,
-    "effects": "🍀"
+    "effects": "🍀",
+    "beschreibung": ""
   },
   {
     "name": "Kosher Kush",
     "type": "Indica",
     "thc": 19,
     "cbd": 3,
-    "effects": "🧠"
+    "effects": "🧠",
+    "beschreibung": ""
   },
   {
     "name": "Blueberry",
     "type": "Hybrid",
     "thc": 20,
     "cbd": 0,
-    "effects": "🍬"
+    "effects": "🍬",
+    "beschreibung": ""
   },
   {
     "name": "Dutch Treat",
     "type": "Hybrid",
     "thc": 16,
     "cbd": 3,
-    "effects": "🍀"
+    "effects": "🍀",
+    "beschreibung": ""
   },
   {
     "name": "Ice Cream Cake",
     "type": "Hybrid",
     "thc": 20,
     "cbd": 1,
-    "effects": "😃"
+    "effects": "😃",
+    "beschreibung": ""
   },
   {
     "name": "Peyote Cookies",
     "type": "Sativa",
     "thc": 19,
     "cbd": 0,
-    "effects": "😃"
+    "effects": "😃",
+    "beschreibung": ""
   },
   {
     "name": "L.A. Woman",
     "type": "Indica",
     "thc": 17,
     "cbd": 2,
-    "effects": "🌈"
+    "effects": "🌈",
+    "beschreibung": ""
   },
   {
     "name": "Platinum OG",
     "type": "Sativa",
     "thc": 16,
     "cbd": 1,
-    "effects": "😃"
+    "effects": "😃",
+    "beschreibung": ""
   },
   {
     "name": "Death Star",
     "type": "Sativa",
     "thc": 16,
     "cbd": 0,
-    "effects": "😌"
+    "effects": "😌",
+    "beschreibung": ""
   },
   {
     "name": "Blackberry Kush",
     "type": "Hybrid",
     "thc": 18,
     "cbd": 0,
-    "effects": "🔥"
+    "effects": "🔥",
+    "beschreibung": ""
   },
   {
     "name": "Harlequin",
     "type": "Sativa",
     "thc": 20,
     "cbd": 0,
-    "effects": "😴"
+    "effects": "😴",
+    "beschreibung": ""
   },
   {
     "name": "ACDC",
     "type": "Hybrid",
     "thc": 15,
     "cbd": 1,
-    "effects": "🎉"
+    "effects": "🎉",
+    "beschreibung": ""
   },
   {
     "name": "Cherry Diesel",
     "type": "Hybrid",
     "thc": 16,
     "cbd": 3,
-    "effects": "⚡"
+    "effects": "⚡",
+    "beschreibung": ""
   },
   {
     "name": "Orange Bud",
     "type": "Hybrid",
     "thc": 15,
     "cbd": 0,
-    "effects": "🌞"
+    "effects": "🌞",
+    "beschreibung": ""
   },
   {
     "name": "Moby Dick",
     "type": "Indica",
     "thc": 16,
     "cbd": 2,
-    "effects": "💪"
+    "effects": "💪",
+    "beschreibung": ""
   },
   {
     "name": "Chemdawg",
     "type": "Sativa",
     "thc": 16,
     "cbd": 2,
-    "effects": "🍇"
+    "effects": "🍇",
+    "beschreibung": ""
   },
   {
     "name": "Papaya",
     "type": "Indica",
     "thc": 17,
     "cbd": 0,
-    "effects": "🛋️"
+    "effects": "🛋️",
+    "beschreibung": ""
   },
   {
     "name": "Apple Fritter",
     "type": "Indica",
     "thc": 15,
     "cbd": 0,
-    "effects": "🔥"
+    "effects": "🔥",
+    "beschreibung": ""
   },
   {
     "name": "Peach Rings",
     "type": "Sativa",
     "thc": 19,
     "cbd": 2,
-    "effects": "🧠"
+    "effects": "🧠",
+    "beschreibung": ""
   },
   {
     "name": "Lemon Skunk",
     "type": "Hybrid",
     "thc": 17,
     "cbd": 1,
-    "effects": "😴"
+    "effects": "😴",
+    "beschreibung": ""
   },
   {
     "name": "Master Kush",
     "type": "Hybrid",
     "thc": 17,
     "cbd": 1,
-    "effects": "🍬"
+    "effects": "🍬",
+    "beschreibung": ""
   },
   {
     "name": "Blueberry Muffin",
     "type": "Hybrid",
     "thc": 19,
     "cbd": 0,
-    "effects": "😎"
+    "effects": "😎",
+    "beschreibung": ""
   },
   {
     "name": "Candyland",
     "type": "Indica",
     "thc": 17,
     "cbd": 0,
-    "effects": "🧠"
+    "effects": "🧠",
+    "beschreibung": ""
   },
   {
     "name": "Jilly Bean",
     "type": "Hybrid",
     "thc": 21,
     "cbd": 2,
-    "effects": "🍇"
+    "effects": "🍇",
+    "beschreibung": ""
   },
   {
     "name": "G13",
     "type": "Indica",
     "thc": 19,
     "cbd": 1,
-    "effects": "🌞"
+    "effects": "🌞",
+    "beschreibung": ""
   },
   {
     "name": "Purple Urkle",
     "type": "Hybrid",
     "thc": 15,
     "cbd": 3,
-    "effects": "💪"
+    "effects": "💪",
+    "beschreibung": ""
   },
   {
     "name": "Chocolate Thai",
     "type": "Indica",
     "thc": 15,
     "cbd": 2,
-    "effects": "😄"
+    "effects": "😄",
+    "beschreibung": ""
   },
   {
     "name": "LA Kush Cake",
     "type": "Sativa",
     "thc": 22,
     "cbd": 2,
-    "effects": "😎"
+    "effects": "😎",
+    "beschreibung": ""
   },
   {
     "name": "Dream Queen",
     "type": "Indica",
     "thc": 20,
     "cbd": 1,
-    "effects": "😁"
+    "effects": "😁",
+    "beschreibung": ""
   },
   {
     "name": "Agent Orange",
     "type": "Indica",
     "thc": 21,
     "cbd": 0,
-    "effects": "😊"
+    "effects": "😊",
+    "beschreibung": ""
   },
   {
     "name": "Blue Cheese",
     "type": "Hybrid",
     "thc": 18,
     "cbd": 2,
-    "effects": "🎉"
+    "effects": "🎉",
+    "beschreibung": ""
   },
   {
     "name": "Super Glue",
     "type": "Sativa",
     "thc": 18,
     "cbd": 3,
-    "effects": "🔥"
+    "effects": "🔥",
+    "beschreibung": ""
   },
   {
     "name": "Cookie Dough",
     "type": "Hybrid",
     "thc": 21,
     "cbd": 0,
-    "effects": "🔥"
+    "effects": "🔥",
+    "beschreibung": ""
   },
   {
     "name": "Lamb's Bread",
     "type": "Hybrid",
     "thc": 21,
     "cbd": 0,
-    "effects": "🎉"
+    "effects": "🎉",
+    "beschreibung": ""
   },
   {
     "name": "Chernobyl",
     "type": "Indica",
     "thc": 16,
     "cbd": 2,
-    "effects": "🎉"
+    "effects": "🎉",
+    "beschreibung": ""
   },
   {
     "name": "Grapefruit",
     "type": "Indica",
     "thc": 22,
     "cbd": 0,
-    "effects": "😴"
+    "effects": "😴",
+    "beschreibung": ""
   },
   {
     "name": "Sage",
     "type": "Indica",
     "thc": 20,
     "cbd": 2,
-    "effects": "🏆"
+    "effects": "🏆",
+    "beschreibung": ""
   },
   {
     "name": "Kush Mints",
     "type": "Sativa",
     "thc": 21,
     "cbd": 1,
-    "effects": "🌞"
+    "effects": "🌞",
+    "beschreibung": ""
   },
   {
     "name": "Platinum Girl Scout Cookies",
     "type": "Hybrid",
     "thc": 16,
     "cbd": 1,
-    "effects": "😊"
+    "effects": "😊",
+    "beschreibung": ""
   },
   {
     "name": "Ghost Train Haze",
     "type": "Indica",
     "thc": 21,
     "cbd": 2,
-    "effects": "😊"
+    "effects": "😊",
+    "beschreibung": ""
   },
   {
     "name": "Sensi Star",
     "type": "Sativa",
     "thc": 15,
     "cbd": 0,
-    "effects": "🛋️"
+    "effects": "🛋️",
+    "beschreibung": ""
   },
   {
     "name": "Stardawg",
     "type": "Hybrid",
     "thc": 16,
     "cbd": 1,
-    "effects": "😌"
+    "effects": "😌",
+    "beschreibung": ""
   },
   {
     "name": "Hawaiian Punch",
     "type": "Hybrid",
     "thc": 18,
     "cbd": 2,
-    "effects": "🎨"
+    "effects": "🎨",
+    "beschreibung": ""
   },
   {
     "name": "Train Haze",
     "type": "Hybrid",
     "thc": 17,
     "cbd": 0,
-    "effects": "🧠"
+    "effects": "🧠",
+    "beschreibung": ""
   },
   {
     "name": "Cactus Breath",
     "type": "Indica",
     "thc": 16,
     "cbd": 0,
-    "effects": "🎨"
+    "effects": "🎨",
+    "beschreibung": ""
   },
   {
     "name": "Monster Cookies",
     "type": "Indica",
     "thc": 16,
     "cbd": 2,
-    "effects": "😄"
+    "effects": "😄",
+    "beschreibung": ""
   },
   {
     "name": "Cherry OG",
     "type": "Hybrid",
     "thc": 20,
     "cbd": 0,
-    "effects": "😄"
+    "effects": "😄",
+    "beschreibung": ""
   },
   {
     "name": "Lemon Pie",
     "type": "Indica",
     "thc": 15,
     "cbd": 0,
-    "effects": "😴"
+    "effects": "😴",
+    "beschreibung": ""
   },
   {
     "name": "Shark Shock",
     "type": "Sativa",
     "thc": 19,
     "cbd": 2,
-    "effects": "🍇"
+    "effects": "🍇",
+    "beschreibung": ""
   },
   {
     "name": "Devil's Lettuce",
     "type": "Hybrid",
     "thc": 15,
     "cbd": 3,
-    "effects": "🏆"
+    "effects": "🏆",
+    "beschreibung": ""
   },
   {
     "name": "Strawberry Banana",
     "type": "Hybrid",
     "thc": 21,
     "cbd": 2,
-    "effects": "🌞"
+    "effects": "🌞",
+    "beschreibung": ""
   },
   {
     "name": "Platinum Kush",
     "type": "Sativa",
     "thc": 18,
     "cbd": 3,
-    "effects": "🍀"
+    "effects": "🍀",
+    "beschreibung": ""
   },
   {
     "name": "Timewreck",
     "type": "Indica",
     "thc": 15,
     "cbd": 1,
-    "effects": "😄"
+    "effects": "😄",
+    "beschreibung": ""
   },
   {
     "name": "Night Nurse",
     "type": "Indica",
     "thc": 20,
     "cbd": 2,
-    "effects": "🍇"
+    "effects": "🍇",
+    "beschreibung": ""
   },
   {
     "name": "Critical Kush",
     "type": "Hybrid",
     "thc": 16,
     "cbd": 2,
-    "effects": "😎"
+    "effects": "😎",
+    "beschreibung": ""
   },
   {
     "name": "Purple Punch",
     "type": "Sativa",
     "thc": 15,
     "cbd": 2,
-    "effects": "🎉"
+    "effects": "🎉",
+    "beschreibung": ""
   },
   {
     "name": "SFV OG",
     "type": "Sativa",
     "thc": 19,
     "cbd": 2,
-    "effects": "🔥"
+    "effects": "🔥",
+    "beschreibung": ""
   },
   {
     "name": "Dawgwalker",
     "type": "Hybrid",
     "thc": 17,
     "cbd": 2,
-    "effects": "😌"
+    "effects": "😌",
+    "beschreibung": ""
   }
 ]
