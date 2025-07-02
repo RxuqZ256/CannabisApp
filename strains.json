@@ -5,7 +5,8 @@
     "thc": 22,
     "cbd": 1,
     "effects": "🎨😌",
-    "beschreibung": "Amnesia Haze ist eine sativadominierte Sorte mit einem zitrusartigen Aroma. Sie wirkt anregend und stimmungsaufhellend – perfekt für kreative Momente."
+    "beschreibung": "Amnesia Haze ist eine sativadominierte Sorte mit einem zitrusartigen Aroma. Sie wirkt anregend und stimmungsaufhellend – perfekt für kreative Momente.",
+    "image": "https://leafly-public.imgix.net/strains/photos/amnesia-haze.png"
   },
   {
     "name": "Blue Dream",
@@ -13,7 +14,8 @@
     "thc": 19,
     "cbd": 2,
     "effects": "💡😊",
-    "beschreibung": "Blue Dream kombiniert entspannende Körperwirkung mit einer kreativen, klaren Euphorie. Das süßlich-beerige Aroma macht sie zu einem Klassiker."
+    "beschreibung": "Blue Dream kombiniert entspannende Körperwirkung mit einer kreativen, klaren Euphorie. Das süßlich-beerige Aroma macht sie zu einem Klassiker.",
+    "image": "https://leafly-public.imgix.net/strains/photos/blue-dream.png"
   },
   {
     "name": "OG Kush",
@@ -21,7 +23,8 @@
     "thc": 21,
     "cbd": 1,
     "effects": "🛋️😴",
-    "beschreibung": "OG Kush besticht durch erdige und leicht zitronige Noten. Sie sorgt für eine tiefe, beruhigende Entspannung und ist daher am Abend beliebt."
+    "beschreibung": "OG Kush besticht durch erdige und leicht zitronige Noten. Sie sorgt für eine tiefe, beruhigende Entspannung und ist daher am Abend beliebt.",
+    "image": "https://leafly-public.imgix.net/strains/photos/og-kush.png"
   },
   {
     "name": "Gelato",
@@ -29,7 +32,8 @@
     "thc": 20,
     "cbd": 1,
     "effects": "😋🎨",
-    "beschreibung": "Gelato verströmt ein süßes, cremiges Aroma und bietet ein ausgeglichenes High zwischen Euphorie und Gelassenheit."
+    "beschreibung": "Gelato verströmt ein süßes, cremiges Aroma und bietet ein ausgeglichenes High zwischen Euphorie und Gelassenheit.",
+    "image": "https://leafly-public.imgix.net/strains/photos/gelato.png"
   },
   {
     "name": "Northern Lights",
@@ -37,7 +41,8 @@
     "thc": 18,
     "cbd": 2,
     "effects": "🌙🛌",
-    "beschreibung": "Northern Lights besitzt ein mildes, süßes Geschmacksprofil und fördert eine wohltuende körperliche Entspannung."
+    "beschreibung": "Northern Lights besitzt ein mildes, süßes Geschmacksprofil und fördert eine wohltuende körperliche Entspannung.",
+    "image": "https://leafly-public.imgix.net/strains/photos/northern-lights.png"
   },
   {
     "name": "Sour Diesel",
@@ -45,7 +50,8 @@
     "thc": 20,
     "cbd": 1,
     "effects": "⚡🧠",
-    "beschreibung": "Sour Diesel riecht markant nach Diesel und Zitrus. Die Wirkung ist belebend und steigert den Fokus."
+    "beschreibung": "Sour Diesel riecht markant nach Diesel und Zitrus. Die Wirkung ist belebend und steigert den Fokus.",
+    "image": "https://leafly-public.imgix.net/strains/photos/sour-diesel.png"
   },
   {
     "name": "Pineapple Express",
@@ -53,7 +59,8 @@
     "thc": 19,
     "cbd": 1,
     "effects": "🍍😃",
-    "beschreibung": "Pineapple Express versprüht tropischen Ananas-Duft und sorgt für lang anhaltende Energie sowie gute Laune."
+    "beschreibung": "Pineapple Express versprüht tropischen Ananas-Duft und sorgt für lang anhaltende Energie sowie gute Laune.",
+    "image": "https://leafly-public.imgix.net/strains/photos/pineapple-express.png"
   },
   {
     "name": "White Widow",
@@ -61,7 +68,8 @@
     "thc": 20,
     "cbd": 1,
     "effects": "❄️😎",
-    "beschreibung": "White Widow hat einen würzig-blumigen Geruch. Sie liefert ein klares, kraftvolles High und leichte Entspannung."
+    "beschreibung": "White Widow hat einen würzig-blumigen Geruch. Sie liefert ein klares, kraftvolles High und leichte Entspannung.",
+    "image": "https://leafly-public.imgix.net/strains/photos/white-widow.png"
   },
   {
     "name": "AK-47",
@@ -69,7 +77,8 @@
     "thc": 19,
     "cbd": 1,
     "effects": "🎯😊",
-    "beschreibung": "AK-47 verbindet süße mit erdigen Noten und erzeugt eine langanhaltende, motivierende Wirkung."
+    "beschreibung": "AK-47 verbindet süße mit erdigen Noten und erzeugt eine langanhaltende, motivierende Wirkung.",
+    "image": "https://leafly-public.imgix.net/strains/photos/ak-47.png"
   },
   {
     "name": "Girl Scout Cookies",
@@ -77,7 +86,8 @@
     "thc": 22,
     "cbd": 1,
     "effects": "🍪😁",
-    "beschreibung": "Girl Scout Cookies schmeckt süß nach Gebäck mit einem Hauch Minze. Der Effekt ist stark euphorisch und zugleich entspannend."
+    "beschreibung": "Girl Scout Cookies schmeckt süß nach Gebäck mit einem Hauch Minze. Der Effekt ist stark euphorisch und zugleich entspannend.",
+    "image": "https://leafly-public.imgix.net/strains/photos/girl-scout-cookies.png"
   },
   {
     "name": "Jack Herer",
@@ -85,7 +95,8 @@
     "thc": 18,
     "cbd": 1,
     "effects": "📝💡",
-    "beschreibung": "Jack Herer kombiniert zerebrale Klarheit mit einer leichten Euphorie. Sein würziges Aroma erinnert an Pinien und Kräuter."
+    "beschreibung": "Jack Herer kombiniert zerebrale Klarheit mit einer leichten Euphorie. Sein würziges Aroma erinnert an Pinien und Kräuter.",
+    "image": "https://leafly-public.imgix.net/strains/photos/jack-herer.png"
   },
   {
     "name": "Green Crack",
@@ -93,7 +104,8 @@
     "thc": 20,
     "cbd": 1,
     "effects": "⚡😄",
-    "beschreibung": "Green Crack liefert einen energiegeladenen, klaren Effekt und verbreitet ein fruchtiges Mangoaroma."
+    "beschreibung": "Green Crack liefert einen energiegeladenen, klaren Effekt und verbreitet ein fruchtiges Mangoaroma.",
+    "image": "https://leafly-public.imgix.net/strains/photos/green-crack.png"
   },
   {
     "name": "Durban Poison",
@@ -101,7 +113,8 @@
     "thc": 18,
     "cbd": 1,
     "effects": "🌍🔆",
-    "beschreibung": "Durban Poison stammt aus Südafrika und entfaltet einen klaren, energiegeladenen Effekt mit süß-würzigem Geschmack."
+    "beschreibung": "Durban Poison stammt aus Südafrika und entfaltet einen klaren, energiegeladenen Effekt mit süß-würzigem Geschmack.",
+    "image": "https://leafly-public.imgix.net/strains/photos/durban-poison.png"
   },
   {
     "name": "Granddaddy Purple",
@@ -109,7 +122,8 @@
     "thc": 21,
     "cbd": 1,
     "effects": "🍇😴",
-    "beschreibung": "Granddaddy Purple überzeugt mit intensivem Beerengeschmack und tiefen, beruhigenden Effekten."
+    "beschreibung": "Granddaddy Purple überzeugt mit intensivem Beerengeschmack und tiefen, beruhigenden Effekten.",
+    "image": "https://leafly-public.imgix.net/strains/photos/granddaddy-purple.png"
   },
   {
     "name": "Lemon Haze",
@@ -117,7 +131,8 @@
     "thc": 17,
     "cbd": 2,
     "effects": "🍋🎉",
-    "beschreibung": "Lemon Haze besitzt ein ausgeprägtes Zitronenaroma und liefert einen frischen, aufmunternden Effekt."
+    "beschreibung": "Lemon Haze besitzt ein ausgeprägtes Zitronenaroma und liefert einen frischen, aufmunternden Effekt.",
+    "image": "https://leafly-public.imgix.net/strains/photos/lemon-haze.png"
   },
   {
     "name": "Bubba Kush",
@@ -125,7 +140,8 @@
     "thc": 18,
     "cbd": 1,
     "effects": "🛌😌",
-    "beschreibung": "Bubba Kush liefert schwere, beruhigende Effekte und verströmt ein erdiges Aroma mit süßen Untertönen."
+    "beschreibung": "Bubba Kush liefert schwere, beruhigende Effekte und verströmt ein erdiges Aroma mit süßen Untertönen.",
+    "image": "https://leafly-public.imgix.net/strains/photos/bubba-kush.png"
   },
   {
     "name": "Maui Waui",
@@ -133,7 +149,8 @@
     "thc": 17,
     "cbd": 1,
     "effects": "🏝️🌞",
-    "beschreibung": "Maui Waui bietet ein tropisches Geschmacksprofil und einen leichten, motivierenden Effekt."
+    "beschreibung": "Maui Waui bietet ein tropisches Geschmacksprofil und einen leichten, motivierenden Effekt.",
+    "image": "https://leafly-public.imgix.net/strains/photos/maui-waui.png"
   },
   {
     "name": "Critical Mass",
@@ -141,7 +158,8 @@
     "thc": 20,
     "cbd": 5,
     "effects": "💪😴",
-    "beschreibung": "Critical Mass punktet mit schweren, entspannenden Effekten und einem süßen, erdigen Geschmack."
+    "beschreibung": "Critical Mass punktet mit schweren, entspannenden Effekten und einem süßen, erdigen Geschmack.",
+    "image": "https://leafly-public.imgix.net/strains/photos/critical-mass.png"
   },
   {
     "name": "Super Silver Haze",
@@ -149,7 +167,8 @@
     "thc": 19,
     "cbd": 1,
     "effects": "⚡🎨",
-    "beschreibung": "Super Silver Haze ist bekannt für sein lang anhaltendes, energetisches High und ein würziges Zitrusaroma."
+    "beschreibung": "Super Silver Haze ist bekannt für sein lang anhaltendes, energetisches High und ein würziges Zitrusaroma.",
+    "image": "https://leafly-public.imgix.net/strains/photos/super-silver-haze.png"
   },
   {
     "name": "Purple Haze",
@@ -157,7 +176,8 @@
     "thc": 17,
     "cbd": 2,
     "effects": "🎸💭",
-    "beschreibung": "Purple Haze weckt mit seinem süßen, erdbeerartigen Geschmack Kreativität und liefert ein klares, fröhliches High."
+    "beschreibung": "Purple Haze weckt mit seinem süßen, erdbeerartigen Geschmack Kreativität und liefert ein klares, fröhliches High.",
+    "image": "https://leafly-public.imgix.net/strains/photos/purple-haze.png"
   },
   {
     "name": "Skywalker OG",
@@ -165,7 +185,8 @@
     "thc": 21,
     "cbd": 0,
     "effects": "🎨",
-    "beschreibung": "Skywalker OG kombiniert ein würziges Aroma mit starken, körperlich entspannenden Effekten."
+    "beschreibung": "Skywalker OG kombiniert ein würziges Aroma mit starken, körperlich entspannenden Effekten.",
+    "image": "https://leafly-public.imgix.net/strains/photos/skywalker-og.png"
   },
   {
     "name": "Trainwreck",
@@ -173,7 +194,8 @@
     "thc": 22,
     "cbd": 3,
     "effects": "😁",
-    "beschreibung": "Trainwreck liefert ein intensives, euphorisches High mit würzig-zitronigem Aroma."
+    "beschreibung": "Trainwreck liefert ein intensives, euphorisches High mit würzig-zitronigem Aroma.",
+    "image": "https://leafly-public.imgix.net/strains/photos/trainwreck.png"
   },
   {
     "name": "Cherry Pie",
@@ -181,7 +203,8 @@
     "thc": 20,
     "cbd": 1,
     "effects": "🛋️",
-    "beschreibung": "Cherry Pie vereint süße Kirsch-Aromen mit erdigen Noten und sorgt für ausgewogene Entspannung."
+    "beschreibung": "Cherry Pie vereint süße Kirsch-Aromen mit erdigen Noten und sorgt für ausgewogene Entspannung.",
+    "image": "https://leafly-public.imgix.net/strains/photos/cherry-pie.png"
   },
   {
     "name": "Zkittlez",
@@ -189,7 +212,8 @@
     "thc": 19,
     "cbd": 1,
     "effects": "😌",
-    "beschreibung": "Zkittlez überzeugt mit intensivem Fruchtaroma und erzeugt ein entspannendes, zugleich fokussierendes High."
+    "beschreibung": "Zkittlez überzeugt mit intensivem Fruchtaroma und erzeugt ein entspannendes, zugleich fokussierendes High.",
+    "image": "https://leafly-public.imgix.net/strains/photos/zkittlez.png"
   },
   {
     "name": "Forbidden Fruit",
@@ -197,7 +221,8 @@
     "thc": 19,
     "cbd": 1,
     "effects": "😁",
-    "beschreibung": "Forbidden Fruit punktet mit süß-fruchtigem Geschmack und sorgt für tiefe Entspannung."
+    "beschreibung": "Forbidden Fruit punktet mit süß-fruchtigem Geschmack und sorgt für tiefe Entspannung.",
+    "image": "https://leafly-public.imgix.net/strains/photos/forbidden-fruit.png"
   },
   {
     "name": "Banana Kush",
@@ -205,7 +230,8 @@
     "thc": 16,
     "cbd": 2,
     "effects": "🧠",
-    "beschreibung": "Banana Kush kombiniert süßes Bananenaroma mit entspannender Wirkung und leichter Euphorie."
+    "beschreibung": "Banana Kush kombiniert süßes Bananenaroma mit entspannender Wirkung und leichter Euphorie.",
+    "image": "https://leafly-public.imgix.net/strains/photos/banana-kush.png"
   },
   {
     "name": "Cheese",
@@ -213,7 +239,8 @@
     "thc": 16,
     "cbd": 2,
     "effects": "🌈",
-    "beschreibung": "Cheese bietet ein intensives, käsiges Aroma und bewirkt ein sanft entspannendes High."
+    "beschreibung": "Cheese bietet ein intensives, käsiges Aroma und bewirkt ein sanft entspannendes High.",
+    "image": "https://leafly-public.imgix.net/strains/photos/cheese.png"
   },
   {
     "name": "Cinderella 99",
@@ -221,7 +248,8 @@
     "thc": 18,
     "cbd": 3,
     "effects": "🏆",
-    "beschreibung": "Cinderella 99 ist für ihr fruchtiges Aroma und einen klaren, energiegeladenen Rausch bekannt."
+    "beschreibung": "Cinderella 99 ist für ihr fruchtiges Aroma und einen klaren, energiegeladenen Rausch bekannt.",
+    "image": "https://leafly-public.imgix.net/strains/photos/cinderella-99.png"
   },
   {
     "name": "Cookies and Cream",
@@ -229,7 +257,8 @@
     "thc": 19,
     "cbd": 0,
     "effects": "🌞",
-    "beschreibung": "Cookies and Cream schmeckt cremig-süß und sorgt für ein ausgewogenes High zwischen Entspannung und Euphorie."
+    "beschreibung": "Cookies and Cream schmeckt cremig-süß und sorgt für ein ausgewogenes High zwischen Entspannung und Euphorie.",
+    "image": "https://leafly-public.imgix.net/strains/photos/cookies-and-cream.png"
   },
   {
     "name": "Kandy Kush",
@@ -237,7 +266,8 @@
     "thc": 16,
     "cbd": 3,
     "effects": "😊",
-    "beschreibung": "Kandy Kush verführt mit süßem Bonbon-Aroma und liefert einen harmonischen Mix aus Entspannung und guter Laune."
+    "beschreibung": "Kandy Kush verführt mit süßem Bonbon-Aroma und liefert einen harmonischen Mix aus Entspannung und guter Laune.",
+    "image": "https://leafly-public.imgix.net/strains/photos/kandy-kush.png"
   },
   {
     "name": "Strawberry Cough",
@@ -245,7 +275,8 @@
     "thc": 22,
     "cbd": 2,
     "effects": "😃",
-    "beschreibung": "Strawberry Cough überzeugt mit fruchtigem Erdbeeraroma und einem klaren, anregenden High."
+    "beschreibung": "Strawberry Cough überzeugt mit fruchtigem Erdbeeraroma und einem klaren, anregenden High.",
+    "image": "https://leafly-public.imgix.net/strains/photos/strawberry-cough.png"
   },
   {
     "name": "Tangerine Dream",
@@ -253,7 +284,8 @@
     "thc": 20,
     "cbd": 0,
     "effects": "⚡",
-    "beschreibung": ""
+    "beschreibung": "",
+    "image": "https://leafly-public.imgix.net/strains/photos/tangerine-dream.png"
   },
   {
     "name": "Godfather OG",
@@ -261,7 +293,8 @@
     "thc": 18,
     "cbd": 1,
     "effects": "😄",
-    "beschreibung": ""
+    "beschreibung": "",
+    "image": "https://leafly-public.imgix.net/strains/photos/godfather-og.png"
   },
   {
     "name": "Banana Punch",
@@ -269,7 +302,8 @@
     "thc": 22,
     "cbd": 0,
     "effects": "💪",
-    "beschreibung": ""
+    "beschreibung": "",
+    "image": "https://leafly-public.imgix.net/strains/photos/banana-punch.png"
   },
   {
     "name": "Runtz",
@@ -277,7 +311,8 @@
     "thc": 22,
     "cbd": 0,
     "effects": "😁",
-    "beschreibung": ""
+    "beschreibung": "",
+    "image": "https://leafly-public.imgix.net/strains/photos/runtz.png"
   },
   {
     "name": "Gorilla Glue",
@@ -285,7 +320,8 @@
     "thc": 19,
     "cbd": 0,
     "effects": "🌞",
-    "beschreibung": ""
+    "beschreibung": "",
+    "image": "https://leafly-public.imgix.net/strains/photos/gorilla-glue.png"
   },
   {
     "name": "Wedding Cake",
@@ -293,7 +329,8 @@
     "thc": 18,
     "cbd": 2,
     "effects": "🏆",
-    "beschreibung": ""
+    "beschreibung": "",
+    "image": "https://leafly-public.imgix.net/strains/photos/wedding-cake.png"
   },
   {
     "name": "Sunset Sherbet",
@@ -301,7 +338,8 @@
     "thc": 21,
     "cbd": 2,
     "effects": "🍀",
-    "beschreibung": ""
+    "beschreibung": "",
+    "image": "https://leafly-public.imgix.net/strains/photos/sunset-sherbet.png"
   },
   {
     "name": "Fire OG",
@@ -309,7 +347,8 @@
     "thc": 19,
     "cbd": 1,
     "effects": "⚡",
-    "beschreibung": ""
+    "beschreibung": "",
+    "image": "https://leafly-public.imgix.net/strains/photos/fire-og.png"
   },
   {
     "name": "LA Confidential",
@@ -317,7 +356,8 @@
     "thc": 15,
     "cbd": 2,
     "effects": "🧠",
-    "beschreibung": ""
+    "beschreibung": "",
+    "image": "https://leafly-public.imgix.net/strains/photos/la-confidential.png"
   },
   {
     "name": "Alien OG",
@@ -325,7 +365,8 @@
     "thc": 16,
     "cbd": 1,
     "effects": "😄",
-    "beschreibung": ""
+    "beschreibung": "",
+    "image": "https://leafly-public.imgix.net/strains/photos/alien-og.png"
   },
   {
     "name": "White Rhino",
@@ -333,7 +374,8 @@
     "thc": 16,
     "cbd": 3,
     "effects": "🛋️",
-    "beschreibung": ""
+    "beschreibung": "",
+    "image": "https://leafly-public.imgix.net/strains/photos/white-rhino.png"
   },
   {
     "name": "Berry White",
@@ -341,7 +383,8 @@
     "thc": 18,
     "cbd": 1,
     "effects": "🍀",
-    "beschreibung": ""
+    "beschreibung": "",
+    "image": "https://leafly-public.imgix.net/strains/photos/berry-white.png"
   },
   {
     "name": "Kosher Kush",
@@ -349,7 +392,8 @@
     "thc": 19,
     "cbd": 3,
     "effects": "🧠",
-    "beschreibung": ""
+    "beschreibung": "",
+    "image": "https://leafly-public.imgix.net/strains/photos/kosher-kush.png"
   },
   {
     "name": "Blueberry",
@@ -357,7 +401,8 @@
     "thc": 20,
     "cbd": 0,
     "effects": "🍬",
-    "beschreibung": ""
+    "beschreibung": "",
+    "image": "https://leafly-public.imgix.net/strains/photos/blueberry.png"
   },
   {
     "name": "Dutch Treat",
@@ -365,7 +410,8 @@
     "thc": 16,
     "cbd": 3,
     "effects": "🍀",
-    "beschreibung": ""
+    "beschreibung": "",
+    "image": "https://leafly-public.imgix.net/strains/photos/dutch-treat.png"
   },
   {
     "name": "Ice Cream Cake",
@@ -373,7 +419,8 @@
     "thc": 20,
     "cbd": 1,
     "effects": "😃",
-    "beschreibung": ""
+    "beschreibung": "",
+    "image": "https://leafly-public.imgix.net/strains/photos/ice-cream-cake.png"
   },
   {
     "name": "Peyote Cookies",
@@ -381,7 +428,8 @@
     "thc": 19,
     "cbd": 0,
     "effects": "😃",
-    "beschreibung": ""
+    "beschreibung": "",
+    "image": "https://leafly-public.imgix.net/strains/photos/peyote-cookies.png"
   },
   {
     "name": "L.A. Woman",
@@ -389,7 +437,8 @@
     "thc": 17,
     "cbd": 2,
     "effects": "🌈",
-    "beschreibung": ""
+    "beschreibung": "",
+    "image": "https://leafly-public.imgix.net/strains/photos/l-a-woman.png"
   },
   {
     "name": "Platinum OG",
@@ -397,7 +446,8 @@
     "thc": 16,
     "cbd": 1,
     "effects": "😃",
-    "beschreibung": ""
+    "beschreibung": "",
+    "image": "https://leafly-public.imgix.net/strains/photos/platinum-og.png"
   },
   {
     "name": "Death Star",
@@ -405,7 +455,8 @@
     "thc": 16,
     "cbd": 0,
     "effects": "😌",
-    "beschreibung": ""
+    "beschreibung": "",
+    "image": "https://leafly-public.imgix.net/strains/photos/death-star.png"
   },
   {
     "name": "Blackberry Kush",
@@ -413,7 +464,8 @@
     "thc": 18,
     "cbd": 0,
     "effects": "🔥",
-    "beschreibung": ""
+    "beschreibung": "",
+    "image": "https://leafly-public.imgix.net/strains/photos/blackberry-kush.png"
   },
   {
     "name": "Harlequin",
@@ -421,7 +473,8 @@
     "thc": 20,
     "cbd": 0,
     "effects": "😴",
-    "beschreibung": ""
+    "beschreibung": "",
+    "image": "https://leafly-public.imgix.net/strains/photos/harlequin.png"
   },
   {
     "name": "ACDC",
@@ -429,7 +482,8 @@
     "thc": 15,
     "cbd": 1,
     "effects": "🎉",
-    "beschreibung": ""
+    "beschreibung": "",
+    "image": "https://leafly-public.imgix.net/strains/photos/acdc.png"
   },
   {
     "name": "Cherry Diesel",
@@ -437,7 +491,8 @@
     "thc": 16,
     "cbd": 3,
     "effects": "⚡",
-    "beschreibung": ""
+    "beschreibung": "",
+    "image": "https://leafly-public.imgix.net/strains/photos/cherry-diesel.png"
   },
   {
     "name": "Orange Bud",
@@ -445,7 +500,8 @@
     "thc": 15,
     "cbd": 0,
     "effects": "🌞",
-    "beschreibung": ""
+    "beschreibung": "",
+    "image": "https://leafly-public.imgix.net/strains/photos/orange-bud.png"
   },
   {
     "name": "Moby Dick",
@@ -453,7 +509,8 @@
     "thc": 16,
     "cbd": 2,
     "effects": "💪",
-    "beschreibung": ""
+    "beschreibung": "",
+    "image": "https://leafly-public.imgix.net/strains/photos/moby-dick.png"
   },
   {
     "name": "Chemdawg",
@@ -461,7 +518,8 @@
     "thc": 16,
     "cbd": 2,
     "effects": "🍇",
-    "beschreibung": ""
+    "beschreibung": "",
+    "image": "https://leafly-public.imgix.net/strains/photos/chemdawg.png"
   },
   {
     "name": "Papaya",
@@ -469,7 +527,8 @@
     "thc": 17,
     "cbd": 0,
     "effects": "🛋️",
-    "beschreibung": ""
+    "beschreibung": "",
+    "image": "https://leafly-public.imgix.net/strains/photos/papaya.png"
   },
   {
     "name": "Apple Fritter",
@@ -477,7 +536,8 @@
     "thc": 15,
     "cbd": 0,
     "effects": "🔥",
-    "beschreibung": ""
+    "beschreibung": "",
+    "image": "https://leafly-public.imgix.net/strains/photos/apple-fritter.png"
   },
   {
     "name": "Peach Rings",
@@ -485,7 +545,8 @@
     "thc": 19,
     "cbd": 2,
     "effects": "🧠",
-    "beschreibung": ""
+    "beschreibung": "",
+    "image": "https://leafly-public.imgix.net/strains/photos/peach-rings.png"
   },
   {
     "name": "Lemon Skunk",
@@ -493,7 +554,8 @@
     "thc": 17,
     "cbd": 1,
     "effects": "😴",
-    "beschreibung": ""
+    "beschreibung": "",
+    "image": "https://leafly-public.imgix.net/strains/photos/lemon-skunk.png"
   },
   {
     "name": "Master Kush",
@@ -501,7 +563,8 @@
     "thc": 17,
     "cbd": 1,
     "effects": "🍬",
-    "beschreibung": ""
+    "beschreibung": "",
+    "image": "https://leafly-public.imgix.net/strains/photos/master-kush.png"
   },
   {
     "name": "Blueberry Muffin",
@@ -509,7 +572,8 @@
     "thc": 19,
     "cbd": 0,
     "effects": "😎",
-    "beschreibung": ""
+    "beschreibung": "",
+    "image": "https://leafly-public.imgix.net/strains/photos/blueberry-muffin.png"
   },
   {
     "name": "Candyland",
@@ -517,7 +581,8 @@
     "thc": 17,
     "cbd": 0,
     "effects": "🧠",
-    "beschreibung": ""
+    "beschreibung": "",
+    "image": "https://leafly-public.imgix.net/strains/photos/candyland.png"
   },
   {
     "name": "Jilly Bean",
@@ -525,7 +590,8 @@
     "thc": 21,
     "cbd": 2,
     "effects": "🍇",
-    "beschreibung": ""
+    "beschreibung": "",
+    "image": "https://leafly-public.imgix.net/strains/photos/jilly-bean.png"
   },
   {
     "name": "G13",
@@ -533,7 +599,8 @@
     "thc": 19,
     "cbd": 1,
     "effects": "🌞",
-    "beschreibung": ""
+    "beschreibung": "",
+    "image": "https://leafly-public.imgix.net/strains/photos/g13.png"
   },
   {
     "name": "Purple Urkle",
@@ -541,7 +608,8 @@
     "thc": 15,
     "cbd": 3,
     "effects": "💪",
-    "beschreibung": ""
+    "beschreibung": "",
+    "image": "https://leafly-public.imgix.net/strains/photos/purple-urkle.png"
   },
   {
     "name": "Chocolate Thai",
@@ -549,7 +617,8 @@
     "thc": 15,
     "cbd": 2,
     "effects": "😄",
-    "beschreibung": ""
+    "beschreibung": "",
+    "image": "https://leafly-public.imgix.net/strains/photos/chocolate-thai.png"
   },
   {
     "name": "LA Kush Cake",
@@ -557,7 +626,8 @@
     "thc": 22,
     "cbd": 2,
     "effects": "😎",
-    "beschreibung": ""
+    "beschreibung": "",
+    "image": "https://leafly-public.imgix.net/strains/photos/la-kush-cake.png"
   },
   {
     "name": "Dream Queen",
@@ -565,7 +635,8 @@
     "thc": 20,
     "cbd": 1,
     "effects": "😁",
-    "beschreibung": ""
+    "beschreibung": "",
+    "image": "https://leafly-public.imgix.net/strains/photos/dream-queen.png"
   },
   {
     "name": "Agent Orange",
@@ -573,7 +644,8 @@
     "thc": 21,
     "cbd": 0,
     "effects": "😊",
-    "beschreibung": ""
+    "beschreibung": "",
+    "image": "https://leafly-public.imgix.net/strains/photos/agent-orange.png"
   },
   {
     "name": "Blue Cheese",
@@ -581,7 +653,8 @@
     "thc": 18,
     "cbd": 2,
     "effects": "🎉",
-    "beschreibung": ""
+    "beschreibung": "",
+    "image": "https://leafly-public.imgix.net/strains/photos/blue-cheese.png"
   },
   {
     "name": "Super Glue",
@@ -589,7 +662,8 @@
     "thc": 18,
     "cbd": 3,
     "effects": "🔥",
-    "beschreibung": ""
+    "beschreibung": "",
+    "image": "https://leafly-public.imgix.net/strains/photos/super-glue.png"
   },
   {
     "name": "Cookie Dough",
@@ -597,7 +671,8 @@
     "thc": 21,
     "cbd": 0,
     "effects": "🔥",
-    "beschreibung": ""
+    "beschreibung": "",
+    "image": "https://leafly-public.imgix.net/strains/photos/cookie-dough.png"
   },
   {
     "name": "Lamb's Bread",
@@ -605,7 +680,8 @@
     "thc": 21,
     "cbd": 0,
     "effects": "🎉",
-    "beschreibung": ""
+    "beschreibung": "",
+    "image": "https://leafly-public.imgix.net/strains/photos/lamb-s-bread.png"
   },
   {
     "name": "Chernobyl",
@@ -613,7 +689,8 @@
     "thc": 16,
     "cbd": 2,
     "effects": "🎉",
-    "beschreibung": ""
+    "beschreibung": "",
+    "image": "https://leafly-public.imgix.net/strains/photos/chernobyl.png"
   },
   {
     "name": "Grapefruit",
@@ -621,7 +698,8 @@
     "thc": 22,
     "cbd": 0,
     "effects": "😴",
-    "beschreibung": ""
+    "beschreibung": "",
+    "image": "https://leafly-public.imgix.net/strains/photos/grapefruit.png"
   },
   {
     "name": "Sage",
@@ -629,7 +707,8 @@
     "thc": 20,
     "cbd": 2,
     "effects": "🏆",
-    "beschreibung": ""
+    "beschreibung": "",
+    "image": "https://leafly-public.imgix.net/strains/photos/sage.png"
   },
   {
     "name": "Kush Mints",
@@ -637,7 +716,8 @@
     "thc": 21,
     "cbd": 1,
     "effects": "🌞",
-    "beschreibung": ""
+    "beschreibung": "",
+    "image": "https://leafly-public.imgix.net/strains/photos/kush-mints.png"
   },
   {
     "name": "Platinum Girl Scout Cookies",
@@ -645,7 +725,8 @@
     "thc": 16,
     "cbd": 1,
     "effects": "😊",
-    "beschreibung": ""
+    "beschreibung": "",
+    "image": "https://leafly-public.imgix.net/strains/photos/platinum-girl-scout-cookies.png"
   },
   {
     "name": "Ghost Train Haze",
@@ -653,7 +734,8 @@
     "thc": 21,
     "cbd": 2,
     "effects": "😊",
-    "beschreibung": ""
+    "beschreibung": "",
+    "image": "https://leafly-public.imgix.net/strains/photos/ghost-train-haze.png"
   },
   {
     "name": "Sensi Star",
@@ -661,7 +743,8 @@
     "thc": 15,
     "cbd": 0,
     "effects": "🛋️",
-    "beschreibung": ""
+    "beschreibung": "",
+    "image": "https://leafly-public.imgix.net/strains/photos/sensi-star.png"
   },
   {
     "name": "Stardawg",
@@ -669,7 +752,8 @@
     "thc": 16,
     "cbd": 1,
     "effects": "😌",
-    "beschreibung": ""
+    "beschreibung": "",
+    "image": "https://leafly-public.imgix.net/strains/photos/stardawg.png"
   },
   {
     "name": "Hawaiian Punch",
@@ -677,7 +761,8 @@
     "thc": 18,
     "cbd": 2,
     "effects": "🎨",
-    "beschreibung": ""
+    "beschreibung": "",
+    "image": "https://leafly-public.imgix.net/strains/photos/hawaiian-punch.png"
   },
   {
     "name": "Train Haze",
@@ -685,7 +770,8 @@
     "thc": 17,
     "cbd": 0,
     "effects": "🧠",
-    "beschreibung": ""
+    "beschreibung": "",
+    "image": "https://leafly-public.imgix.net/strains/photos/train-haze.png"
   },
   {
     "name": "Cactus Breath",
@@ -693,7 +779,8 @@
     "thc": 16,
     "cbd": 0,
     "effects": "🎨",
-    "beschreibung": ""
+    "beschreibung": "",
+    "image": "https://leafly-public.imgix.net/strains/photos/cactus-breath.png"
   },
   {
     "name": "Monster Cookies",
@@ -701,7 +788,8 @@
     "thc": 16,
     "cbd": 2,
     "effects": "😄",
-    "beschreibung": ""
+    "beschreibung": "",
+    "image": "https://leafly-public.imgix.net/strains/photos/monster-cookies.png"
   },
   {
     "name": "Cherry OG",
@@ -709,7 +797,8 @@
     "thc": 20,
     "cbd": 0,
     "effects": "😄",
-    "beschreibung": ""
+    "beschreibung": "",
+    "image": "https://leafly-public.imgix.net/strains/photos/cherry-og.png"
   },
   {
     "name": "Lemon Pie",
@@ -717,7 +806,8 @@
     "thc": 15,
     "cbd": 0,
     "effects": "😴",
-    "beschreibung": ""
+    "beschreibung": "",
+    "image": "https://leafly-public.imgix.net/strains/photos/lemon-pie.png"
   },
   {
     "name": "Shark Shock",
@@ -725,7 +815,8 @@
     "thc": 19,
     "cbd": 2,
     "effects": "🍇",
-    "beschreibung": ""
+    "beschreibung": "",
+    "image": "https://leafly-public.imgix.net/strains/photos/shark-shock.png"
   },
   {
     "name": "Devil's Lettuce",
@@ -733,7 +824,8 @@
     "thc": 15,
     "cbd": 3,
     "effects": "🏆",
-    "beschreibung": ""
+    "beschreibung": "",
+    "image": "https://leafly-public.imgix.net/strains/photos/devil-s-lettuce.png"
   },
   {
     "name": "Strawberry Banana",
@@ -741,7 +833,8 @@
     "thc": 21,
     "cbd": 2,
     "effects": "🌞",
-    "beschreibung": ""
+    "beschreibung": "",
+    "image": "https://leafly-public.imgix.net/strains/photos/strawberry-banana.png"
   },
   {
     "name": "Platinum Kush",
@@ -749,7 +842,8 @@
     "thc": 18,
     "cbd": 3,
     "effects": "🍀",
-    "beschreibung": ""
+    "beschreibung": "",
+    "image": "https://leafly-public.imgix.net/strains/photos/platinum-kush.png"
   },
   {
     "name": "Timewreck",
@@ -757,7 +851,8 @@
     "thc": 15,
     "cbd": 1,
     "effects": "😄",
-    "beschreibung": ""
+    "beschreibung": "",
+    "image": "https://leafly-public.imgix.net/strains/photos/timewreck.png"
   },
   {
     "name": "Night Nurse",
@@ -765,7 +860,8 @@
     "thc": 20,
     "cbd": 2,
     "effects": "🍇",
-    "beschreibung": ""
+    "beschreibung": "",
+    "image": "https://leafly-public.imgix.net/strains/photos/night-nurse.png"
   },
   {
     "name": "Critical Kush",
@@ -773,7 +869,8 @@
     "thc": 16,
     "cbd": 2,
     "effects": "😎",
-    "beschreibung": ""
+    "beschreibung": "",
+    "image": "https://leafly-public.imgix.net/strains/photos/critical-kush.png"
   },
   {
     "name": "Purple Punch",
@@ -781,7 +878,8 @@
     "thc": 15,
     "cbd": 2,
     "effects": "🎉",
-    "beschreibung": ""
+    "beschreibung": "",
+    "image": "https://leafly-public.imgix.net/strains/photos/purple-punch.png"
   },
   {
     "name": "SFV OG",
@@ -789,7 +887,8 @@
     "thc": 19,
     "cbd": 2,
     "effects": "🔥",
-    "beschreibung": ""
+    "beschreibung": "",
+    "image": "https://leafly-public.imgix.net/strains/photos/sfv-og.png"
   },
   {
     "name": "Dawgwalker",
@@ -797,6 +896,7 @@
     "thc": 17,
     "cbd": 2,
     "effects": "😌",
-    "beschreibung": ""
+    "beschreibung": "",
+    "image": "https://leafly-public.imgix.net/strains/photos/dawgwalker.png"
   }
 ]

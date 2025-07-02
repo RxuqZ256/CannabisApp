@@ -87,8 +87,25 @@
         return;
       }
       const description = strain.beschreibung || 'Beschreibung folgt.';
-      container.innerHTML = `
-        <img src="https://via.placeholder.com/400x200.png?text=${encodeURIComponent(strain.name)}" alt="${strain.name}" class="w-full h-40 object-cover rounded-xl mb-4">
+      const img = document.createElement('img');
+      img.src = strain.image;
+      img.alt = strain.name;
+      img.className = 'w-full h-40 object-cover rounded-xl mb-4';
+
+      const placeholder = document.createElement('div');
+      placeholder.textContent = 'Bild folgt';
+      placeholder.className = 'w-full h-40 bg-gray-100 text-gray-400 flex items-center justify-center rounded-xl mb-4';
+      placeholder.style.display = 'none';
+
+      img.onerror = () => {
+        img.style.display = 'none';
+        placeholder.style.display = 'flex';
+      };
+
+      container.innerHTML = '';
+      container.appendChild(img);
+      container.appendChild(placeholder);
+      container.innerHTML += `
         <h2 class="text-2xl font-bold mb-2">${strain.name}</h2>
         <span class="inline-block bg-emerald-100 text-emerald-700 px-2 py-1 rounded-full text-sm">${strain.type}</span>
         <div class="mt-2 text-sm">THC ${strain.thc} % · CBD ${strain.cbd} %</div>
