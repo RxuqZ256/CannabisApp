@@ -69,34 +69,31 @@
   </nav>
 
   <script>
-    const strains = [
-      { id: 'amnesia-haze', name: 'Amnesia Haze', type: 'Sativa', thc: 22, cbd: 1, emoji: ['🎨','😊'], beschreibung: 'Amnesia Haze ist eine sativadominierte Sorte mit einem zitrusartigen Aroma. Sie wirkt anregend und stimmungsaufhellend – perfekt für kreative Momente.' },
-      { id: 'blue-dream', name: 'Blue Dream', type: 'Sativa', thc: 19, cbd: 2, emoji: ['💡','😌'], beschreibung: 'Blue Dream kombiniert entspannende Körperwirkung mit einer kreativen, klaren Euphorie. Das süßlich-beerige Aroma macht sie zu einem Klassiker.' },
-      { id: 'og-kush', name: 'OG Kush', type: 'Indica', thc: 21, cbd: 1, emoji: ['🛋️','😴'], beschreibung: 'OG Kush besticht durch erdige und leicht zitronige Noten. Sie sorgt für eine tiefe, beruhigende Entspannung und ist daher am Abend beliebt.' },
-      { id: 'gelato', name: 'Gelato', type: 'Hybrid', thc: 20, cbd: 1, emoji: ['😋','🎨'], beschreibung: 'Gelato verströmt ein süßes, cremiges Aroma und bietet ein ausgeglichenes High zwischen Euphorie und Gelassenheit.' },
-      { id: 'northern-lights', name: 'Northern Lights', type: 'Indica', thc: 18, cbd: 2, emoji: ['🌙','🛌'], beschreibung: 'Northern Lights besitzt ein mildes, süßes Geschmacksprofil und fördert eine wohltuende körperliche Entspannung.' },
-      { id: 'sour-diesel', name: 'Sour Diesel', type: 'Sativa', thc: 20, cbd: 1, emoji: ['⚡','🧠'], beschreibung: 'Sour Diesel riecht markant nach Diesel und Zitrus. Die Wirkung ist belebend und steigert den Fokus.' },
-      { id: 'pineapple-express', name: 'Pineapple Express', type: 'Hybrid', thc: 19, cbd: 1, emoji: ['🍍','😃'], beschreibung: 'Pineapple Express versprüht tropischen Ananas-Duft und sorgt für lang anhaltende Energie sowie gute Laune.' },
-      { id: 'white-widow', name: 'White Widow', type: 'Hybrid', thc: 20, cbd: 1, emoji: ['❄️','😎'], beschreibung: 'White Widow hat einen würzig-blumigen Geruch. Sie liefert ein klares, kraftvolles High und leichte Entspannung.' },
-      { id: 'ak-47', name: 'AK-47', type: 'Hybrid', thc: 19, cbd: 1, emoji: ['🎯','😊'], beschreibung: 'AK-47 verbindet süße mit erdigen Noten und erzeugt eine langanhaltende, motivierende Wirkung.' },
-      { id: 'girl-scout-cookies', name: 'Girl Scout Cookies', type: 'Hybrid', thc: 22, cbd: 1, emoji: ['🍪','😁'], beschreibung: 'Girl Scout Cookies schmeckt süß nach Gebäck mit einem Hauch Minze. Der Effekt ist stark euphorisch und zugleich entspannend.' }
-    ];
+    function slugify(name) {
+      return name.toLowerCase()
+        .replace(/\s+/g, '-')
+        .replace(/[^a-z0-9-]/g, '');
+    }
 
-    function loadStrain() {
+    async function loadStrain() {
+      const resp = await fetch('strains.json');
+      const strains = await resp.json();
       const params = new URLSearchParams(window.location.search);
       const id = params.get('id');
+      const strain = strains.find(s => slugify(s.name) === id);
       const container = document.getElementById('strain-detail');
-      const strain = strains.find(s => s.id === id);
       if (!strain) {
         container.innerHTML = '<p class="text-center mt-4">Sorte nicht gefunden.</p>';
         return;
       }
+      const description = strain.beschreibung || 'Beschreibung folgt.';
       container.innerHTML = `
+        <img src="https://via.placeholder.com/400x200.png?text=${encodeURIComponent(strain.name)}" alt="${strain.name}" class="w-full h-40 object-cover rounded-xl mb-4">
         <h2 class="text-2xl font-bold mb-2">${strain.name}</h2>
         <span class="inline-block bg-emerald-100 text-emerald-700 px-2 py-1 rounded-full text-sm">${strain.type}</span>
         <div class="mt-2 text-sm">THC ${strain.thc} % · CBD ${strain.cbd} %</div>
-        <div class="text-2xl mt-2">${strain.emoji.join('')}</div>
-        <p id="beschreibung" class="mt-4 text-gray-600 text-sm">${strain.beschreibung}</p>
+        <div class="text-2xl mt-2">${strain.effects}</div>
+        <p id="beschreibung" class="mt-4 text-gray-600 text-sm">${description}</p>
       `;
     }
     document.addEventListener('DOMContentLoaded', loadStrain);
