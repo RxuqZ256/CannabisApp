@@ -88,14 +88,20 @@
         a.className = 'block bg-white rounded-xl shadow overflow-hidden';
 
         const img = document.createElement('img');
-        img.src = s.image;
-        img.alt = s.name;
         img.className = 'w-full h-40 object-cover rounded-t-md';
+        img.alt = s.name;
 
         const placeholder = document.createElement('div');
         placeholder.textContent = 'Bild folgt';
         placeholder.className = 'w-full h-40 bg-gray-100 text-gray-400 flex items-center justify-center rounded-t-md';
         placeholder.style.display = 'none';
+
+        if (s.image) {
+          img.src = s.image;
+        } else {
+          img.style.display = 'none';
+          placeholder.style.display = 'flex';
+        }
 
         img.onerror = () => {
           img.style.display = 'none';
