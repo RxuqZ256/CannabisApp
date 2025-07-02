@@ -86,13 +86,36 @@
         const a = document.createElement('a');
         a.href = `strain.html?id=${slug}`;
         a.className = 'block bg-white rounded-xl shadow overflow-hidden';
-        a.innerHTML = `
-          <div class="h-24 bg-gray-100 flex items-center justify-center">Bild</div>
-          <div class="p-4">
-            <span class="text-sm bg-emerald-100 text-emerald-700 px-2 py-1 rounded-full">${s.type}</span>
-            <h2 class="mt-2 font-bold">${s.name}</h2>
-            <div class="mt-1">${s.effects}</div>
-          </div>`;
+
+        const img = document.createElement('img');
+        img.src = s.image;
+        img.alt = s.name;
+        img.className = 'w-full h-40 object-cover rounded-t-md';
+
+        const placeholder = document.createElement('div');
+        placeholder.textContent = 'Bild folgt';
+        placeholder.className = 'w-full h-40 bg-gray-100 text-gray-400 flex items-center justify-center rounded-t-md';
+        placeholder.style.display = 'none';
+
+        img.onerror = () => {
+          img.style.display = 'none';
+          placeholder.style.display = 'flex';
+        };
+
+        const imgWrapper = document.createElement('div');
+        imgWrapper.appendChild(img);
+        imgWrapper.appendChild(placeholder);
+
+        const content = document.createElement('div');
+        content.className = 'p-4';
+        content.innerHTML = `
+          <span class="text-sm bg-emerald-100 text-emerald-700 px-2 py-1 rounded-full">${s.type}</span>
+          <h2 class="mt-2 font-bold">${s.name}</h2>
+          <div class="mt-1">${s.effects}</div>
+        `;
+
+        a.appendChild(imgWrapper);
+        a.appendChild(content);
         container.appendChild(a);
       });
     }
