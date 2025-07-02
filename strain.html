@@ -88,14 +88,20 @@
       }
       const description = strain.beschreibung || 'Beschreibung folgt.';
       const img = document.createElement('img');
-      img.src = strain.image;
-      img.alt = strain.name;
       img.className = 'w-full h-40 object-cover rounded-xl mb-4';
+      img.alt = strain.name;
 
       const placeholder = document.createElement('div');
       placeholder.textContent = 'Bild folgt';
       placeholder.className = 'w-full h-40 bg-gray-100 text-gray-400 flex items-center justify-center rounded-xl mb-4';
       placeholder.style.display = 'none';
+
+      if (strain.image) {
+        img.src = strain.image;
+      } else {
+        img.style.display = 'none';
+        placeholder.style.display = 'flex';
+      }
 
       img.onerror = () => {
         img.style.display = 'none';
