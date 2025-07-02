@@ -69,28 +69,34 @@
   </nav>
 
   <script>
-    async function loadStrain() {
+    const strains = [
+      { id: 'amnesia-haze', name: 'Amnesia Haze', type: 'Sativa', thc: 22, cbd: 1, emoji: ['🎨','😊'], beschreibung: 'Amnesia Haze ist eine Sativa-dominierte Sorte mit frischem Zitrusaroma. Sie sorgt für einen klaren Kopf und hebt die Stimmung.' },
+      { id: 'blue-dream', name: 'Blue Dream', type: 'Sativa', thc: 19, cbd: 2, emoji: ['💡','😌'], beschreibung: 'Blue Dream kombiniert entspannende Körperwirkung mit kreativer Energie. Das beerige Aroma macht sie besonders beliebt.' },
+      { id: 'og-kush', name: 'OG Kush', type: 'Indica', thc: 21, cbd: 1, emoji: ['🛋️','😴'], beschreibung: 'OG Kush verströmt ein erdiges, leicht zitroniges Bouquet. Die starke Indica-Wirkung sorgt für tiefe Entspannung.' },
+      { id: 'gelato', name: 'Gelato', type: 'Hybrid', thc: 20, cbd: 1, emoji: ['😋','🎨'], beschreibung: 'Gelato besticht durch ihr süßes, cremiges Aroma. Sie wirkt euphorisierend und beruhigt zugleich.' },
+      { id: 'northern-lights', name: 'Northern Lights', type: 'Indica', thc: 18, cbd: 2, emoji: ['🌙','🛌'], beschreibung: 'Northern Lights besitzt ein sanftes, süßes Geschmacksprofil. Die Indica-Effekte fördern tiefe körperliche Entspannung.' },
+      { id: 'sour-diesel', name: 'Sour Diesel', type: 'Sativa', thc: 20, cbd: 1, emoji: ['⚡','🧠'], beschreibung: 'Sour Diesel duftet stark nach Diesel und Zitrus. Die anregende Wirkung steigert Fokus und Kreativität.' },
+      { id: 'pineapple-express', name: 'Pineapple Express', type: 'Hybrid', thc: 19, cbd: 1, emoji: ['🍍','😃'], beschreibung: 'Pineapple Express verströmt tropischen Ananas-Duft. Sie sorgt für anhaltende Energie und gute Laune.' },
+      { id: 'white-widow', name: 'White Widow', type: 'Hybrid', thc: 20, cbd: 1, emoji: ['❄️','😎'], beschreibung: 'White Widow hat ein würziges, blumiges Aroma. Ihr ausgewogenes High bringt Klarheit und leichte körperliche Entspannung.' },
+      { id: 'ak-47', name: 'AK-47', type: 'Hybrid', thc: 19, cbd: 1, emoji: ['🎯','😊'], beschreibung: 'AK-47 kombiniert süße und erdige Noten. Die langanhaltende Wirkung ist motivierend und zugleich beruhigend.' },
+      { id: 'girl-scout-cookies', name: 'Girl Scout Cookies', type: 'Hybrid', thc: 22, cbd: 1, emoji: ['🍪','😁'], beschreibung: 'Girl Scout Cookies schmeckt süß nach Gebäck mit einem Hauch Minze. Der Hybrid-Effekt ist euphorisch und entspannend.' }
+    ];
+
+    function loadStrain() {
       const params = new URLSearchParams(window.location.search);
       const id = params.get('id');
-      const resp = await fetch('strains.json');
-      const data = await resp.json();
-      const slug = s => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-      const strain = data.find(x => slug(x.name) === id);
       const container = document.getElementById('strain-detail');
+      const strain = strains.find(s => s.id === id);
       if (!strain) {
         container.innerHTML = '<p class="text-center mt-4">Sorte nicht gefunden.</p>';
         return;
       }
-      const image = strain.image
-        ? `<img src="${strain.image}" alt="${strain.name}" class="w-full h-40 object-cover rounded-lg mb-4">`
-        : '<div class="h-40 bg-gray-100 flex items-center justify-center rounded-lg mb-4">Bild folgt</div>';
       container.innerHTML = `
-        ${image}
         <h2 class="text-2xl font-bold mb-2">${strain.name}</h2>
         <span class="inline-block bg-emerald-100 text-emerald-700 px-2 py-1 rounded-full text-sm">${strain.type}</span>
         <div class="mt-2 text-sm">THC ${strain.thc} % · CBD ${strain.cbd} %</div>
-        <div class="text-2xl mt-2">${strain.effects}</div>
-        <p class="mt-2 text-gray-600">${strain.beschreibung}</p>
+        <div class="text-2xl mt-2">${strain.emoji.join('')}</div>
+        <p id="beschreibung" class="mt-4 text-gray-600 text-sm">${strain.beschreibung}</p>
       `;
     }
     document.addEventListener('DOMContentLoaded', loadStrain);
