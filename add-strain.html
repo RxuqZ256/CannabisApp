@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Neue Sorte anlegen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+  <script>
+    const SUPABASE_URL = 'https://rnotahndlswjmwqxnjmx.supabase.co';
+    const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJub3RhaG5kbHN3am13cXhuam14Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTE0NTYwNTksImV4cCI6MjA2NzAzMjA1OX0.qd-pXkRXMRp80yRvopIEvK0wDbfCA1iKBzZyVgDv4_A';
+    const { createClient } = supabase;
+    const supabaseClient = createClient(SUPABASE_URL, SUPABASE_KEY);
+
+    async function handleSubmit(event) {
+      event.preventDefault();
+      const form = event.target;
+      const name = form.name.value.trim();
+      const type = form.type.value.trim();
+      const thc = parseFloat(form.thc.value) || null;
+      const cbd = parseFloat(form.cbd.value) || null;
+      const effects = form.effects.value.trim();
+      const beschreibung = form.beschreibung.value.trim();
+      const file = form.image.files[0];
+      let imageUrl = '';
+      if (file) {
+        const fileExt = file.name.split('.').pop();
+        const fileName = `${Date.now()}.${fileExt}`;
+        const { error: uploadError } = await supabaseClient
+          .storage.from('strain-images')
+          .upload(fileName, file);
+        if (uploadError) {
+          alert('Fehler beim Hochladen des Bildes: ' + uploadError.message);
+          return;
+        }
+        imageUrl = supabaseClient
+          .storage.from('strain-images')
+          .getPublicUrl(fileName).data.publicUrl;
+      }
+
+      const { error: insertError } = await supabaseClient
+        .from('strains')
+        .insert({ name, type, thc, cbd, effects, beschreibung, image: imageUrl });
+
+      if (insertError) {
+        alert('Fehler beim Speichern: ' + insertError.message);
+      } else {
+        alert('Sorte erfolgreich gespeichert!');
+        form.reset();
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans text-lg font-semibold tracking-wide flex flex-col min-h-screen">
+  <header class="bg-emerald-700 text-white py-4">
+    <div class="max-w-md mx-auto text-center">
+      <h1 class="text-2xl font-bold">Neue Sorte</h1>
+    </div>
+  </header>
+
+  <main class="flex-1 max-w-md mx-auto p-4 pb-24">
+    <form id="strain-form" class="space-y-4 bg-white rounded-xl shadow p-4" onsubmit="handleSubmit(event)">
+      <div>
+        <label for="name" class="block mb-1">Name</label>
+        <input type="text" id="name" name="name" required class="w-full border rounded-lg p-2">
+      </div>
+      <div>
+        <label for="type" class="block mb-1">Typ</label>
+        <input type="text" id="type" name="type" required class="w-full border rounded-lg p-2">
+      </div>
+      <div>
+        <label for="thc" class="block mb-1">THC (%)</label>
+        <input type="number" id="thc" name="thc" min="0" max="30" step="0.1" required class="w-full border rounded-lg p-2">
+      </div>
+      <div>
+        <label for="cbd" class="block mb-1">CBD (%)</label>
+        <input type="number" id="cbd" name="cbd" min="0" max="30" step="0.1" required class="w-full border rounded-lg p-2">
+      </div>
+      <div>
+        <label for="effects" class="block mb-1">Effekte</label>
+        <input type="text" id="effects" name="effects" class="w-full border rounded-lg p-2">
+      </div>
+      <div>
+        <label for="beschreibung" class="block mb-1">Beschreibung</label>
+        <textarea id="beschreibung" name="beschreibung" rows="3" class="w-full border rounded-lg p-2"></textarea>
+      </div>
+      <div>
+        <label for="image" class="block mb-1">Bild</label>
+        <input type="file" id="image" name="image" accept="image/*" class="w-full">
+      </div>
+      <button type="submit" class="w-full bg-emerald-700 text-white py-2 rounded-lg">Speichern</button>
+    </form>
+  </main>
+
+  <nav class="fixed bottom-0 left-0 right-0 bg-white border-t shadow-lg pb-[env(safe-area-inset-bottom)]">
+    <div class="max-w-md mx-auto px-4">
+      <ul class="flex justify-between items-center gap-x-2 py-2 text-xs">
+        <li>
+          <a href="strains.html" class="flex flex-col items-center text-gray-700 hover:text-emerald-700">
+            <img src="icons/strains.svg" alt="Strains" class="w-6 h-6 mb-0.5">
+            <span>Strains</span>
+          </a>
+        </li>
+        <li>
+          <a href="finder.html" class="flex flex-col items-center text-gray-700 hover:text-emerald-700">
+            <img src="icons/finder.svg" alt="Finder" class="w-6 h-6 mb-0.5">
+            <span>Finder</span>
+          </a>
+        </li>
+        <li>
+          <a href="news.html" class="flex flex-col items-center text-gray-700 hover:text-emerald-700">
+            <img src="icons/news.svg" alt="News" class="w-6 h-6 mb-0.5">
+            <span>News</span>
+          </a>
+        </li>
+        <li>
+          <a href="safe-use.html" class="flex flex-col items-center text-gray-700 hover:text-emerald-700">
+            <img src="icons/safe.svg" alt="Safer Use" class="w-6 h-6 mb-0.5">
+            <span>Safer Use</span>
+          </a>
+        </li>
+        <li>
+          <a href="map.html" class="flex flex-col items-center text-gray-700 hover:text-emerald-700">
+            <img src="icons/map.svg" alt="Map" class="w-6 h-6 mb-0.5">
+            <span>Map</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</body>
+</html>
