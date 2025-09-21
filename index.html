@@ -18,6 +18,9 @@
           colors: {
             safe: '#16F79A',
             danger: '#FF4F6D'
+          },
+          boxShadow: {
+            glass: '0 40px 120px -60px rgba(33, 173, 255, 0.45)'
           }
         }
       }
@@ -29,25 +32,29 @@
     <div class="absolute inset-0 bg-gradient-to-br from-[#040012] via-[#060220] to-[#001A2E]"></div>
     <div class="absolute -top-40 -left-24 h-96 w-96 rounded-full bg-[#22B5FF]/10 blur-3xl"></div>
     <div class="absolute -bottom-32 -right-28 h-96 w-96 rounded-full bg-[#17F7AA]/10 blur-3xl"></div>
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(47,125,255,0.08),_transparent_55%)]"></div>
 
     <div class="relative mx-auto flex min-h-screen w-full max-w-6xl flex-col px-6 py-10">
       <header class="flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
         <div>
           <p class="uppercase tracking-[0.5em] text-xs text-white/50">Risk Control Center</p>
           <h1 class="mt-3 text-4xl font-semibold text-white">Kontrollzentrum</h1>
-          <p class="mt-2 max-w-xl text-base text-white/60">Behalte deine Handels-Bots, Live-Signale und die aktuelle Risikolage im Blick. Passe Limite und Hedging mit wenigen Klicks an.</p>
+          <p class="mt-2 max-w-xl text-base text-white/60">Behalte deine Handels-Bots, Live-Signale und die aktuelle Risikolage im Blick. Passe Limits und Hedging mit wenigen Klicks an.</p>
         </div>
         <div class="flex items-center gap-3 self-start lg:self-end">
           <button class="h-11 w-11 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl text-lg">🔔</button>
           <button class="h-11 w-11 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl text-lg">⚙️</button>
+          <a href="start.html" class="flex h-11 w-28 items-center justify-center gap-2 rounded-2xl border border-white/10 bg-white/10 text-sm font-semibold text-white/80 transition hover:bg-white/15">
+            <span>Onboarding</span>
+          </a>
           <button class="h-11 w-11 rounded-2xl border border-white/10 bg-gradient-to-br from-[#2AF7FF]/80 to-[#3CFF6E]/80 text-[#021222] font-semibold">JD</button>
         </div>
       </header>
 
-      <main class="mt-12 grid flex-1 gap-8 lg:grid-cols-[1.7fr_1fr]">
+      <main class="mt-12 grid flex-1 gap-8 lg:grid-cols-[1.75fr_1fr]">
         <section class="space-y-8">
           <div class="grid gap-6 md:grid-cols-2">
-            <article class="rounded-3xl border border-white/10 bg-white/5/20 bg-clip-padding p-6 shadow-[0_25px_80px_-60px_rgba(22,247,154,0.8)]">
+            <article class="rounded-3xl border border-white/10 bg-white/5/20 bg-clip-padding p-6 shadow-[0_25px_80px_-60px_rgba(22,247,154,0.6)] backdrop-blur-2xl">
               <div class="flex items-center justify-between">
                 <div class="flex items-center gap-3">
                   <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#093726]/70 text-2xl">🛡️</span>
@@ -61,7 +68,7 @@
               <p class="mt-4 text-sm text-white/60">Alle Limits werden eingehalten. Offene Positionen verhalten sich im Rahmen deiner Risikostrategie.</p>
             </article>
 
-            <article class="rounded-3xl border border-white/10 bg-white/5/20 bg-clip-padding p-6 shadow-[0_25px_80px_-60px_rgba(255,79,109,0.8)]">
+            <article class="rounded-3xl border border-white/10 bg-white/5/20 bg-clip-padding p-6 shadow-[0_25px_80px_-60px_rgba(255,79,109,0.65)] backdrop-blur-2xl">
               <div class="flex items-center justify-between">
                 <div class="flex items-center gap-3">
                   <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#3B0E1B]/70 text-2xl">🚨</span>
@@ -76,13 +83,16 @@
             </article>
           </div>
 
-          <section class="rounded-3xl border border-white/10 bg-white/5/10 bg-clip-padding p-6">
-            <div class="flex items-center justify-between">
+          <section class="rounded-3xl border border-white/10 bg-white/5/10 bg-clip-padding p-6 backdrop-blur-2xl">
+            <div class="flex flex-wrap items-center gap-4">
               <div>
                 <h3 class="text-lg font-semibold">Exposure by Symbol</h3>
                 <p class="text-sm text-white/50">Verteilung aller aktiven Bots nach Underlying</p>
               </div>
-              <button class="rounded-xl border border-white/10 bg-white/5 px-4 py-2 text-xs uppercase tracking-[0.2em] text-white/70">Anpassen</button>
+              <div class="ml-auto flex gap-2">
+                <button class="rounded-xl border border-white/10 bg-white/5 px-4 py-2 text-xs uppercase tracking-[0.2em] text-white/70">Anpassen</button>
+                <a href="performance.html" class="rounded-xl border border-white/10 bg-white/5 px-4 py-2 text-xs uppercase tracking-[0.2em] text-white/70">Performance</a>
+              </div>
             </div>
             <div class="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
               <div class="flex flex-col gap-2 rounded-2xl border border-white/10 bg-white/5 p-4 text-center">
@@ -118,15 +128,15 @@
             </div>
           </section>
 
-          <section class="rounded-3xl border border-white/10 bg-white/5/10 bg-clip-padding p-6">
+          <section class="rounded-3xl border border-white/10 bg-white/5/10 bg-clip-padding p-6 backdrop-blur-2xl">
             <div class="flex flex-wrap items-center gap-4">
               <h3 class="text-lg font-semibold">Open Signals</h3>
-              <div class="flex gap-4 text-sm text-white/50">
+              <div class="flex flex-wrap gap-4 text-sm text-white/50">
                 <span>Limits 1.2%</span>
                 <span>Max Drawdown € 10,5k</span>
                 <span>Daily Loss € 4,5k</span>
               </div>
-              <button class="ml-auto rounded-xl border border-white/10 bg-white/5 px-4 py-2 text-xs uppercase tracking-[0.2em] text-white/70">Logs</button>
+              <a href="chat-stats.html" class="ml-auto rounded-xl border border-white/10 bg-white/5 px-4 py-2 text-xs uppercase tracking-[0.2em] text-white/70">Chat Stats</a>
             </div>
             <div class="mt-6 space-y-4">
               <article class="rounded-2xl border border-white/10 bg-white/5 p-4">
@@ -254,7 +264,7 @@
         </section>
 
         <aside class="space-y-8">
-          <section class="rounded-3xl border border-white/10 bg-white/5/10 bg-clip-padding p-6 text-center shadow-[0_25px_80px_-60px_rgba(34,181,255,0.8)]">
+          <section class="rounded-3xl border border-white/10 bg-white/5/10 bg-clip-padding p-6 text-center shadow-[0_25px_80px_-60px_rgba(34,181,255,0.8)] backdrop-blur-2xl">
             <p class="text-sm uppercase tracking-[0.3em] text-white/60">Open Signals</p>
             <div class="mt-4 flex flex-col items-center justify-center gap-6">
               <div class="relative flex h-40 w-40 items-center justify-center">
@@ -283,7 +293,7 @@
             </div>
           </section>
 
-          <section class="rounded-3xl border border-white/10 bg-white/5/10 bg-clip-padding p-6">
+          <section class="rounded-3xl border border-white/10 bg-white/5/10 bg-clip-padding p-6 backdrop-blur-2xl">
             <h3 class="text-lg font-semibold">Session Limits</h3>
             <p class="mt-2 text-sm text-white/60">Setze präventive Limits für automatische Notabschaltungen, sobald dein Verlust oder die Latenz zu groß werden.</p>
             <div class="mt-6 space-y-4">
@@ -292,7 +302,7 @@
                   <p class="text-xs uppercase tracking-[0.2em] text-white/50">Max Drawdown</p>
                   <p class="mt-1 text-lg font-semibold">€ 12,5k</p>
                 </div>
-                <button class="rounded-xl border border-white/10 bg-gradient-to-r from-[#2AF7FF] to-[#3CFF6E] px-4 py-2 text-xs font-semibold text-[#021222]">Anpassen</button>
+                <a href="automation.html" class="rounded-xl border border-white/10 bg-gradient-to-r from-[#2AF7FF] to-[#3CFF6E] px-4 py-2 text-xs font-semibold text-[#021222]">Anpassen</a>
               </div>
               <div class="flex items-center justify-between rounded-2xl border border-white/10 bg-white/5 p-4">
                 <div>
@@ -311,7 +321,7 @@
             </div>
           </section>
 
-          <section class="rounded-3xl border border-white/10 bg-white/5/10 bg-clip-padding p-6">
+          <section class="rounded-3xl border border-white/10 bg-white/5/10 bg-clip-padding p-6 backdrop-blur-2xl">
             <h3 class="text-lg font-semibold">Compliance &amp; Security</h3>
             <div class="mt-4 space-y-4 text-sm text-white/60">
               <div class="flex items-start gap-3 rounded-2xl border border-white/10 bg-white/5 p-4">
@@ -335,9 +345,11 @@
 
       <footer class="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/10 py-6 text-sm text-white/40 sm:flex-row">
         <span>© 2024 CannabisApp · Trading Automation Suite</span>
-        <div class="flex items-center gap-3">
+        <div class="flex flex-wrap items-center gap-3">
           <a class="rounded-xl border border-white/10 bg-white/5 px-3 py-1.5" href="start.html">Onboarding</a>
-          <a class="rounded-xl border border-white/10 bg-white/5 px-3 py-1.5" href="homescreen.html">Classic UI</a>
+          <a class="rounded-xl border border-white/10 bg-white/5 px-3 py-1.5" href="performance.html">Performance</a>
+          <a class="rounded-xl border border-white/10 bg-white/5 px-3 py-1.5" href="chat-stats.html">Chat Stats</a>
+          <a class="rounded-xl border border-white/10 bg-white/5 px-3 py-1.5" href="automation.html">Automationen</a>
         </div>
       </footer>
     </div>

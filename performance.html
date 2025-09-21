@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trading Bot Performance · CannabisApp</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Outfit', 'sans-serif']
+          },
+          colors: {
+            primary: '#2AF7FF',
+            accent: '#3CFF6E'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="min-h-screen bg-[#050010] font-sans text-white">
+  <div class="relative min-h-screen overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-[#040015] via-[#06062C] to-[#02162F]"></div>
+    <div class="absolute -top-32 -left-28 h-96 w-96 rounded-full bg-[#2C7DFF]/10 blur-3xl"></div>
+    <div class="absolute -bottom-40 -right-24 h-96 w-96 rounded-full bg-[#25F4C7]/15 blur-3xl"></div>
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(44,143,255,0.08),_transparent_60%)]"></div>
+
+    <div class="relative mx-auto flex min-h-screen w-full max-w-6xl flex-col px-6 py-10">
+      <header class="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
+        <div>
+          <p class="text-xs uppercase tracking-[0.5em] text-white/50">Trading Bot Performance</p>
+          <h1 class="mt-3 text-4xl font-semibold">Performance Dashboard</h1>
+        </div>
+        <div class="flex flex-wrap items-center gap-3 text-sm text-white/70">
+          <a href="index.html" class="rounded-2xl border border-white/10 bg-white/5 px-4 py-2 transition hover:bg-white/10">Zurück zum Center</a>
+          <button class="flex items-center gap-2 rounded-2xl border border-white/10 bg-white/5 px-4 py-2">
+            <span>Jan 1, 2024 – Apr 25, 2024</span>
+            <span class="text-lg">📅</span>
+          </button>
+        </div>
+      </header>
+
+      <main class="mt-10 grid flex-1 gap-8 lg:grid-cols-[1.6fr_1fr]">
+        <section class="rounded-[32px] border border-white/10 bg-white/5/10 bg-clip-padding p-6 shadow-[0_40px_120px_-60px_rgba(33,173,255,0.45)] backdrop-blur-2xl">
+          <div class="flex flex-wrap items-center gap-4">
+            <h2 class="text-lg font-semibold">Equity Curve</h2>
+            <div class="ml-auto flex items-center gap-2 rounded-2xl border border-white/10 bg-white/5 px-3 py-2 text-xs uppercase tracking-[0.25em] text-white/60">
+              <span>Live</span>
+              <span class="inline-flex h-2 w-2 rounded-full bg-primary"></span>
+            </div>
+          </div>
+
+          <div class="relative mt-6 h-72 overflow-hidden rounded-3xl border border-white/5 bg-gradient-to-b from-white/10 to-transparent">
+            <div class="absolute inset-0 bg-[radial-gradient(circle_at_bottom,_rgba(60,255,110,0.15),_transparent_55%)]"></div>
+            <div class="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.04)_1px,transparent_1px)], bg-[length:80px_1px]"></div>
+            <div class="absolute inset-0 bg-[linear-gradient(to_top,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:1px_60px]"></div>
+            <svg viewBox="0 0 800 320" class="relative h-full w-full">
+              <defs>
+                <linearGradient id="lineGradient" x1="0%" x2="100%" y1="0%" y2="0%">
+                  <stop offset="0%" stop-color="#2AF7FF" />
+                  <stop offset="100%" stop-color="#3CFF6E" />
+                </linearGradient>
+              </defs>
+              <path d="M0 260 Q120 220 180 230 T320 170 T460 190 T640 110 T800 80" stroke="url(#lineGradient)" stroke-width="6" fill="none" stroke-linecap="round"></path>
+              <path d="M0 320 L0 260 Q120 220 180 230 T320 170 T460 190 T640 110 T800 80 L800 320 Z" fill="url(#lineGradient)" opacity="0.15"></path>
+            </svg>
+            <div class="absolute bottom-4 right-4 rounded-2xl border border-white/10 bg-black/40 px-3 py-2 text-xs text-white/70 backdrop-blur">
+              Letztes Update: 08:45 Uhr
+            </div>
+          </div>
+
+          <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+              <p class="text-xs uppercase tracking-[0.3em] text-white/50">Sharpe</p>
+              <p class="mt-2 text-3xl font-semibold">1,45</p>
+            </div>
+            <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+              <p class="text-xs uppercase tracking-[0.3em] text-white/50">Sortino</p>
+              <p class="mt-2 text-3xl font-semibold">2,30</p>
+            </div>
+            <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+              <p class="text-xs uppercase tracking-[0.3em] text-white/50">Max Drawdown</p>
+              <p class="mt-2 text-3xl font-semibold text-danger">-13,7%</p>
+            </div>
+            <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+              <p class="text-xs uppercase tracking-[0.3em] text-white/50">Win Rate</p>
+              <p class="mt-2 text-3xl font-semibold text-accent">67,5%</p>
+            </div>
+          </div>
+        </section>
+
+        <aside class="space-y-6">
+          <section class="rounded-[32px] border border-white/10 bg-white/5/10 bg-clip-padding p-6 backdrop-blur-2xl">
+            <h3 class="text-lg font-semibold">Profit</h3>
+            <p class="mt-1 text-3xl font-semibold text-accent">+ 4.453 €</p>
+            <p class="mt-2 text-sm text-white/60">Bruttorendite seit Jahresbeginn</p>
+          </section>
+
+          <section class="rounded-[32px] border border-white/10 bg-white/5/10 bg-clip-padding p-6 backdrop-blur-2xl">
+            <h3 class="text-lg font-semibold">Monthly Profit</h3>
+            <div class="mt-5 grid grid-cols-7 gap-2 text-center text-[11px] text-white/40">
+              <span>M</span><span>D</span><span>M</span><span>D</span><span>F</span><span>S</span><span>S</span>
+            </div>
+            <div class="mt-3 grid grid-cols-7 gap-2">
+              <div class="h-10 rounded-lg bg-primary/5"></div>
+              <div class="h-10 rounded-lg bg-primary/10"></div>
+              <div class="h-10 rounded-lg bg-primary/30"></div>
+              <div class="h-10 rounded-lg bg-accent/40"></div>
+              <div class="h-10 rounded-lg bg-accent/70"></div>
+              <div class="h-10 rounded-lg bg-accent/40"></div>
+              <div class="h-10 rounded-lg bg-primary/20"></div>
+              <div class="h-10 rounded-lg bg-primary/15"></div>
+              <div class="h-10 rounded-lg bg-primary/5"></div>
+              <div class="h-10 rounded-lg bg-accent/30"></div>
+              <div class="h-10 rounded-lg bg-accent/60"></div>
+              <div class="h-10 rounded-lg bg-accent/20"></div>
+              <div class="h-10 rounded-lg bg-primary/10"></div>
+              <div class="h-10 rounded-lg bg-primary/5"></div>
+            </div>
+          </section>
+
+          <section class="rounded-[32px] border border-white/10 bg-white/5/10 bg-clip-padding p-6 backdrop-blur-2xl">
+            <h3 class="text-lg font-semibold">Profit Distribution</h3>
+            <div class="mt-6 space-y-2">
+              <div class="flex items-end gap-2">
+                <div class="flex-1 rounded-t-lg bg-primary/30" style="height: 60px"></div>
+                <div class="flex-1 rounded-t-lg bg-primary/40" style="height: 120px"></div>
+                <div class="flex-1 rounded-t-lg bg-accent/70" style="height: 180px"></div>
+                <div class="flex-1 rounded-t-lg bg-primary/40" style="height: 100px"></div>
+                <div class="flex-1 rounded-t-lg bg-primary/20" style="height: 70px"></div>
+              </div>
+              <div class="flex justify-between text-xs text-white/40">
+                <span>-800</span>
+                <span>-200</span>
+                <span>0</span>
+                <span>400</span>
+                <span>800</span>
+              </div>
+            </div>
+          </section>
+        </aside>
+      </main>
+
+      <footer class="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/10 py-6 text-sm text-white/40 sm:flex-row">
+        <span>© 2024 CannabisApp · Trading Automation Suite</span>
+        <div class="flex flex-wrap items-center gap-3">
+          <a class="rounded-xl border border-white/10 bg-white/5 px-3 py-1.5" href="index.html">Risk Center</a>
+          <a class="rounded-xl border border-white/10 bg-white/5 px-3 py-1.5" href="chat-stats.html">Chat Stats</a>
+          <a class="rounded-xl border border-white/10 bg-white/5 px-3 py-1.5" href="automation.html">Automationen</a>
+        </div>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>

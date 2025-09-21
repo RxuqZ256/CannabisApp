@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chat-Statistiken · CannabisApp</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Outfit', 'sans-serif']
+          },
+          colors: {
+            primary: '#2AF7FF',
+            accent: '#3CFF6E',
+            purple: '#7A5CFF'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="min-h-screen bg-[#050011] font-sans text-white">
+  <div class="relative min-h-screen overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-[#030014] via-[#070830] to-[#02142D]"></div>
+    <div class="absolute -top-36 -left-32 h-96 w-96 rounded-full bg-[#2F6DFF]/15 blur-3xl"></div>
+    <div class="absolute -bottom-40 -right-28 h-96 w-96 rounded-full bg-[#25F4C7]/15 blur-3xl"></div>
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(60,255,200,0.08),_transparent_55%)]"></div>
+
+    <div class="relative mx-auto flex min-h-screen w-full max-w-5xl flex-col px-6 py-10">
+      <header class="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
+        <div>
+          <p class="text-xs uppercase tracking-[0.5em] text-white/50">Chat-Statistiken</p>
+          <h1 class="mt-3 text-4xl font-semibold">Gold Trading VIP</h1>
+        </div>
+        <div class="flex flex-wrap items-center gap-3">
+          <a href="index.html" class="rounded-2xl border border-white/10 bg-white/5 px-4 py-2 text-sm text-white/70 transition hover:bg-white/10">Zurück</a>
+          <button class="rounded-2xl border border-white/10 bg-white/5 px-4 py-2 text-sm text-white/70">Export CSV</button>
+        </div>
+      </header>
+
+      <main class="mt-10 grid flex-1 gap-8 lg:grid-cols-[1.7fr_1fr]">
+        <section class="space-y-6">
+          <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            <div class="rounded-3xl border border-white/10 bg-white/5/10 bg-clip-padding p-5 backdrop-blur-2xl">
+              <p class="text-xs uppercase tracking-[0.3em] text-white/50">Winrate</p>
+              <p class="mt-2 text-3xl font-semibold text-accent">69,4%</p>
+            </div>
+            <div class="rounded-3xl border border-white/10 bg-white/5/10 bg-clip-padding p-5 backdrop-blur-2xl">
+              <p class="text-xs uppercase tracking-[0.3em] text-white/50">R / R</p>
+              <p class="mt-2 text-3xl font-semibold">2,18</p>
+            </div>
+            <div class="rounded-3xl border border-white/10 bg-white/5/10 bg-clip-padding p-5 backdrop-blur-2xl">
+              <p class="text-xs uppercase tracking-[0.3em] text-white/50">Signals</p>
+              <p class="mt-2 text-3xl font-semibold">125</p>
+            </div>
+            <div class="rounded-3xl border border-white/10 bg-white/5/10 bg-clip-padding p-5 backdrop-blur-2xl">
+              <p class="text-xs uppercase tracking-[0.3em] text-white/50">Profit</p>
+              <p class="mt-2 text-3xl font-semibold text-primary">+ 9.432 €</p>
+            </div>
+          </div>
+
+          <section class="rounded-[32px] border border-white/10 bg-white/5/10 bg-clip-padding p-6 backdrop-blur-2xl">
+            <div class="flex flex-wrap items-center gap-4">
+              <h2 class="text-lg font-semibold">Session Heatmap</h2>
+              <div class="ml-auto flex items-center gap-2 text-xs uppercase tracking-[0.25em] text-white/50">
+                <span>00</span><span>03</span><span>06</span><span>09</span><span>12</span><span>15</span><span>18</span><span>21</span>
+              </div>
+            </div>
+            <div class="mt-6 grid grid-cols-8 gap-2">
+              <div class="space-y-2 text-xs text-white/40">
+                <span>Mo</span>
+                <span>Di</span>
+                <span>Mi</span>
+                <span>Do</span>
+                <span>Fr</span>
+                <span>Sa</span>
+                <span>So</span>
+              </div>
+              <div class="col-span-7 grid grid-cols-7 gap-2">
+                <div class="h-6 rounded-md bg-primary/10"></div>
+                <div class="h-6 rounded-md bg-primary/20"></div>
+                <div class="h-6 rounded-md bg-purple/30"></div>
+                <div class="h-6 rounded-md bg-purple/50"></div>
+                <div class="h-6 rounded-md bg-purple/70"></div>
+                <div class="h-6 rounded-md bg-purple/40"></div>
+                <div class="h-6 rounded-md bg-primary/15"></div>
+                <div class="h-6 rounded-md bg-primary/5"></div>
+                <div class="h-6 rounded-md bg-primary/15"></div>
+                <div class="h-6 rounded-md bg-purple/40"></div>
+                <div class="h-6 rounded-md bg-purple/70"></div>
+                <div class="h-6 rounded-md bg-purple/50"></div>
+                <div class="h-6 rounded-md bg-primary/20"></div>
+                <div class="h-6 rounded-md bg-primary/10"></div>
+                <div class="h-6 rounded-md bg-primary/5"></div>
+                <div class="h-6 rounded-md bg-primary/15"></div>
+                <div class="h-6 rounded-md bg-purple/60"></div>
+                <div class="h-6 rounded-md bg-purple/80"></div>
+                <div class="h-6 rounded-md bg-purple/50"></div>
+                <div class="h-6 rounded-md bg-primary/20"></div>
+                <div class="h-6 rounded-md bg-primary/15"></div>
+                <div class="h-6 rounded-md bg-primary/10"></div>
+                <div class="h-6 rounded-md bg-primary/5"></div>
+                <div class="h-6 rounded-md bg-primary/20"></div>
+                <div class="h-6 rounded-md bg-purple/60"></div>
+                <div class="h-6 rounded-md bg-purple/30"></div>
+                <div class="h-6 rounded-md bg-primary/15"></div>
+                <div class="h-6 rounded-md bg-primary/5"></div>
+                <div class="h-6 rounded-md bg-primary/10"></div>
+                <div class="h-6 rounded-md bg-primary/20"></div>
+                <div class="h-6 rounded-md bg-purple/70"></div>
+                <div class="h-6 rounded-md bg-purple/60"></div>
+                <div class="h-6 rounded-md bg-purple/40"></div>
+                <div class="h-6 rounded-md bg-primary/15"></div>
+                <div class="h-6 rounded-md bg-primary/5"></div>
+                <div class="h-6 rounded-md bg-primary/10"></div>
+                <div class="h-6 rounded-md bg-primary/20"></div>
+                <div class="h-6 rounded-md bg-purple/50"></div>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <aside class="space-y-6">
+          <section class="rounded-[32px] border border-white/10 bg-white/5/10 bg-clip-padding p-6 text-center backdrop-blur-2xl">
+            <h3 class="text-lg font-semibold">Pair Distribution</h3>
+            <div class="mt-6 flex items-center justify-center">
+              <div class="relative h-40 w-40">
+                <div class="absolute inset-0 rounded-full border border-white/10 bg-gradient-to-br from-primary/30 to-purple/30"></div>
+                <div class="absolute inset-6 rounded-full border border-white/10 bg-[#050011]"></div>
+                <div class="absolute inset-[1.4rem] flex flex-col items-center justify-center rounded-full bg-[#050011] text-center">
+                  <span class="text-2xl font-semibold">60%</span>
+                  <span class="text-xs uppercase tracking-[0.25em] text-white/50">EUR/USD</span>
+                </div>
+              </div>
+            </div>
+            <p class="mt-4 text-sm text-white/60">GBP/USD 30% · Sonstige 10%</p>
+          </section>
+
+          <section class="rounded-[32px] border border-white/10 bg-white/5/10 bg-clip-padding p-6 backdrop-blur-2xl">
+            <h3 class="text-lg font-semibold">Accuracy by Pair</h3>
+            <div class="mt-6 space-y-4">
+              <div class="flex items-center justify-between">
+                <span class="text-sm text-white/60">EUR/USD</span>
+                <span class="text-base font-semibold text-accent">70%</span>
+              </div>
+              <div class="flex h-3 overflow-hidden rounded-full bg-white/10">
+                <div class="w-[70%] bg-gradient-to-r from-primary to-accent"></div>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-sm text-white/60">GBP/USD</span>
+                <span class="text-base font-semibold text-accent">90%</span>
+              </div>
+              <div class="flex h-3 overflow-hidden rounded-full bg-white/10">
+                <div class="w-[90%] bg-gradient-to-r from-purple to-accent"></div>
+              </div>
+            </div>
+
+            <div class="mt-6 flex items-center justify-between rounded-2xl border border-white/10 bg-white/5 p-4 text-sm">
+              <span>Alert Quality Score</span>
+              <span class="text-xl font-semibold text-primary">0,7</span>
+            </div>
+          </section>
+
+          <section class="rounded-[32px] border border-white/10 bg-white/5/10 bg-clip-padding p-6 backdrop-blur-2xl">
+            <h3 class="text-lg font-semibold">Latenz</h3>
+            <p class="mt-2 text-3xl font-semibold text-primary">210 ms</p>
+            <p class="mt-1 text-sm text-white/60">Median der letzten 7 Tage</p>
+          </section>
+        </aside>
+      </main>
+
+      <footer class="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/10 py-6 text-sm text-white/40 sm:flex-row">
+        <span>© 2024 CannabisApp · Trading Automation Suite</span>
+        <div class="flex flex-wrap items-center gap-3">
+          <a class="rounded-xl border border-white/10 bg-white/5 px-3 py-1.5" href="index.html">Risk Center</a>
+          <a class="rounded-xl border border-white/10 bg-white/5 px-3 py-1.5" href="performance.html">Performance</a>
+          <a class="rounded-xl border border-white/10 bg-white/5 px-3 py-1.5" href="automation.html">Automationen</a>
+        </div>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
