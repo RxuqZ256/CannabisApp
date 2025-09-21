@@ -16,125 +16,166 @@
             sans: ['Outfit', 'sans-serif']
           },
           colors: {
-            safe: '#16F79A',
-            danger: '#FF4F6D'
+            primary: '#2AF7FF',
+            accent: '#3CFF6E',
+            safe: '#1CF59A',
+            danger: '#FF4F6D',
+            warning: '#FF9F4D',
+            surface: 'rgba(5, 12, 32, 0.75)'
+          },
+          boxShadow: {
+            glass: '0 45px 140px -60px rgba(42, 247, 255, 0.55)'
           }
         }
       }
     }
   </script>
 </head>
-<body class="min-h-screen bg-[#05010F] font-sans text-white">
+<body class="min-h-screen bg-[#030011] font-sans text-white">
   <div class="relative min-h-screen overflow-hidden">
-    <div class="absolute inset-0 bg-gradient-to-br from-[#040012] via-[#060220] to-[#001A2E]"></div>
-    <div class="absolute -top-40 -left-24 h-96 w-96 rounded-full bg-[#22B5FF]/10 blur-3xl"></div>
-    <div class="absolute -bottom-32 -right-28 h-96 w-96 rounded-full bg-[#17F7AA]/10 blur-3xl"></div>
+    <div class="absolute inset-0 bg-gradient-to-br from-[#020012] via-[#060826] to-[#001C35]"></div>
+    <div class="absolute -top-44 -left-32 h-96 w-96 rounded-full bg-[#2C7DFF]/25 blur-3xl"></div>
+    <div class="absolute -bottom-36 -right-24 h-96 w-96 rounded-full bg-[#25F4C7]/20 blur-3xl"></div>
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(42,247,255,0.12),_transparent_60%)]"></div>
 
     <div class="relative mx-auto flex min-h-screen w-full max-w-6xl flex-col px-6 py-10">
       <header class="flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
         <div>
-          <p class="uppercase tracking-[0.5em] text-xs text-white/50">Risk Control Center</p>
-          <h1 class="mt-3 text-4xl font-semibold text-white">Kontrollzentrum</h1>
-          <p class="mt-2 max-w-xl text-base text-white/60">Behalte deine Handels-Bots, Live-Signale und die aktuelle Risikolage im Blick. Passe Limite und Hedging mit wenigen Klicks an.</p>
+          <p class="text-xs uppercase tracking-[0.55em] text-white/50">Risk Control Center</p>
+          <h1 class="mt-2 text-4xl font-semibold">Trading Kontrollzentrum</h1>
+          <p class="mt-3 max-w-2xl text-base text-white/60">Überwache Bots, Exposure und Notabschaltungen in einem Dashboard. Verknüpfe Automationen, sichere Limits und Compliance-Benachrichtigungen in Echtzeit.</p>
         </div>
-        <div class="flex items-center gap-3 self-start lg:self-end">
-          <button class="h-11 w-11 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl text-lg">🔔</button>
-          <button class="h-11 w-11 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl text-lg">⚙️</button>
-          <button class="h-11 w-11 rounded-2xl border border-white/10 bg-gradient-to-br from-[#2AF7FF]/80 to-[#3CFF6E]/80 text-[#021222] font-semibold">JD</button>
+        <div class="flex flex-wrap items-center gap-3">
+          <button class="h-11 w-11 rounded-2xl border border-white/10 bg-white/10 text-lg text-white/80 backdrop-blur">🔔</button>
+          <button class="h-11 w-11 rounded-2xl border border-white/10 bg-white/10 text-lg text-white/80 backdrop-blur">⚙️</button>
+          <a href="start.html" class="inline-flex items-center gap-2 rounded-2xl border border-white/10 bg-white/10 px-4 py-2 text-sm font-semibold text-white/80 transition hover:bg-white/15">Onboarding</a>
+          <span class="inline-flex h-11 items-center gap-3 rounded-2xl border border-white/10 bg-gradient-to-br from-primary/80 to-accent/80 px-4 py-2 text-sm font-semibold text-[#021222]">JD · Admin</span>
         </div>
       </header>
 
-      <main class="mt-12 grid flex-1 gap-8 lg:grid-cols-[1.7fr_1fr]">
+      <main class="mt-12 grid flex-1 gap-8 xl:grid-cols-[1.55fr_1fr]">
         <section class="space-y-8">
-          <div class="grid gap-6 md:grid-cols-2">
-            <article class="rounded-3xl border border-white/10 bg-white/5/20 bg-clip-padding p-6 shadow-[0_25px_80px_-60px_rgba(22,247,154,0.8)]">
-              <div class="flex items-center justify-between">
-                <div class="flex items-center gap-3">
-                  <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#093726]/70 text-2xl">🛡️</span>
-                  <div>
-                    <p class="text-sm uppercase tracking-[0.3em] text-white/60">Status</p>
-                    <h2 class="text-3xl font-semibold text-safe">Safe</h2>
+          <div class="grid gap-6 lg:grid-cols-[1.15fr_0.85fr]">
+            <article class="relative overflow-hidden rounded-[34px] border border-white/10 bg-surface p-6 shadow-glass backdrop-blur-2xl">
+              <div class="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(42,247,255,0.18),transparent_70%)]"></div>
+              <div class="relative flex flex-col gap-6">
+                <div class="flex flex-wrap items-center gap-4">
+                  <div class="flex items-center gap-3">
+                    <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#072D1F] text-2xl">🛡️</span>
+                    <div>
+                      <p class="text-xs uppercase tracking-[0.35em] text-white/50">Gesamtrisiko</p>
+                      <h2 class="text-3xl font-semibold text-safe">Safe</h2>
+                    </div>
+                  </div>
+                  <span class="inline-flex items-center gap-2 rounded-full border border-safe/40 bg-safe/10 px-4 py-1 text-xs uppercase tracking-[0.35em] text-safe">Live</span>
+                </div>
+                <p class="text-sm text-white/60">Alle Bots halten die Drawdown- und Latenzlimits ein. Es bestehen keine offenen Compliance-Sperren.</p>
+                <div class="grid gap-4 sm:grid-cols-3">
+                  <div class="rounded-2xl border border-white/10 bg-white/5/60 px-4 py-3">
+                    <p class="text-[11px] uppercase tracking-[0.25em] text-white/50">Aktive Bots</p>
+                    <p class="mt-2 text-2xl font-semibold">24</p>
+                  </div>
+                  <div class="rounded-2xl border border-white/10 bg-white/5/60 px-4 py-3">
+                    <p class="text-[11px] uppercase tracking-[0.25em] text-white/50">Auslastung</p>
+                    <p class="mt-2 text-2xl font-semibold">68%</p>
+                  </div>
+                  <div class="rounded-2xl border border-white/10 bg-white/5/60 px-4 py-3">
+                    <p class="text-[11px] uppercase tracking-[0.25em] text-white/50">Notabschaltung</p>
+                    <p class="mt-2 text-2xl font-semibold text-accent">Bereit</p>
                   </div>
                 </div>
-                <span class="rounded-full border border-safe/30 px-4 py-1 text-xs uppercase tracking-[0.3em] text-safe">Live</span>
               </div>
-              <p class="mt-4 text-sm text-white/60">Alle Limits werden eingehalten. Offene Positionen verhalten sich im Rahmen deiner Risikostrategie.</p>
             </article>
 
-            <article class="rounded-3xl border border-white/10 bg-white/5/20 bg-clip-padding p-6 shadow-[0_25px_80px_-60px_rgba(255,79,109,0.8)]">
-              <div class="flex items-center justify-between">
-                <div class="flex items-center gap-3">
-                  <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#3B0E1B]/70 text-2xl">🚨</span>
-                  <div>
-                    <p class="text-sm uppercase tracking-[0.3em] text-white/60">Alert</p>
-                    <h2 class="text-3xl font-semibold text-danger">Emergency Flat</h2>
-                  </div>
+            <article class="rounded-[34px] border border-white/10 bg-surface p-6 backdrop-blur-2xl">
+              <header class="flex items-center justify-between">
+                <div>
+                  <p class="text-xs uppercase tracking-[0.35em] text-white/50">Signals Monitor</p>
+                  <h3 class="mt-2 text-xl font-semibold">Heatmap</h3>
                 </div>
-                <span class="rounded-full border border-danger/40 px-4 py-1 text-xs uppercase tracking-[0.3em] text-danger">1 aktiv</span>
+                <span class="text-sm text-white/50">Aktualisiert 08:47</span>
+              </header>
+              <div class="mt-6 space-y-4 text-sm text-white/60">
+                <div class="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-3">
+                  <span class="inline-flex h-3 w-3 rounded-full bg-accent"></span>
+                  <span class="flex-1">Premium Forex Signals</span>
+                  <span class="text-xs uppercase tracking-[0.25em] text-white/40">Low</span>
+                </div>
+                <div class="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-3">
+                  <span class="inline-flex h-3 w-3 rounded-full bg-warning"></span>
+                  <span class="flex-1">Commodities Zone</span>
+                  <span class="text-xs uppercase tracking-[0.25em] text-white/40">Medium</span>
+                </div>
+                <div class="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-3">
+                  <span class="inline-flex h-3 w-3 rounded-full bg-danger"></span>
+                  <span class="flex-1">Gold Trading VIP</span>
+                  <span class="text-xs uppercase tracking-[0.25em] text-white/40">High</span>
+                </div>
               </div>
-              <p class="mt-4 text-sm text-white/60">Gold-Strategie überschreitet Max-Drawdown. Automatisches Glattstellen in Vorbereitung.</p>
+              <a href="chat-stats.html" class="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-2xl border border-white/10 bg-white/10 px-4 py-3 text-xs uppercase tracking-[0.25em] text-white/70 transition hover:bg-white/15">Chat Insights öffnen →</a>
             </article>
           </div>
 
-          <section class="rounded-3xl border border-white/10 bg-white/5/10 bg-clip-padding p-6">
-            <div class="flex items-center justify-between">
+          <section class="rounded-[34px] border border-white/10 bg-surface p-6 backdrop-blur-2xl">
+            <div class="flex flex-wrap items-center gap-4">
               <div>
-                <h3 class="text-lg font-semibold">Exposure by Symbol</h3>
+                <h3 class="text-lg font-semibold">Exposure nach Symbol</h3>
                 <p class="text-sm text-white/50">Verteilung aller aktiven Bots nach Underlying</p>
               </div>
-              <button class="rounded-xl border border-white/10 bg-white/5 px-4 py-2 text-xs uppercase tracking-[0.2em] text-white/70">Anpassen</button>
+              <div class="ml-auto flex gap-2">
+                <button class="rounded-xl border border-white/10 bg-white/10 px-4 py-2 text-xs uppercase tracking-[0.2em] text-white/70">Anpassen</button>
+                <a href="performance.html" class="rounded-xl border border-white/10 bg-white/10 px-4 py-2 text-xs uppercase tracking-[0.2em] text-white/70">Performance</a>
+              </div>
             </div>
-            <div class="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
-              <div class="flex flex-col gap-2 rounded-2xl border border-white/10 bg-white/5 p-4 text-center">
-                <span class="text-sm text-white/50">BTC</span>
-                <span class="text-2xl font-semibold">35%</span>
-                <span class="h-1 rounded-full bg-gradient-to-r from-[#2AF7FF] to-[#3CFF6E]"></span>
+            <div class="mt-6 space-y-4">
+              <div class="grid grid-cols-[auto_1fr_auto] items-center gap-4 rounded-2xl border border-white/10 bg-white/5 px-4 py-3">
+                <span class="text-sm text-white/60">BTC</span>
+                <div class="h-2 rounded-full bg-white/10">
+                  <div class="h-2 w-[72%] rounded-full bg-gradient-to-r from-primary to-accent"></div>
+                </div>
+                <span class="text-lg font-semibold">35%</span>
               </div>
-              <div class="flex flex-col gap-2 rounded-2xl border border-white/10 bg-white/5 p-4 text-center">
-                <span class="text-sm text-white/50">EUR₿</span>
-                <span class="text-2xl font-semibold">12%</span>
-                <span class="h-1 rounded-full bg-gradient-to-r from-[#3CFF6E] to-[#2AF7FF]"></span>
+              <div class="grid grid-cols-[auto_1fr_auto] items-center gap-4 rounded-2xl border border-white/10 bg-white/5 px-4 py-3">
+                <span class="text-sm text-white/60">Gold</span>
+                <div class="h-2 rounded-full bg-white/10">
+                  <div class="h-2 w-[48%] rounded-full bg-gradient-to-r from-primary via-[#5E7BFF] to-[#8E5BFF]"></div>
+                </div>
+                <span class="text-lg font-semibold">18%</span>
               </div>
-              <div class="flex flex-col gap-2 rounded-2xl border border-white/10 bg-white/5 p-4 text-center">
-                <span class="text-sm text-white/50">Gold</span>
-                <span class="text-2xl font-semibold">18%</span>
-                <span class="h-1 rounded-full bg-gradient-to-r from-[#22B5FF] to-[#805BFF]"></span>
+              <div class="grid grid-cols-[auto_1fr_auto] items-center gap-4 rounded-2xl border border-white/10 bg-white/5 px-4 py-3">
+                <span class="text-sm text-white/60">EUR</span>
+                <div class="h-2 rounded-full bg-white/10">
+                  <div class="h-2 w-[34%] rounded-full bg-gradient-to-r from-[#8E5BFF] via-danger to-warning"></div>
+                </div>
+                <span class="text-lg font-semibold">14%</span>
               </div>
-              <div class="flex flex-col gap-2 rounded-2xl border border-white/10 bg-white/5 p-4 text-center">
-                <span class="text-sm text-white/50">EUR</span>
-                <span class="text-2xl font-semibold">9%</span>
-                <span class="h-1 rounded-full bg-gradient-to-r from-[#805BFF] to-[#FF4F6D]"></span>
-              </div>
-              <div class="flex flex-col gap-2 rounded-2xl border border-white/10 bg-white/5 p-4 text-center">
-                <span class="text-sm text-white/50">USD</span>
-                <span class="text-2xl font-semibold">16%</span>
-                <span class="h-1 rounded-full bg-gradient-to-r from-[#FF4F6D] to-[#FF9F4D]"></span>
-              </div>
-              <div class="flex flex-col gap-2 rounded-2xl border border-white/10 bg-white/5 p-4 text-center">
-                <span class="text-sm text-white/50">TSLA</span>
-                <span class="text-2xl font-semibold">10%</span>
-                <span class="h-1 rounded-full bg-gradient-to-r from-[#FF9F4D] to-[#2AF7FF]"></span>
+              <div class="grid grid-cols-[auto_1fr_auto] items-center gap-4 rounded-2xl border border-white/10 bg-white/5 px-4 py-3">
+                <span class="text-sm text-white/60">TSLA</span>
+                <div class="h-2 rounded-full bg-white/10">
+                  <div class="h-2 w-[28%] rounded-full bg-gradient-to-r from-warning to-primary"></div>
+                </div>
+                <span class="text-lg font-semibold">10%</span>
               </div>
             </div>
           </section>
 
-          <section class="rounded-3xl border border-white/10 bg-white/5/10 bg-clip-padding p-6">
+          <section class="rounded-[34px] border border-white/10 bg-surface p-6 backdrop-blur-2xl">
             <div class="flex flex-wrap items-center gap-4">
-              <h3 class="text-lg font-semibold">Open Signals</h3>
-              <div class="flex gap-4 text-sm text-white/50">
+              <h3 class="text-lg font-semibold">Offene Signale</h3>
+              <div class="flex flex-wrap gap-4 text-sm text-white/50">
                 <span>Limits 1.2%</span>
                 <span>Max Drawdown € 10,5k</span>
                 <span>Daily Loss € 4,5k</span>
               </div>
-              <button class="ml-auto rounded-xl border border-white/10 bg-white/5 px-4 py-2 text-xs uppercase tracking-[0.2em] text-white/70">Logs</button>
+              <a href="automation.html" class="ml-auto rounded-xl border border-white/10 bg-white/10 px-4 py-2 text-xs uppercase tracking-[0.2em] text-white/70">Regeln anpassen</a>
             </div>
             <div class="mt-6 space-y-4">
               <article class="rounded-2xl border border-white/10 bg-white/5 p-4">
-                <div class="flex items-center justify-between text-sm text-white/60">
+                <div class="flex flex-wrap items-center justify-between gap-3 text-sm text-white/60">
                   <span class="font-semibold text-white">Premium Forex Signals</span>
                   <span>€ 240</span>
                 </div>
-                <div class="mt-3 grid grid-cols-5 items-center gap-3 text-xs text-white/50">
+                <div class="mt-4 grid grid-cols-5 gap-3 text-xs text-white/50">
                   <div>
                     <p class="text-[11px] uppercase tracking-[0.2em] text-white/40">Risk</p>
                     <p class="text-sm text-safe">0.3%</p>
@@ -159,11 +200,11 @@
               </article>
 
               <article class="rounded-2xl border border-white/10 bg-white/5 p-4">
-                <div class="flex items-center justify-between text-sm text-white/60">
+                <div class="flex flex-wrap items-center justify-between gap-3 text-sm text-white/60">
                   <span class="font-semibold text-white">Gold Trading VIP</span>
                   <span>€ 1,3k</span>
                 </div>
-                <div class="mt-3 grid grid-cols-5 items-center gap-3 text-xs text-white/50">
+                <div class="mt-4 grid grid-cols-5 gap-3 text-xs text-white/50">
                   <div>
                     <p class="text-[11px] uppercase tracking-[0.2em] text-white/40">Risk</p>
                     <p class="text-sm text-danger">0.9%</p>
@@ -188,40 +229,11 @@
               </article>
 
               <article class="rounded-2xl border border-white/10 bg-white/5 p-4">
-                <div class="flex items-center justify-between text-sm text-white/60">
-                  <span class="font-semibold text-white">Commodities Zone</span>
-                  <span>€ 920</span>
-                </div>
-                <div class="mt-3 grid grid-cols-5 items-center gap-3 text-xs text-white/50">
-                  <div>
-                    <p class="text-[11px] uppercase tracking-[0.2em] text-white/40">Risk</p>
-                    <p class="text-sm text-[#FF9F4D]">0.6%</p>
-                  </div>
-                  <div>
-                    <p class="text-[11px] uppercase tracking-[0.2em] text-white/40">Heatmap</p>
-                    <p class="text-sm">Orange</p>
-                  </div>
-                  <div>
-                    <p class="text-[11px] uppercase tracking-[0.2em] text-white/40">Latency</p>
-                    <p class="text-sm">52 ms</p>
-                  </div>
-                  <div>
-                    <p class="text-[11px] uppercase tracking-[0.2em] text-white/40">Hedging</p>
-                    <p class="text-sm">Aktiv</p>
-                  </div>
-                  <div>
-                    <p class="text-[11px] uppercase tracking-[0.2em] text-white/40">Leverage</p>
-                    <p class="text-sm">× 7</p>
-                  </div>
-                </div>
-              </article>
-
-              <article class="rounded-2xl border border-white/10 bg-white/5 p-4">
-                <div class="flex items-center justify-between text-sm text-white/60">
+                <div class="flex flex-wrap items-center justify-between gap-3 text-sm text-white/60">
                   <span class="font-semibold text-white">Crypto Signals Pro</span>
                   <span>€ 540</span>
                 </div>
-                <div class="mt-3 grid grid-cols-5 items-center gap-3 text-xs text-white/50">
+                <div class="mt-4 grid grid-cols-5 gap-3 text-xs text-white/50">
                   <div>
                     <p class="text-[11px] uppercase tracking-[0.2em] text-white/40">Risk</p>
                     <p class="text-sm text-safe">0.2%</p>
@@ -245,65 +257,90 @@
                 </div>
               </article>
             </div>
+          </section>
 
-            <footer class="mt-6 flex flex-col gap-3 border-t border-white/10 pt-4 text-sm text-white/50 sm:flex-row sm:items-center sm:justify-between">
-              <span>2 Compliance Alerts</span>
-              <span>Latency to Broker: 37 ms</span>
-            </footer>
+          <section class="rounded-[34px] border border-white/10 bg-surface p-6 backdrop-blur-2xl">
+            <header class="flex items-center justify-between">
+              <h3 class="text-lg font-semibold">Aktivität &amp; Compliance</h3>
+              <span class="text-xs uppercase tracking-[0.3em] text-white/50">Letzte 24h</span>
+            </header>
+            <div class="mt-6 space-y-4 text-sm text-white/60">
+              <div class="flex items-start gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-3">
+                <span class="mt-1 text-lg">✅</span>
+                <div>
+                  <p class="font-medium text-white">Audit Log exportiert</p>
+                  <p class="text-white/60">Automatischer Upload ins sichere Archiv erfolgreich.</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-3">
+                <span class="mt-1 text-lg">⚠️</span>
+                <div>
+                  <p class="font-medium text-white">2 ungeprüfte Alerts</p>
+                  <p class="text-white/60">Bitte bestätige den Finanzstatus der US Futures Signale bis 18:00 Uhr.</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-3">
+                <span class="mt-1 text-lg">🛠️</span>
+                <div>
+                  <p class="font-medium text-white">Automation angepasst</p>
+                  <p class="text-white/60">Rule 4 wurde auf Backup-Broker verschoben.</p>
+                </div>
+              </div>
+            </div>
           </section>
         </section>
 
         <aside class="space-y-8">
-          <section class="rounded-3xl border border-white/10 bg-white/5/10 bg-clip-padding p-6 text-center shadow-[0_25px_80px_-60px_rgba(34,181,255,0.8)]">
-            <p class="text-sm uppercase tracking-[0.3em] text-white/60">Open Signals</p>
-            <div class="mt-4 flex flex-col items-center justify-center gap-6">
-              <div class="relative flex h-40 w-40 items-center justify-center">
+          <section class="rounded-[34px] border border-white/10 bg-surface p-6 text-center shadow-glass backdrop-blur-2xl">
+            <p class="text-sm uppercase tracking-[0.3em] text-white/60">Live Auslastung</p>
+            <div class="mt-6 flex flex-col items-center gap-6">
+              <div class="relative flex h-48 w-48 items-center justify-center">
                 <div class="absolute inset-4 rounded-full border-2 border-dashed border-white/10"></div>
-                <div class="absolute inset-0 rounded-full bg-gradient-to-br from-[#2AF7FF]/30 to-[#3CFF6E]/10 blur-xl"></div>
-                <div class="relative flex h-full w-full items-center justify-center rounded-full border border-white/10 bg-[#05010F]"></div>
-                <div class="absolute flex h-24 w-24 flex-col items-center justify-center rounded-full bg-[#05010F] text-center">
-                  <span class="text-3xl font-semibold text-[#2AF7FF]">1.2%</span>
-                  <span class="text-xs uppercase tracking-[0.2em] text-white/50">Auslastung</span>
+                <div class="absolute inset-0 rounded-full bg-gradient-to-br from-primary/25 to-accent/15 blur-xl"></div>
+                <div class="relative flex h-full w-full items-center justify-center rounded-full border border-white/10 bg-[#030011]/80"></div>
+                <div class="absolute flex h-28 w-28 flex-col items-center justify-center rounded-full bg-[#030011] text-center">
+                  <span class="text-4xl font-semibold text-primary">1.2%</span>
+                  <span class="text-xs uppercase tracking-[0.25em] text-white/50">Risk Util.</span>
                 </div>
               </div>
               <div class="grid w-full grid-cols-3 gap-3 text-sm">
                 <div class="rounded-2xl border border-white/10 bg-white/5 p-3">
-                  <p class="text-xs uppercase tracking-[0.2em] text-white/50">Aktiv</p>
+                  <p class="text-xs uppercase tracking-[0.25em] text-white/50">Aktiv</p>
                   <p class="mt-1 text-lg font-semibold">12</p>
                 </div>
                 <div class="rounded-2xl border border-white/10 bg-white/5 p-3">
-                  <p class="text-xs uppercase tracking-[0.2em] text-white/50">Max DD</p>
+                  <p class="text-xs uppercase tracking-[0.25em] text-white/50">Max DD</p>
                   <p class="mt-1 text-lg font-semibold">€ 10,5k</p>
                 </div>
                 <div class="rounded-2xl border border-white/10 bg-white/5 p-3">
-                  <p class="text-xs uppercase tracking-[0.2em] text-white/50">Day Loss</p>
+                  <p class="text-xs uppercase tracking-[0.25em] text-white/50">Day Loss</p>
                   <p class="mt-1 text-lg font-semibold">€ 4,5k</p>
                 </div>
               </div>
             </div>
           </section>
 
-          <section class="rounded-3xl border border-white/10 bg-white/5/10 bg-clip-padding p-6">
+          <section class="rounded-[34px] border border-white/10 bg-surface p-6 backdrop-blur-2xl">
             <h3 class="text-lg font-semibold">Session Limits</h3>
-            <p class="mt-2 text-sm text-white/60">Setze präventive Limits für automatische Notabschaltungen, sobald dein Verlust oder die Latenz zu groß werden.</p>
+            <p class="mt-2 text-sm text-white/60">Definiere präventive Notabschaltungen für Verlust, Latenz und Fehlermeldungen.</p>
             <div class="mt-6 space-y-4">
-              <div class="flex items-center justify-between rounded-2xl border border-white/10 bg-white/5 p-4">
+              <div class="flex items-center justify-between gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-3">
                 <div>
-                  <p class="text-xs uppercase tracking-[0.2em] text-white/50">Max Drawdown</p>
+                  <p class="text-xs uppercase tracking-[0.25em] text-white/50">Max Drawdown</p>
                   <p class="mt-1 text-lg font-semibold">€ 12,5k</p>
                 </div>
-                <button class="rounded-xl border border-white/10 bg-gradient-to-r from-[#2AF7FF] to-[#3CFF6E] px-4 py-2 text-xs font-semibold text-[#021222]">Anpassen</button>
+                <a href="automation.html" class="rounded-xl border border-white/10 bg-gradient-to-r from-primary to-accent px-4 py-2 text-xs font-semibold text-[#021222]">Anpassen</a>
               </div>
-              <div class="flex items-center justify-between rounded-2xl border border-white/10 bg-white/5 p-4">
+              <div class="flex items-center justify-between gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-3">
                 <div>
-                  <p class="text-xs uppercase tracking-[0.2em] text-white/50">Daily Loss Limit</p>
+                  <p class="text-xs uppercase tracking-[0.25em] text-white/50">Daily Loss Limit</p>
                   <p class="mt-1 text-lg font-semibold">€ 6,0k</p>
                 </div>
                 <button class="rounded-xl border border-white/10 bg-white/10 px-4 py-2 text-xs font-semibold text-white/70">Editieren</button>
               </div>
-              <div class="flex items-center justify-between rounded-2xl border border-white/10 bg-white/5 p-4">
+              <div class="flex items-center justify-between gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-3">
                 <div>
-                  <p class="text-xs uppercase tracking-[0.2em] text-white/50">Max Latency</p>
+                  <p class="text-xs uppercase tracking-[0.25em] text-white/50">Max Latency</p>
                   <p class="mt-1 text-lg font-semibold">75 ms</p>
                 </div>
                 <button class="rounded-xl border border-white/10 bg-white/10 px-4 py-2 text-xs font-semibold text-white/70">Editieren</button>
@@ -311,21 +348,40 @@
             </div>
           </section>
 
-          <section class="rounded-3xl border border-white/10 bg-white/5/10 bg-clip-padding p-6">
-            <h3 class="text-lg font-semibold">Compliance &amp; Security</h3>
-            <div class="mt-4 space-y-4 text-sm text-white/60">
-              <div class="flex items-start gap-3 rounded-2xl border border-white/10 bg-white/5 p-4">
-                <span class="mt-1 text-xl">✅</span>
+          <section class="rounded-[34px] border border-white/10 bg-surface p-6 backdrop-blur-2xl">
+            <h3 class="text-lg font-semibold">Automation Shortcuts</h3>
+            <div class="mt-5 space-y-3 text-sm text-white/60">
+              <a href="automation.html" class="flex items-center justify-between gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-3 transition hover:bg-white/10">
+                <span>Gold Hedging Preset</span>
+                <span class="text-xs uppercase tracking-[0.25em] text-white/40">Aktiv</span>
+              </a>
+              <a href="automation.html" class="flex items-center justify-between gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-3 transition hover:bg-white/10">
+                <span>Latency Guard</span>
+                <span class="text-xs uppercase tracking-[0.25em] text-white/40">Standby</span>
+              </a>
+              <a href="automation.html" class="flex items-center justify-between gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-3 transition hover:bg-white/10">
+                <span>Volume Surge Alert</span>
+                <span class="text-xs uppercase tracking-[0.25em] text-white/40">Off</span>
+              </a>
+            </div>
+            <button class="mt-5 w-full rounded-2xl border border-white/10 bg-white/10 px-4 py-3 text-xs uppercase tracking-[0.25em] text-white/70">Neue Regel erstellen</button>
+          </section>
+
+          <section class="rounded-[34px] border border-white/10 bg-surface p-6 backdrop-blur-2xl">
+            <h3 class="text-lg font-semibold">Compliance Status</h3>
+            <div class="mt-5 space-y-3 text-sm text-white/60">
+              <div class="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-3">
+                <span class="text-lg">🕒</span>
                 <div>
-                  <p class="font-medium text-white">Protokoll automatisch exportiert</p>
-                  <p class="mt-1 text-white/60">Audit-Log der letzten 24h wurde an deinen sicheren Speicher gesendet.</p>
+                  <p class="font-medium text-white">MiFID II Report</p>
+                  <p class="text-white/60">Automatischer Upload geplant um 18:30 Uhr.</p>
                 </div>
               </div>
-              <div class="flex items-start gap-3 rounded-2xl border border-white/10 bg-white/5 p-4">
-                <span class="mt-1 text-xl">⚠️</span>
+              <div class="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-3">
+                <span class="text-lg">🛡️</span>
                 <div>
-                  <p class="font-medium text-white">2 ungeprüfte Alerts</p>
-                  <p class="mt-1 text-white/60">Bitte bestätige den Finanzstatus der US Futures Signale bis 18:00 Uhr.</p>
+                  <p class="font-medium text-white">Penetration Test</p>
+                  <p class="text-white/60">Letzter Test vor 6 Tagen · Keine Findings.</p>
                 </div>
               </div>
             </div>
@@ -335,9 +391,11 @@
 
       <footer class="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/10 py-6 text-sm text-white/40 sm:flex-row">
         <span>© 2024 CannabisApp · Trading Automation Suite</span>
-        <div class="flex items-center gap-3">
+        <div class="flex flex-wrap items-center gap-3">
           <a class="rounded-xl border border-white/10 bg-white/5 px-3 py-1.5" href="start.html">Onboarding</a>
-          <a class="rounded-xl border border-white/10 bg-white/5 px-3 py-1.5" href="homescreen.html">Classic UI</a>
+          <a class="rounded-xl border border-white/10 bg-white/5 px-3 py-1.5" href="performance.html">Performance</a>
+          <a class="rounded-xl border border-white/10 bg-white/5 px-3 py-1.5" href="chat-stats.html">Chat Stats</a>
+          <a class="rounded-xl border border-white/10 bg-white/5 px-3 py-1.5" href="automation.html">Automationen</a>
         </div>
       </footer>
     </div>

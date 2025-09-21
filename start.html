@@ -15,62 +15,159 @@
           fontFamily: {
             sans: ['Outfit', 'sans-serif']
           },
+          colors: {
+            primary: '#2AF7FF',
+            accent: '#3CFF6E',
+            surface: 'rgba(6, 17, 41, 0.72)'
+          },
           boxShadow: {
-            onboarding: '0 40px 80px -40px rgba(28, 225, 255, 0.45)'
+            glow: '0 45px 140px -60px rgba(42, 247, 255, 0.55)'
           }
         }
       }
     }
   </script>
 </head>
-<body class="min-h-screen bg-[#050111] text-white font-sans">
-  <div class="relative overflow-hidden min-h-screen flex items-center justify-center px-6 py-12">
-    <div class="absolute inset-0 bg-gradient-to-br from-[#050111] via-[#0B0A28] to-[#061835]"></div>
-    <div class="absolute -top-20 -left-24 h-72 w-72 rounded-full bg-[#1C69FF]/20 blur-3xl"></div>
-    <div class="absolute -bottom-24 -right-16 h-72 w-72 rounded-full bg-[#27EFB4]/10 blur-3xl"></div>
+<body class="min-h-screen bg-[#040012] font-sans text-white">
+  <div class="relative min-h-screen overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-[#040012] via-[#060B26] to-[#041B36]"></div>
+    <div class="absolute -top-40 -left-28 h-96 w-96 rounded-full bg-[#2C7DFF]/25 blur-3xl"></div>
+    <div class="absolute -bottom-32 -right-24 h-96 w-96 rounded-full bg-[#2AF7FF]/20 blur-3xl"></div>
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(42,247,255,0.12),_transparent_55%)]"></div>
 
-    <div class="relative w-full max-w-sm">
-      <header class="text-center uppercase tracking-[0.3em] text-xs text-white/70">
-        <h1 class="text-3xl font-semibold tracking-[0.5em]">Onboarding</h1>
-        <div class="mt-8 flex items-center justify-between">
-          <div class="flex-1 flex justify-between px-1">
-            <span class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-br from-[#32E4FF] to-[#2AD8B6] text-sm font-semibold text-[#050111] shadow-onboarding">1</span>
-            <span class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/20 bg-white/5 text-sm font-semibold">2</span>
-            <span class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/10 text-sm font-semibold text-white/40">3</span>
-            <span class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/10 text-sm font-semibold text-white/40">4</span>
-          </div>
+    <div class="relative mx-auto flex min-h-screen w-full max-w-5xl flex-col px-6 py-12">
+      <header class="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+        <div>
+          <p class="text-xs uppercase tracking-[0.55em] text-white/50">Risk Automation Suite</p>
+          <h1 class="mt-2 text-4xl font-semibold tracking-[0.18em] text-white">Onboarding</h1>
+          <p class="mt-3 max-w-xl text-sm text-white/60">Führe deinen Trading-Bot in vier einfachen Schritten live: Verbinde Telegram, bestätige deine Kanäle, wähle die Sicherheitsstufe und starte anschließend die Automatisierung.</p>
+        </div>
+        <div class="flex items-center gap-3 text-sm text-white/60">
+          <span class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 backdrop-blur">💡 <span>Guided Setup aktiv</span></span>
+          <a href="index.html" class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-white/70 transition hover:bg-white/10">Zurück zum Center</a>
         </div>
       </header>
 
-      <main class="mt-10 rounded-3xl border border-white/5 bg-white/5/10 bg-clip-padding backdrop-blur-xl p-8 shadow-[0_30px_60px_-40px_rgba(0,0,0,0.8)]">
-        <div class="flex items-center gap-3 text-[#33C7FF]">
-          <span class="flex h-10 w-10 items-center justify-center rounded-2xl bg-[#0E1B3B] text-xl">📨</span>
-          <div>
-            <p class="text-sm uppercase tracking-[0.3em] text-white/60">Connect</p>
-            <h2 class="text-xl font-semibold">Telegram</h2>
+      <main class="mt-12 grid flex-1 gap-8 lg:grid-cols-[1.15fr_0.85fr]">
+        <section class="rounded-[32px] border border-white/10 bg-surface/80 p-8 shadow-glow backdrop-blur-2xl">
+          <div class="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
+            <div>
+              <p class="text-[11px] uppercase tracking-[0.4em] text-white/50">Schritt 1</p>
+              <h2 class="mt-1 text-2xl font-semibold text-primary">Telegram verbinden</h2>
+            </div>
+            <div class="hidden gap-3 text-xs uppercase tracking-[0.3em] text-white/50 sm:flex">
+              <span class="rounded-full border border-white/15 px-3 py-1 text-white/70">Verifizieren</span>
+              <span class="rounded-full border border-white/10 px-3 py-1">Security Check</span>
+            </div>
           </div>
-        </div>
 
-        <form class="mt-8 space-y-5">
-          <div>
-            <label for="api-id" class="mb-2 block text-xs uppercase tracking-[0.3em] text-white/50">API ID</label>
-            <input id="api-id" type="text" value="1234567" class="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-base text-white placeholder-white/30 focus:border-[#33C7FF] focus:outline-none focus:ring-2 focus:ring-[#33C7FF]/40">
+          <ol class="mt-8 grid gap-4 md:grid-cols-4">
+            <li class="flex flex-col items-center gap-2 rounded-2xl border border-primary/30 bg-primary/15 px-4 py-3 text-center shadow-[0_10px_40px_-35px_rgba(42,247,255,0.9)]">
+              <span class="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-primary to-accent text-sm font-semibold text-[#031326]">1</span>
+              <span class="text-xs uppercase tracking-[0.25em] text-white/70">Connect</span>
+            </li>
+            <li class="flex flex-col items-center gap-2 rounded-2xl border border-white/15 bg-white/5 px-4 py-3 text-center">
+              <span class="flex h-10 w-10 items-center justify-center rounded-full border border-white/20 text-sm font-semibold text-white/70">2</span>
+              <span class="text-xs uppercase tracking-[0.25em] text-white/50">Channels</span>
+            </li>
+            <li class="flex flex-col items-center gap-2 rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-center">
+              <span class="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 text-sm font-semibold text-white/40">3</span>
+              <span class="text-xs uppercase tracking-[0.25em] text-white/40">Risk</span>
+            </li>
+            <li class="flex flex-col items-center gap-2 rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-center">
+              <span class="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 text-sm font-semibold text-white/40">4</span>
+              <span class="text-xs uppercase tracking-[0.25em] text-white/40">Start</span>
+            </li>
+          </ol>
+
+          <form class="mt-10 grid gap-6 md:grid-cols-2">
+            <label class="flex flex-col gap-2">
+              <span class="text-[11px] uppercase tracking-[0.35em] text-white/55">API ID</span>
+              <div class="relative">
+                <input type="text" value="1234567" class="w-full rounded-2xl border border-white/10 bg-[#071027]/70 px-4 py-3 text-base text-white placeholder-white/30 shadow-[0_18px_45px_-35px_rgba(0,0,0,0.8)] focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/40">
+                <span class="pointer-events-none absolute inset-y-0 right-4 flex items-center text-xs uppercase tracking-[0.2em] text-white/30">ID</span>
+              </div>
+            </label>
+            <label class="flex flex-col gap-2">
+              <span class="text-[11px] uppercase tracking-[0.35em] text-white/55">API Hash</span>
+              <div class="relative">
+                <input type="password" value="••••••••••" class="w-full rounded-2xl border border-white/10 bg-[#071027]/70 px-4 py-3 text-base text-white placeholder-white/30 focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/40">
+                <span class="pointer-events-none absolute inset-y-0 right-4 flex items-center text-xs uppercase tracking-[0.2em] text-white/30">SEC</span>
+              </div>
+            </label>
+            <label class="flex flex-col gap-2">
+              <span class="text-[11px] uppercase tracking-[0.35em] text-white/55">Telefon-Code</span>
+              <input type="text" value="+49" class="w-full rounded-2xl border border-white/10 bg-[#071027]/70 px-4 py-3 text-base text-white placeholder-white/30 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/40">
+            </label>
+            <label class="flex flex-col gap-2">
+              <span class="text-[11px] uppercase tracking-[0.35em] text-white/55">Bot Alias</span>
+              <input type="text" value="Atlas Risk Guard" class="w-full rounded-2xl border border-white/10 bg-[#071027]/70 px-4 py-3 text-base text-white placeholder-white/30 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/40">
+            </label>
+            <div class="md:col-span-2 flex flex-col gap-4 rounded-2xl border border-white/10 bg-[#060F26]/80 px-5 py-4">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                  <span class="flex h-9 w-9 items-center justify-center rounded-xl bg-white/10 text-lg">🔒</span>
+                  <div>
+                    <p class="text-sm font-medium text-white">Zwei-Faktor-Authentifizierung</p>
+                    <p class="text-xs uppercase tracking-[0.25em] text-white/40">Empfohlen</p>
+                  </div>
+                </div>
+                <button type="button" class="rounded-full border border-white/10 bg-white/10 px-4 py-2 text-xs uppercase tracking-[0.25em] text-white/60">Aktivieren</button>
+              </div>
+              <p class="text-xs text-white/50">Verbinde zusätzlich die verifizierte Telefonnummer für kritische Aktionen wie Not-Stopp oder Limit-Änderungen.</p>
+            </div>
+          </form>
+
+          <div class="mt-10 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+            <div class="flex flex-col gap-2 text-sm text-white/60">
+              <span class="inline-flex items-center gap-2 text-white/70"><span class="inline-flex h-2 w-2 rounded-full bg-accent"></span> Sicherer Kanal aktiv</span>
+              <span>Letzte Verbindung <strong class="font-medium text-white">vor 12 Minuten</strong></span>
+            </div>
+            <button class="inline-flex items-center justify-center gap-3 rounded-[22px] bg-gradient-to-r from-primary via-[#30F2C6] to-accent px-8 py-4 text-lg font-semibold text-[#04111F] shadow-[0_28px_95px_-50px_rgba(60,255,110,0.85)] transition-transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary/60 focus:ring-offset-[#040012]">
+              Weiter zu Kanälen
+              <span class="text-xl">→</span>
+            </button>
           </div>
-          <div>
-            <label for="api-hash" class="mb-2 block text-xs uppercase tracking-[0.3em] text-white/50">API Hash</label>
-            <input id="api-hash" type="password" value="••••••••••" class="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-base text-white placeholder-white/30 focus:border-[#33C7FF] focus:outline-none focus:ring-2 focus:ring-[#33C7FF]/40">
-          </div>
-        </form>
+        </section>
 
-        <ol class="mt-8 space-y-2 text-sm text-white/70">
-          <li class="flex items-center gap-2"><span class="text-[#32E4FF]">1.</span> Verbinde deinen Telegram-Account</li>
-          <li class="flex items-center gap-2"><span class="text-[#32E4FF]">2.</span> Wähle deine Chats aus</li>
-          <li class="flex items-center gap-2"><span class="text-[#32E4FF]">3.</span> Lege das Risikoniveau fest</li>
-          <li class="flex items-center gap-2"><span class="text-[#32E4FF]">4.</span> Starte den Bot</li>
-        </ol>
+        <aside class="space-y-6">
+          <section class="rounded-[32px] border border-white/10 bg-surface/80 p-6 backdrop-blur-2xl">
+            <h3 class="text-lg font-semibold text-white">Live-Überblick</h3>
+            <div class="mt-4 space-y-4 text-sm text-white/60">
+              <div class="flex items-center justify-between rounded-2xl border border-white/10 bg-white/5 px-4 py-3">
+                <span>Aktive Bots</span>
+                <span class="text-lg font-semibold text-primary">12</span>
+              </div>
+              <div class="flex items-center justify-between rounded-2xl border border-white/10 bg-white/5 px-4 py-3">
+                <span>Risk Preset</span>
+                <span class="text-lg font-semibold text-accent">Balanced</span>
+              </div>
+              <div class="flex items-center justify-between rounded-2xl border border-white/10 bg-white/5 px-4 py-3">
+                <span>Letzte Änderung</span>
+                <span class="text-lg font-semibold text-white/80">08:42</span>
+              </div>
+            </div>
+          </section>
 
-        <button class="mt-10 w-full rounded-2xl bg-gradient-to-r from-[#2AF7FF] via-[#2EF0B5] to-[#3CFF6E] px-6 py-4 text-lg font-semibold text-[#050111] shadow-[0_20px_60px_-30px_rgba(46,240,181,0.8)] transition-transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#2EF0B5] focus:ring-offset-[#050111]">Start Bot</button>
+          <section class="rounded-[32px] border border-white/10 bg-surface/80 p-6 backdrop-blur-2xl">
+            <h3 class="text-lg font-semibold text-white">Checkliste</h3>
+            <ul class="mt-4 space-y-3 text-sm text-white/65">
+              <li class="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-3"><span class="text-xl">✅</span><span>API Schlüssel aus BotFather kopieren</span></li>
+              <li class="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-3"><span class="text-xl">⬜️</span><span>Signals Premium &amp; Gold VIP bestätigen</span></li>
+              <li class="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-3"><span class="text-xl">⬜️</span><span>Notabschaltung via SMS testen</span></li>
+            </ul>
+          </section>
+        </aside>
       </main>
+
+      <footer class="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/10 py-6 text-sm text-white/40 sm:flex-row">
+        <span>© 2024 CannabisApp · Trading Automation Suite</span>
+        <div class="flex flex-wrap items-center gap-3">
+          <a class="rounded-xl border border-white/10 bg-white/5 px-3 py-1.5" href="index.html">Risk Center</a>
+          <a class="rounded-xl border border-white/10 bg-white/5 px-3 py-1.5" href="performance.html">Performance</a>
+          <a class="rounded-xl border border-white/10 bg-white/5 px-3 py-1.5" href="chat-stats.html">Chat Stats</a>
+        </div>
+      </footer>
     </div>
   </div>
 </body>

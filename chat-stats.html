@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chat Statistics · CannabisApp</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Outfit', 'sans-serif']
+          },
+          colors: {
+            primary: '#2AF7FF',
+            accent: '#3CFF6E',
+            warning: '#FF9F4D',
+            danger: '#FF4F6D',
+            surface: 'rgba(5, 18, 40, 0.78)'
+          },
+          boxShadow: {
+            glass: '0 45px 140px -60px rgba(42, 247, 255, 0.55)'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="min-h-screen bg-[#030015] font-sans text-white">
+  <div class="relative min-h-screen overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-[#020012] via-[#050A28] to-[#001B34]"></div>
+    <div class="absolute -top-40 -left-28 h-96 w-96 rounded-full bg-[#2C7DFF]/25 blur-3xl"></div>
+    <div class="absolute -bottom-36 -right-24 h-96 w-96 rounded-full bg-[#25F4C7]/20 blur-3xl"></div>
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(42,247,255,0.12),_transparent_60%)]"></div>
+
+    <div class="relative mx-auto flex min-h-screen w-full max-w-6xl flex-col px-6 py-10">
+      <header class="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
+        <div>
+          <p class="text-xs uppercase tracking-[0.55em] text-white/50">Chat Intelligence</p>
+          <h1 class="mt-2 text-4xl font-semibold">Chat Statistiken</h1>
+          <p class="mt-3 max-w-2xl text-sm text-white/60">Analysiere Signal-Feeds, Antwortzeiten und Engagement über alle Telegram-Channels hinweg. Identifiziere Volumen-Spitzen und Silence Phases.</p>
+        </div>
+        <div class="flex flex-wrap items-center gap-3 text-sm text-white/70">
+          <a href="index.html" class="inline-flex items-center gap-2 rounded-2xl border border-white/10 bg-white/10 px-4 py-2 transition hover:bg-white/15">Zurück zum Center</a>
+          <button class="inline-flex items-center gap-2 rounded-2xl border border-white/10 bg-white/10 px-4 py-2">Sync 08:46 · 🔄</button>
+          <button class="inline-flex items-center gap-2 rounded-2xl border border-white/10 bg-gradient-to-r from-primary to-accent px-4 py-2 text-[#021222] font-semibold">Export</button>
+        </div>
+      </header>
+
+      <main class="mt-10 grid flex-1 gap-8 xl:grid-cols-[1.55fr_1fr]">
+        <section class="space-y-8">
+          <section class="rounded-[34px] border border-white/10 bg-surface p-6 shadow-glass backdrop-blur-2xl">
+            <div class="flex flex-wrap items-center gap-4">
+              <h2 class="text-lg font-semibold">Channel Übersicht</h2>
+              <span class="text-xs uppercase tracking-[0.25em] text-white/50">Top Feeds</span>
+              <button class="ml-auto rounded-xl border border-white/10 bg-white/10 px-4 py-2 text-xs uppercase tracking-[0.2em] text-white/70">Filter</button>
+            </div>
+            <div class="mt-6 space-y-4">
+              <div class="grid grid-cols-[auto_1fr_auto_auto_auto] items-center gap-4 rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white/70">
+                <span class="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-primary/20 text-lg">💬</span>
+                <div>
+                  <p class="font-semibold text-white">Premium Forex Signals</p>
+                  <p class="text-xs text-white/50">1h Takt · Moderiert</p>
+                </div>
+                <span class="text-sm font-semibold text-accent">128 Msg</span>
+                <span class="text-xs uppercase tracking-[0.25em] text-white/50">Latency 1.2s</span>
+                <span class="text-xs uppercase tracking-[0.25em] text-white/50">Engagement 67%</span>
+              </div>
+              <div class="grid grid-cols-[auto_1fr_auto_auto_auto] items-center gap-4 rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white/70">
+                <span class="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-warning/20 text-lg">📈</span>
+                <div>
+                  <p class="font-semibold text-white">GoldTrading VIP</p>
+                  <p class="text-xs text-white/50">5m Takt · High Risk</p>
+                </div>
+                <span class="text-sm font-semibold text-warning">214 Msg</span>
+                <span class="text-xs uppercase tracking-[0.25em] text-white/50">Latency 0.9s</span>
+                <span class="text-xs uppercase tracking-[0.25em] text-white/50">Engagement 74%</span>
+              </div>
+              <div class="grid grid-cols-[auto_1fr_auto_auto_auto] items-center gap-4 rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white/70">
+                <span class="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-primary/15 text-lg">🪙</span>
+                <div>
+                  <p class="font-semibold text-white">Crypto Signals Pro</p>
+                  <p class="text-xs text-white/50">15m Takt · Momentum</p>
+                </div>
+                <span class="text-sm font-semibold text-accent">162 Msg</span>
+                <span class="text-xs uppercase tracking-[0.25em] text-white/50">Latency 1.5s</span>
+                <span class="text-xs uppercase tracking-[0.25em] text-white/50">Engagement 59%</span>
+              </div>
+            </div>
+          </section>
+
+          <section class="rounded-[34px] border border-white/10 bg-surface p-6 backdrop-blur-2xl">
+            <div class="flex flex-wrap items-center gap-4">
+              <h2 class="text-lg font-semibold">Engagement &amp; Antworten</h2>
+              <span class="text-xs uppercase tracking-[0.25em] text-white/50">24h</span>
+            </div>
+            <div class="mt-6 grid gap-4 md:grid-cols-3">
+              <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+                <p class="text-xs uppercase tracking-[0.25em] text-white/50">Ø Antwortzeit</p>
+                <p class="mt-2 text-2xl font-semibold text-accent">2.3 s</p>
+                <p class="mt-3 text-xs text-white/50">95% innerhalb 6 Sekunden</p>
+              </div>
+              <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+                <p class="text-xs uppercase tracking-[0.25em] text-white/50">User Reaktionen</p>
+                <p class="mt-2 text-2xl font-semibold text-accent">+ 384</p>
+                <p class="mt-3 text-xs text-white/50">🔥 56 · 👍 184 · ⚠️ 12</p>
+              </div>
+              <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+                <p class="text-xs uppercase tracking-[0.25em] text-white/50">Silent Phases</p>
+                <p class="mt-2 text-2xl font-semibold text-white/80">3×</p>
+                <p class="mt-3 text-xs text-white/50">Longest: 18 Minuten</p>
+              </div>
+            </div>
+            <div class="mt-6 grid gap-4 md:grid-cols-2">
+              <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+                <p class="text-xs uppercase tracking-[0.25em] text-white/50">Peak Activity</p>
+                <p class="mt-2 text-lg font-semibold">London Open 09:15</p>
+                <p class="mt-3 text-xs text-white/50">142 Nachrichten in 15 Minuten</p>
+              </div>
+              <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+                <p class="text-xs uppercase tracking-[0.25em] text-white/50">Quiet Window</p>
+                <p class="mt-2 text-lg font-semibold">Asia Close 02:00</p>
+                <p class="mt-3 text-xs text-white/50">7 Nachrichten · Delay Trigger aktiv</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="rounded-[34px] border border-white/10 bg-surface p-6 backdrop-blur-2xl">
+            <div class="flex flex-wrap items-center gap-4">
+              <h2 class="text-lg font-semibold">Signal Breakdown</h2>
+              <span class="text-xs uppercase tracking-[0.25em] text-white/50">Letzte 12h</span>
+            </div>
+            <div class="mt-6 space-y-4 text-sm text-white/70">
+              <div class="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-3">
+                <span class="inline-flex h-3 w-3 rounded-full bg-accent"></span>
+                <span class="flex-1">Long Signale</span>
+                <span class="text-xs uppercase tracking-[0.25em] text-white/40">58%</span>
+                <span class="text-lg font-semibold text-accent">+ 1.120 €</span>
+              </div>
+              <div class="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-3">
+                <span class="inline-flex h-3 w-3 rounded-full bg-danger"></span>
+                <span class="flex-1">Short Signale</span>
+                <span class="text-xs uppercase tracking-[0.25em] text-white/40">32%</span>
+                <span class="text-lg font-semibold text-danger">- 420 €</span>
+              </div>
+              <div class="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-3">
+                <span class="inline-flex h-3 w-3 rounded-full bg-warning"></span>
+                <span class="flex-1">Warnungen</span>
+                <span class="text-xs uppercase tracking-[0.25em] text-white/40">10%</span>
+                <span class="text-lg font-semibold text-warning">12 Events</span>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <aside class="space-y-8">
+          <section class="rounded-[34px] border border-white/10 bg-surface p-6 text-center shadow-glass backdrop-blur-2xl">
+            <p class="text-sm uppercase tracking-[0.3em] text-white/60">Live Traffic</p>
+            <div class="mt-6 flex flex-col items-center gap-6">
+              <div class="relative flex h-44 w-44 items-center justify-center">
+                <div class="absolute inset-4 rounded-full border-2 border-dashed border-white/10"></div>
+                <div class="absolute inset-0 rounded-full bg-gradient-to-br from-primary/25 to-accent/15 blur-xl"></div>
+                <div class="relative flex h-full w-full items-center justify-center rounded-full border border-white/10 bg-[#030015]/80"></div>
+                <div class="absolute flex h-24 w-24 flex-col items-center justify-center rounded-full bg-[#030015] text-center">
+                  <span class="text-3xl font-semibold text-primary">42</span>
+                  <span class="text-xs uppercase tracking-[0.25em] text-white/50">Msg/min</span>
+                </div>
+              </div>
+              <div class="grid w-full grid-cols-3 gap-3 text-sm">
+                <div class="rounded-2xl border border-white/10 bg-white/5 p-3">
+                  <p class="text-xs uppercase tracking-[0.25em] text-white/50">Live</p>
+                  <p class="mt-1 text-lg font-semibold">312</p>
+                </div>
+                <div class="rounded-2xl border border-white/10 bg-white/5 p-3">
+                  <p class="text-xs uppercase tracking-[0.25em] text-white/50">Alerts</p>
+                  <p class="mt-1 text-lg font-semibold text-warning">7</p>
+                </div>
+                <div class="rounded-2xl border border-white/10 bg-white/5 p-3">
+                  <p class="text-xs uppercase tracking-[0.25em] text-white/50">Muted</p>
+                  <p class="mt-1 text-lg font-semibold text-white/80">3</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="rounded-[34px] border border-white/10 bg-surface p-6 backdrop-blur-2xl">
+            <h3 class="text-lg font-semibold">Antwortmatrix</h3>
+            <div class="mt-5 space-y-3 text-sm text-white/60">
+              <div class="flex items-center justify-between gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-3">
+                <span>GoldTrading VIP</span>
+                <span class="text-xs uppercase tracking-[0.25em] text-white/40">Median 1.1s</span>
+                <span class="text-lg font-semibold text-accent">98%</span>
+              </div>
+              <div class="flex items-center justify-between gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-3">
+                <span>Premium Forex</span>
+                <span class="text-xs uppercase tracking-[0.25em] text-white/40">Median 1.6s</span>
+                <span class="text-lg font-semibold text-accent">92%</span>
+              </div>
+              <div class="flex items-center justify-between gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-3">
+                <span>Crypto Signals</span>
+                <span class="text-xs uppercase tracking-[0.25em] text-white/40">Median 2.4s</span>
+                <span class="text-lg font-semibold text-warning">84%</span>
+              </div>
+            </div>
+          </section>
+
+          <section class="rounded-[34px] border border-white/10 bg-surface p-6 backdrop-blur-2xl">
+            <h3 class="text-lg font-semibold">Insights</h3>
+            <div class="mt-5 space-y-3 text-sm text-white/60">
+              <div class="flex items-start gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-3">
+                <span class="text-lg">💡</span>
+                <div>
+                  <p class="font-medium text-white">London Session übernimmt Volumen</p>
+                  <p class="text-white/60">83% der Reaktionen zwischen 8:30 und 10:00 Uhr.</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-3">
+                <span class="text-lg">⚠️</span>
+                <div>
+                  <p class="font-medium text-white">Asia Range inaktiv</p>
+                  <p class="text-white/60">Silent Phase &gt; 20 Minuten · Automation vorschlagen.</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-3">
+                <span class="text-lg">🛠️</span>
+                <div>
+                  <p class="font-medium text-white">Quick Reply Macros</p>
+                  <p class="text-white/60">Neue Shortcuts reduzieren Antwortzeit um 14%.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </aside>
+      </main>
+
+      <footer class="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/10 py-6 text-sm text-white/40 sm:flex-row">
+        <span>© 2024 CannabisApp · Trading Automation Suite</span>
+        <div class="flex flex-wrap items-center gap-3">
+          <a class="rounded-xl border border-white/10 bg-white/5 px-3 py-1.5" href="index.html">Risk Center</a>
+          <a class="rounded-xl border border-white/10 bg-white/5 px-3 py-1.5" href="performance.html">Performance</a>
+          <a class="rounded-xl border border-white/10 bg-white/5 px-3 py-1.5" href="automation.html">Automationen</a>
+        </div>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
