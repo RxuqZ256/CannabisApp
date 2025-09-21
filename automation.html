@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Automation Rules · CannabisApp</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Outfit', 'sans-serif']
+          },
+          colors: {
+            primary: '#2AF7FF',
+            accent: '#3CFF6E',
+            warning: '#FF9F4D'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="min-h-screen bg-[#040015] font-sans text-white">
+  <div class="relative min-h-screen overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-[#020012] via-[#060529] to-[#001F36]"></div>
+    <div class="absolute -top-36 -left-28 h-96 w-96 rounded-full bg-[#2971FF]/15 blur-3xl"></div>
+    <div class="absolute -bottom-40 -right-24 h-96 w-96 rounded-full bg-[#2AF7FF]/15 blur-3xl"></div>
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(42,247,255,0.08),_transparent_55%)]"></div>
+
+    <div class="relative mx-auto flex min-h-screen w-full max-w-5xl flex-col px-6 py-10">
+      <header class="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
+        <div>
+          <p class="text-xs uppercase tracking-[0.5em] text-white/50">Automations</p>
+          <h1 class="mt-3 text-4xl font-semibold">Automation Rules</h1>
+        </div>
+        <div class="flex flex-wrap items-center gap-3 text-sm text-white/70">
+          <a href="index.html" class="rounded-2xl border border-white/10 bg-white/5 px-4 py-2 transition hover:bg-white/10">Zurück zum Center</a>
+          <button class="flex items-center gap-2 rounded-2xl border border-white/10 bg-white/5 px-4 py-2">
+            <span>Preset speichern</span>
+            <span class="text-lg">💾</span>
+          </button>
+        </div>
+      </header>
+
+      <main class="mt-10 flex-1">
+        <section class="rounded-[32px] border border-white/10 bg-white/5/10 bg-clip-padding p-8 shadow-[0_40px_120px_-60px_rgba(42,247,255,0.45)] backdrop-blur-2xl">
+          <div class="flex flex-wrap items-center gap-3 border-b border-white/10 pb-6 text-sm uppercase tracking-[0.4em] text-white/50">
+            <span class="flex items-center gap-2 text-primary">
+              <span class="inline-flex h-2 w-2 rounded-full bg-accent"></span>
+              Automations Live
+            </span>
+            <span class="rounded-full border border-white/10 px-3 py-1 text-[11px] text-white/60">5 aktive Regeln</span>
+          </div>
+
+          <div class="mt-8 space-y-6 text-sm text-white/80">
+            <article class="rounded-3xl border border-white/10 bg-white/5/20 bg-clip-padding p-6 backdrop-blur-xl">
+              <div class="flex flex-wrap items-center gap-3">
+                <span class="rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-[11px] uppercase tracking-[0.3em] text-primary">If</span>
+                <span>Chat</span>
+                <span class="rounded-xl border border-white/10 bg-white/5 px-3 py-1">Is GoldTrading VIP</span>
+                <span>and Pair is</span>
+                <span class="rounded-xl border border-white/10 bg-white/5 px-3 py-1">XAUUSD, XAGUSD</span>
+                <span>Confidence &gt; 8%</span>
+              </div>
+              <div class="mt-4 flex flex-wrap items-center gap-3 border-t border-white/10 pt-4">
+                <span class="rounded-full border border-accent/40 bg-accent/15 px-3 py-1 text-[11px] uppercase tracking-[0.3em] text-accent">Then</span>
+                <span>Execute trade</span>
+                <span class="rounded-xl border border-white/10 bg-white/5 px-3 py-1">With</span>
+                <span class="rounded-xl border border-white/10 bg-white/5 px-3 py-1">Risk Setting: Fixed %</span>
+                <button class="ml-auto rounded-xl border border-white/10 bg-white/10 px-3 py-1 text-xs text-white/60">Protokoll</button>
+              </div>
+            </article>
+
+            <article class="rounded-3xl border border-white/10 bg-white/5/20 bg-clip-padding p-6 backdrop-blur-xl">
+              <div class="flex flex-wrap items-center gap-3">
+                <span class="rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-[11px] uppercase tracking-[0.3em] text-primary">If</span>
+                <span>Chat</span>
+                <span class="rounded-xl border border-white/10 bg-white/5 px-3 py-1">Is Premium Forex Signals</span>
+                <span>and Pair is not</span>
+                <span class="rounded-xl border border-white/10 bg-white/5 px-3 py-1">GBPUSD</span>
+              </div>
+              <div class="mt-4 flex flex-wrap items-center gap-3 border-t border-white/10 pt-4">
+                <span class="rounded-full border border-accent/40 bg-accent/15 px-3 py-1 text-[11px] uppercase tracking-[0.3em] text-accent">Then</span>
+                <span>Mute chat for</span>
+                <span class="rounded-xl border border-white/10 bg-white/5 px-3 py-1">Duration 12 h</span>
+                <button class="ml-auto rounded-xl border border-white/10 bg-white/10 px-3 py-1 text-xs text-white/60">Details</button>
+              </div>
+            </article>
+
+            <article class="rounded-3xl border border-white/10 bg-white/5/20 bg-clip-padding p-6 backdrop-blur-xl">
+              <div class="flex flex-wrap items-center gap-3">
+                <span class="rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-[11px] uppercase tracking-[0.3em] text-primary">If</span>
+                <span>Chat</span>
+                <span class="rounded-xl border border-white/10 bg-white/5 px-3 py-1">Is Any</span>
+                <span>and Slippage &gt;</span>
+                <span class="rounded-xl border border-white/10 bg-white/5 px-3 py-1">0,5</span>
+              </div>
+              <div class="mt-4 flex flex-wrap items-center gap-3 border-t border-white/10 pt-4">
+                <span class="rounded-full border border-accent/40 bg-accent/15 px-3 py-1 text-[11px] uppercase tracking-[0.3em] text-accent">Then</span>
+                <span>Notify via Telegram</span>
+                <span class="rounded-xl border border-white/10 bg-white/5 px-3 py-1">With Alert Preset: High</span>
+                <button class="ml-auto rounded-xl border border-white/10 bg-white/10 px-3 py-1 text-xs text-white/60">Logs</button>
+              </div>
+            </article>
+
+            <article class="rounded-3xl border border-white/10 bg-white/5/20 bg-clip-padding p-6 backdrop-blur-xl">
+              <div class="flex flex-wrap items-center gap-3">
+                <span class="rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-[11px] uppercase tracking-[0.3em] text-primary">If</span>
+                <span>Latency</span>
+                <span class="rounded-xl border border-white/10 bg-white/5 px-3 py-1">is &gt; 120 ms</span>
+                <span>and</span>
+                <span class="rounded-xl border border-warning/40 bg-warning/15 px-3 py-1 text-warning">Broker = Backup</span>
+              </div>
+              <div class="mt-4 flex flex-wrap items-center gap-3 border-t border-white/10 pt-4">
+                <span class="rounded-full border border-accent/40 bg-accent/15 px-3 py-1 text-[11px] uppercase tracking-[0.3em] text-accent">Then</span>
+                <span>Execute trade</span>
+                <span class="rounded-xl border border-white/10 bg-white/5 px-3 py-1">Choose chat</span>
+                <span class="rounded-xl border border-white/10 bg-white/5 px-3 py-1">Add ×</span>
+                <button class="ml-auto rounded-xl border border-white/10 bg-white/10 px-3 py-1 text-xs text-white/60">Fallback</button>
+              </div>
+            </article>
+
+            <article class="rounded-3xl border border-dashed border-white/20 bg-white/5/20 bg-clip-padding p-6 text-white/60 backdrop-blur-xl">
+              <div class="flex flex-wrap items-center gap-3">
+                <span class="rounded-full border border-primary/20 bg-primary/5 px-3 py-1 text-[11px] uppercase tracking-[0.3em]">If</span>
+                <span>Signal</span>
+                <span class="rounded-xl border border-white/10 bg-white/5 px-3 py-1 text-white/70">is</span>
+                <span class="rounded-xl border border-white/10 bg-white/5 px-3 py-1 text-white/70">Choose condition</span>
+              </div>
+              <div class="mt-4 flex flex-wrap items-center gap-3 border-t border-white/10 pt-4">
+                <span class="rounded-full border border-accent/20 bg-accent/5 px-3 py-1 text-[11px] uppercase tracking-[0.3em]">Then</span>
+                <span class="rounded-xl border border-white/10 bg-white/5 px-3 py-1 text-white/70">Execute trade</span>
+                <span class="rounded-xl border border-white/10 bg-white/5 px-3 py-1 text-white/70">Risk Parameter</span>
+                <span class="rounded-xl border border-white/10 bg-white/5 px-3 py-1 text-white/70">+</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="mt-8 flex items-center justify-between">
+            <button class="rounded-2xl border border-white/10 bg-white/10 px-5 py-3 text-sm text-white/70">Historie</button>
+            <button class="rounded-2xl border border-accent/40 bg-gradient-to-r from-primary to-accent px-6 py-3 text-sm font-semibold text-[#041221] shadow-[0_25px_60px_-40px_rgba(60,255,110,0.7)]">+ Add Rule</button>
+          </div>
+        </section>
+      </main>
+
+      <footer class="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/10 py-6 text-sm text-white/40 sm:flex-row">
+        <span>© 2024 CannabisApp · Trading Automation Suite</span>
+        <div class="flex flex-wrap items-center gap-3">
+          <a class="rounded-xl border border-white/10 bg-white/5 px-3 py-1.5" href="index.html">Risk Center</a>
+          <a class="rounded-xl border border-white/10 bg-white/5 px-3 py-1.5" href="performance.html">Performance</a>
+          <a class="rounded-xl border border-white/10 bg-white/5 px-3 py-1.5" href="chat-stats.html">Chat Stats</a>
+        </div>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
